@@ -3,10 +3,15 @@
 
 <head>
     <title>A Cinemateca Portuguesa</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -18,12 +23,13 @@
                 alt="Cinemateca Portuguesa">
         </a>
         <div class="navbar-menu-container">
-        <div id="navbar-menu">
-            <a>A Cinemateca</a>
-            <a>Acervo Digital</a>
-            <a>Notícias</a>
-            <a>Contactos</a>
-        </div></div>
+            <div id="navbar-menu">
+                <a><h3>A Cinemateca</h3></a>
+                <a><h3>Acervo Digital</h3></a>
+                <a><h3>Notícias</h3></a>
+                <a><h3>Contactos</h3></a>
+            </div>
+        </div>
     </nav>
 
     <!-- navbar imagem fundo + barra amarela-->
@@ -31,7 +37,7 @@
         <div class="header-image">
             <img src="images/header-index-total.png" alt="Cinemateca">
         </div>
- 
+
     </div>
 
     <div id="index-container">
@@ -45,7 +51,9 @@
                     <img class="card-image" src="images/agenda/midnight in paris.jpg" alt="Filme: Midnight in Paris">
                     <div class="card-img-overlay">
                         <div class="card-date-container">
-                            <div class="card-detail-yellow">11 NOV 2024</div>
+                            <div class="card-detail-yellow">
+                                <p class="font-detail">11 NOV 2024</p>
+                            </div>
                         </div>
                         <div class="card-title-container">
                             <h5 class="card-title">Midnight in Paris</h5>
@@ -57,7 +65,9 @@
                     <img class="card-image" src="images/agenda/lejos de africa.jpg" alt="Filme: Lejos de África">
                     <div class="card-img-overlay">
                         <div class="card-date-container">
-                            <div class="card-detail-yellow">27 NOV 2024</div>
+                            <div class="card-detail-yellow">
+                                <p class="font-detail">27 NOV 2024</p>
+                            </div>
                         </div>
                         <div class="card-title-container">
                             <h5 class="card-title">Lejos de África</h5>
@@ -69,7 +79,9 @@
                     <img class="card-image" src="images/agenda/cinetracts.png" alt="Filme: Cinétracts">
                     <div class="card-img-overlay">
                         <div class="card-date-container">
-                            <div class="card-detail-yellow">29 NOV 2024</div>
+                            <div class="card-detail-yellow">
+                                <p class="font-detail">29 NOV 2024</p>
+                            </div>
                         </div>
                         <div class="card-title-container">
                             <h5 class="card-title">Cinétracts</h5>
@@ -82,7 +94,9 @@
                         alt="Oficina: Técnicas de Cinema de Animação">
                     <div class="card-img-overlay">
                         <div class="card-date-container">
-                            <div class="card-detail-yellow">14 DEZ 2024</div>
+                            <div class="card-detail-yellow">
+                                <p class="font-detail">14 DEZ 2024</p>
+                            </div>
                         </div>
                         <div class="card-title-container">
                             <h5 class="card-title">Técnicas de Cinema de Animação</h5>
@@ -94,7 +108,9 @@
                     <img class="card-image" src="images/agenda/noemia.jpg" alt="Exposição: Noémia.">
                     <div class="card-img-overlay">
                         <div class="card-date-container">
-                            <div class="card-detail-yellow">Até 16 DEZ 2024</div>
+                            <div class="card-detail-yellow">
+                                <p class="font-detail">Até 16 DEZ 2024</p>
+                            </div>
                         </div>
                         <div class="card-title-container">
                             <h5 class="card-title">Noémia.</h5>
@@ -111,12 +127,14 @@
     <div class="acervo-container">
         <div class="acervo-card">
             <!-- titulo acervo + texto-->
-            <h1>Acervo Digital</h1>
-            <p>A Cinemateca Digital foi criada em 2011 através do projecto European Film Gateway.</p>
+            <div class="acervo-title">
+                <h1>Acervo</h1>
+                <h1>Digital</h1>
+            </div>
+            <p class="acervo-bold">A Cinemateca Digital foi criada em 2011 através do projecto European Film Gateway.
+                </h5>
             <p>Para a selecção das obras, a Cinemateca adoptou como critério o tema da produção portuguesa de
-                não-ficção
-                do
-                período 1896-1931.</p>
+                não-ficção do período 1896-1931.</p>
             <p>Atualmente estão disponíveis para consulta digital:</p>
             <ol class="custom-list-acervo">
                 <li>1300 filmes;</li>
@@ -142,10 +160,14 @@
             <div class="news-card-container">
                 <!-- 1-->
                 <div class="news-card">
+                    <div class="card-top"></div>
                     <h5>Estreia de cópia digital restaurada de Camões (1946) </h5>
                     <div class="news-card-class">
-                        <div class="card-detail-yellow">Exibição</div>
-                        <div>18 NOV 2024</div>
+                        <div class="card-detail-yellow">
+                            <p class="font-detail">Exibição</p>
+                        </div>
+                        <div class="news-date">
+                            <p class="font-detail">18 NOV 2024</p></div>
                     </div>
                     <p>
                         A Cinemateca Portuguesa comemora os 500 anos do nascimento da figura central na literatura
@@ -156,10 +178,15 @@
                 </div>
                 <!-- 2-->
                 <div class="news-card">
+                    <div class="card-top"></div>
                     <h5>Cinco décadas de democracia em Espanha</h5>
                     <div class="news-card-class">
-                        <div class="card-detail-yellow">Programação</div>
-                        <div>22 OUT 2024</div>
+                        <div class="card-detail-yellow">
+                            <p class="font-detail"> Programação </p>
+                        </div>
+                        <div class="news-date">
+                            <p class="font-detail">22 OUT 2024</p>
+                        </div>
                     </div>
                     <p>
                         A Cinemateca associando-se ao programa "Portugal Espanha: 50 Anos de Democracia", e exibe cinco
@@ -168,10 +195,15 @@
                 </div>
                 <!-- 3-->
                 <div class="news-card">
+                    <div class="card-top"></div>
                     <h5>FILMar tem últimas sessões na RTP dias 20 e 23 de junho</h5>
                     <div class="news-card-class">
-                        <div class="card-detail-yellow">Projeto</div>
-                        <div>15 JUN 2024</div>
+                        <div class="card-detail-yellow">
+                            <p class="font-detail">Projeto</p>
+                        </div>
+                        <div class="news-date">
+                            <p class="font-detail">15 JUN 2024</p>
+                        </div>
                     </div>
                     <p>
                         O programa Cinemax, da RTP 2, despedem-se de uma colaboração que permitiu mostrar 21 títulos na
@@ -180,10 +212,15 @@
                 </div>
                 <!-- 4-->
                 <div class="news-card">
+                    <div class="card-top"></div>
                     <h5>FILMar inicia ÚLTIMA VAGA</h5>
                     <div class="news-card-class">
-                        <div class="card-detail-yellow">Projeto</div>
-                        <div>25 JAN 2024</div>
+                        <div class="card-detail-yellow">
+                            <p class="font-detail">In Memorium</p>
+                        </div>
+                        <div class="news-date">
+                            <p class="font-detail">25 JAN 2024</p>
+                        </div>
                     </div>
                     <p>
                         A partir de 1 de fevereiro, a Cinemateca Portuguesa apresenta um vasto programa de sessões de
@@ -207,24 +244,24 @@
 
                 <div class="footer-menu">
                     <div class="footer-menu-apresentacao">
-                        <h6>A Cinemateca</h5>
-                            <div>Apresentação</div>
-                            <div>História</div>
-                            <div>Missão e atividades</div>
-                            <div>Agenda</div>
+                        <h6>A Cinemateca</h6>
+                        <div class="body2">Apresentação</div>
+                        <div class="body2">História</div>
+                        <div class="body2">Missão e atividades</div>
+                        <div class="body2">Agenda</div>
                     </div>
                     <div class="footer-menu-acervo">
-                        <h6>Acervo Digital</h5>
-                            <div>Filme</div>
-                            <div>Imagem</div>
-                            <div>Texto</div>
+                        <h6>Acervo Digital</h6>
+                        <div class="body2">Filme</div>
+                        <div class="body2">Imagem</div>
+                        <div class="body2">Texto</div>
                     </div>
                     <div class="footer-menu-news">
-                        <h6>Notícias</h5>
+                        <h6>Notícias</h6>
                     </div>
                     <div class="footer-menu-contacts">
-                        <h6>Contactos</h5>
-                            <div>Localização</div>
+                        <h6>Contactos</h6>
+                        <div class="body2">Localização</div>
                     </div>
                 </div>
 
@@ -234,11 +271,14 @@
             </div>
             <div class="footer-container-end">
                 <div class="footer-return-top">
-                    <p> Voltar ao topo /\</p>
+                    <div class="body2">Voltar ao topo</div>
+                    <div>
+                        <img src="Icon/arrow-up.svg" alt="Voltar">
+                    </div>
                 </div>
 
                 <div class="footer-rights">
-                    <p>@ 2024 CINEMATECA PORTUGUESA - Museu do Cinema, IP</p>
+                    <p class="subtitle">@ 2024 CINEMATECA PORTUGUESA - Museu do Cinema, IP</p>
                 </div>
             </div>
         </div>

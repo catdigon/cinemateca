@@ -1,3 +1,76 @@
+/*TypeFont*/
+h1 {
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 750;
+    font-variant: small-caps;
+}
+
+/*Menu-Navbar*/
+h3 {
+    -webkit-text-stroke-width: 0.5px;
+    font-family: 'Julius Sans One';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*News-Tittles*/
+h5 {
+    font-family: Afacad;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+/*Footer-Title-Menu*/
+h6 {
+    font-family: 'Afacad';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/*Body text*/
+body {
+    font-family: Afacad;
+font-size:  1.2rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;;
+}
+
+.body2{
+    font-family:  Afacad;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 144%;
+}
+
+/*Type for details like dates and categories*/
+p.font-detail {
+    font-family: Karla;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+p.subtitle {
+    font-family: Afacad;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 /*Navbar*/
 #navbar {
     display: flex;
@@ -11,18 +84,17 @@
 }
 
 
-#navbar a {
+#navbar a h3 {
     float: left;
     display: block;
     color: #FCFAF8;
     padding: 14px 16px;
-    font-size: 17px;
 }
 
-.navbar-menu-container{
+.navbar-menu-container {
     position: absolute;
-    top: 26%;
-    right: 12.7%;
+    top: 26.5%;
+    right: 9%;
 }
 
 #navbar-menu {
@@ -30,8 +102,8 @@
     flex-direction: row;
 }
 
-.navbar-logo{
-    position:absolute;
+.navbar-logo {
+    position: absolute;
     top: -12%;
     left: 5%;
 }
@@ -39,11 +111,11 @@
 
 #navbar img {
     filter: invert(100%);
-    
 }
+
 /*Image Header*/
 
-#header-composition{
+#header-composition {
     margin-top: -12rem;
 }
 
@@ -69,7 +141,7 @@
 }
 
 
-#footer-container img {
+#footer-container .footer-logo {
     filter: invert(100%);
 }
 
@@ -95,6 +167,9 @@
 #footer-container .footer-return-top {
     display: flex;
     justify-content: flex-end;
+    gap: 0.5rem;
+    padding-bottom: 0.3rem;
+    align-items: center;
 }
 
 #footer-container .footer-rights {
@@ -108,13 +183,18 @@
     height: 40px;
     color: #100C07;
     border: 2px solid #100C07;
+    font-family: Afacad;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
 .btn-primary:hover {
     color: #FCFAF8;
     background-color: #100C07;
     border: 2px solid #100C07;
-    ;
 }
 
 .btn-secondary {
@@ -123,6 +203,12 @@
     background-color: #100C07;
     color: #FCFAF8;
     border: 2px solid #FCFAF8;
+    font-family: Afacad;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
 .btn-secondary:hover {
@@ -133,18 +219,17 @@
 
 
 /*Index page*/
-
 #index-container {
-    padding: 0 13%;
+    padding: 0 15%;
 }
+
 
 
 /*Yellow detail card and news*/
 .card-detail-yellow {
-    padding: 0 1rem;
+    padding: 0 0.7rem;
     color: #100C07;
     background-color: #FEA017;
-    text-transform: uppercase;
 }
 
 
@@ -153,7 +238,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
@@ -174,6 +259,7 @@
 }
 
 .events-cards .card-img-overlay {
+    box-shadow: inset 10px 10px 500px rgba(0, 0, 0, 0.4);
     padding: 1rem 0
 }
 
@@ -206,8 +292,8 @@
 }
 
 
-.events-cards .card-back{
-    color:#100C07
+.events-cards .card-back {
+    color: #100C07
 }
 
 
@@ -225,12 +311,30 @@
     height: 100%;
 }
 
+.acervo-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.acervo-title h1:last-of-type {
+    margin-top: -1rem;
+}
+
+.acervo-bold {
+    font-family: Afacad;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 .acervo-container .acervo-card {
     display: flex;
     width: 50%;
     flex-direction: column;
     align-self: anchor-center;
-    padding: 0 3% 0 9%;
+    padding: 0 3% 0 10%;
 }
 
 
@@ -274,19 +378,35 @@ ol.custom-list-acervo li::before {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
 .news-card-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 2rem;
 }
 
 
 .news-card {
+    position: relative;
     width: 50%;
-    padding: 0rem 0.5rem 0 1rem;
+    padding: 0.3rem 0.5rem 0rem 1rem;
+}
+
+.news-card>.card-top {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: calc(100% - 20px);
+    border-top: 1px solid #100C07;
+}
+
+
+.news-date {
+    margin-inline-start: 0.6rem;
 }
 
 .news-card-class {
@@ -304,9 +424,49 @@ ol.custom-list-acervo li::before {
 
 /*Media Queries*/
 
-@media (max-width: 800px) {
-    .navbar-logo img{
+@media only screen and (max-width: 1400px) {
+
+    /*Navbar*/
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    .navbar-logo {
+        position: absolute;
+        top: -5%;
+        left: 5%;
+    }
+    
+
+    .navbar-logo img {
+        height: 135px;
+    }
+
+    #navbar a h3 {
+        padding: 5px px;
+    }
+
+    .navbar-menu-container {
+        top: 16%;
+        right: 7%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /*Navbar*/
+    h3 {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+         .navbar-logo img {
         height: 120px;
+    }
+
+    #navbar a h3 {
+        padding: 2px 9px;
     }
 
     /*Footer*/
@@ -352,15 +512,15 @@ ol.custom-list-acervo li::before {
         flex-direction: row;
     }
 
-    
+
     /*News - Index page*/
     .news-card {
         width: 100%;
     }
 }
 
-@media (max-width: 480px) {
-    .navbar-logo img{
+@media only screen and (max-width: 576px) {
+    .navbar-logo img {
         height: 80px;
     }
 
@@ -374,6 +534,9 @@ ol.custom-list-acervo li::before {
     }
 
     /*Events - Index page*/
+    .events-cards{
+        justify-content: center;
+    }
     .events-cards .card {
         width: 300px;
     }
@@ -381,11 +544,22 @@ ol.custom-list-acervo li::before {
 }
 
 
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
+
     /*Events - Index page*/
     .events-cards .card {
         width: 100%;
         height: 150px;
+    }
+
+    .btn-primary {
+        width: 100px;
+        height: 40px;
+    }
+
+    .btn-secondary {
+        width: 100px;
+        height: 40px;
     }
 
 }

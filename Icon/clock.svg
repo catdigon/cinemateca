@@ -1,0 +1,11 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="&#195;&#173;cone/relogio" clip-path="url(#clip0_2713_400)">
+<path id="Vector" d="M7.99992 14.6673C11.6818 14.6673 14.6666 11.6825 14.6666 8.00065C14.6666 4.31875 11.6818 1.33398 7.99992 1.33398C4.31802 1.33398 1.33325 4.31875 1.33325 8.00065C1.33325 11.6825 4.31802 14.6673 7.99992 14.6673Z" stroke="#100C07" stroke-linecap="square"/>
+<path id="Vector_2" d="M8 3.33398V8.00065L10.6667 10.6673" stroke="#100C07" stroke-linecap="square"/>
+</g>
+<defs>
+<clipPath id="clip0_2713_400">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>
