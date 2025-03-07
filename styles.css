@@ -102,6 +102,10 @@ p.subtitle {
     flex-direction: row;
 }
 
+.navbar-menu-icon {
+    display: none;
+}
+
 .navbar-logo {
     position: absolute;
     top: -12%;
@@ -424,7 +428,7 @@ ol.custom-list-acervo li::before {
 
 /*Media Queries*/
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1470px) {
 
     /*Navbar*/
     h3 {
@@ -453,10 +457,10 @@ ol.custom-list-acervo li::before {
     }
 }
 
-@media only screen and (max-width: 768px) {
 
-    /*Navbar*/
-    h3 {
+@media only screen and (max-width: 1000px) {
+/*Navbar*/
+  h3 {
         font-size: 1rem;
         font-weight: 300;
     }
@@ -467,6 +471,37 @@ ol.custom-list-acervo li::before {
 
     #navbar a h3 {
         padding: 2px 9px;
+    }
+
+    .navbar-menu-container {
+        top: 20%;
+        right: 7%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #navbar a:not(:last-of-type) 
+    {display: none;}
+
+    .navbar-menu-icon {
+      float: right;
+      display: block;
+    }
+
+    .navbar-menu-icon img {
+        height: 30px;
+    }
+
+    .navbar-logo {
+        position: absolute;
+        top: -8%;
+        left: 5%;
+    }
+
+    .navbar-menu-container {
+        top: 12%;
+        right: 7%;
     }
 
     /*Footer*/
@@ -524,6 +559,18 @@ ol.custom-list-acervo li::before {
         height: 80px;
     }
 
+    .navbar-logo {
+        position: absolute;
+        top: -4%;
+        left: 5%;
+    }
+
+    .navbar-menu-container {
+        top: 8%;
+        right: 7%;
+    }
+
+    
     /*Footer*/
     #footer-container .footer-logo {
         display: none;
@@ -545,6 +592,15 @@ ol.custom-list-acervo li::before {
 
 
 @media only screen and (max-width: 320px) {
+
+    .navbar-menu-container {
+        top: 6%;
+        right: 7%;
+    }
+
+    .navbar-menu-icon img {
+        height: 20px;
+    }
 
     /*Events - Index page*/
     .events-cards .card {
