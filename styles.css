@@ -156,8 +156,6 @@ ol.custom-list-acervo li::before {
     padding-top: 1.5rem;
 }
 
-
-
 /*News - Index page*/
 .news-container {
     display: flex;
@@ -174,7 +172,6 @@ ol.custom-list-acervo li::before {
     margin-top: 2rem;
 }
 
-
 .news-card {
     position: relative;
     width: 50%;
@@ -188,7 +185,6 @@ ol.custom-list-acervo li::before {
     width: calc(100% - 20px);
     border-top: 1px solid #100C07;
 }
-
 
 .news-date {
     margin-inline-start: 0.6rem;
@@ -221,6 +217,7 @@ ol.custom-list-acervo li::before {
         width: 100%;
     }
 
+    /*Acervo*/
     .acervo-container {
         flex-direction: column;
     }
@@ -239,7 +236,6 @@ ol.custom-list-acervo li::before {
         flex-direction: row;
     }
 
-
     /*News - Index page*/
     .news-card {
         width: 100%;
@@ -247,7 +243,6 @@ ol.custom-list-acervo li::before {
 }
 
 @media only screen and (max-width: 576px) {
-
     /*Events - Index page*/
     .events-cards {
         justify-content: center;
@@ -256,12 +251,10 @@ ol.custom-list-acervo li::before {
     .events-cards .card {
         width: 300px;
     }
-
 }
 
 
 @media only screen and (max-width: 320px) {
-
     /*Events - Index page*/
     .events-cards .card {
         width: 100%;
