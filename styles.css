@@ -86,7 +86,6 @@ p.subtitle {
     display: flex;
     position: sticky;
     top: 0;
-    overflow: hidden;
     z-index: 999;
     height: 200px;
     left: 0;
@@ -99,6 +98,7 @@ p.subtitle {
     display: block;
     color: #FCFAF8;
     padding: 14px 16px;
+    padding-bottom: 6px;
 }
 
 .navbar-menu-container {
@@ -122,9 +122,33 @@ p.subtitle {
     left: 5%;
 }
 
-
 #navbar img {
     filter: invert(100%);
+}
+
+#navbar .navbar-open-triangle {
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid transparent;
+    border-bottom: 1rem solid #100c07dc;
+}
+
+#navbar .option-menu-container {
+    display: flex;
+    border: 1px solid #100c07dc;
+    width: 10rem;
+    height: 2rem;
+    margin-block-start: -0.1px;
+    justify-content: center;
+    align-items: center;
+    background: #100c07dc;
+    color: #FCFAF8;
+}
+
+#navbar .navbar-menu-options-open {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-self: anchor-center;
 }
 
 .navbar-hambuguer a {
@@ -461,7 +485,7 @@ ol.custom-list-acervo li::before {
     }
 
     #navbar a h3 {
-        padding: 5px px;
+        padding: 5px 20px;
     }
 
     .navbar-menu-container {
@@ -470,8 +494,6 @@ ol.custom-list-acervo li::before {
     }
 
 }
-
-
 
 @media only screen and (max-width: 1000px) {
 
@@ -494,6 +516,15 @@ ol.custom-list-acervo li::before {
         right: 7%;
     }
 
+    .body-menu-navbar{
+        font-size: 0.8rem;
+    }
+
+    #navbar .option-menu-container {
+        width: 8rem;
+        height: 1.6rem;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -506,6 +537,10 @@ ol.custom-list-acervo li::before {
     }
 
     #navbar .navbar-menu-container a:not(:last-of-type) {
+        display: none;
+    }
+
+    #navbar .navbar-menu-container .navbar-menu-options {
         display: none;
     }
 
@@ -542,14 +577,14 @@ ol.custom-list-acervo li::before {
     }
 
     .navbar-hamburguer-container {
+        display: none;
         position: fixed;
         top: 65px;
         width: 100%;
-        display: flex;
         flex-direction: column;
         align-items: flex-end;
         right: 7%;
-        color:#FCFAF8;
+        color: #FCFAF8;
     }
 
     /*Footer*/
