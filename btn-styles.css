@@ -1,0 +1,52 @@
+/*Botons*/
+
+.btn-primary {
+    width: 200px;
+    height: 40px;
+    color: #100C07;
+    border: 2px solid #100C07;
+    font-family: Afacad;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    color: #FCFAF8;
+    background-color: #100C07;
+    border: 2px solid #100C07;
+}
+
+.btn-secondary {
+    width: 200px;
+    height: 40px;
+    background-color: #100C07;
+    color: #FCFAF8;
+    border: 2px solid #FCFAF8;
+    font-family: Afacad;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+    color: #100C07;
+    background-color: #FCFAF8;
+    border: 2px solid #FCFAF8;
+}
+
+@media only screen and (max-width: 320px) {
+    .btn-primary {
+        width: 100px;
+        height: 40px;
+    }
+
+    .btn-secondary {
+        width: 100px;
+        height: 40px;
+    }
+}
