@@ -1,14 +1,3 @@
-/*Image Header*/
-#header-composition {
-    margin-top: -12rem;
-}
-
-#header-composition img {
-    width: 100%;
-    height: auto;
-    margin-top: -0.6rem;
-}
-
 /*Index page*/
 #index-container {
     padding: 0 15%;

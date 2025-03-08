@@ -1,3 +1,21 @@
+/*Tipografia*/
+h6 {
+    font-family: 'Afacad';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer-type {
+    font-family: Afacad;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 144%;
+}
+
 /*Footer*/
 #footer-container {
     background-color: #100C07;

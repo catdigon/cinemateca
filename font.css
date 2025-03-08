@@ -6,26 +6,6 @@ h1 {
     font-weight: 750;
     font-variant: small-caps;
 }
-
-/*Menu-Navbar*/
-h3 {
-    -webkit-text-stroke-width: 0.5px;
-    font-family: 'Julius Sans One';
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.body-menu-navbar {
-    font-family: Afacad;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 160%;
-    text-transform: uppercase;
-}
-
 /*News-Tittles*/
 h5 {
     font-family: Afacad;
@@ -33,16 +13,6 @@ h5 {
     font-style: normal;
     font-weight: 600;
     line-height: 2rem;
-}
-
-/*Footer-Title-Menu*/
-h6 {
-    font-family: 'Afacad';
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
 }
 
 /*Body text*/
@@ -53,14 +23,6 @@ body {
     font-weight: 400;
     line-height: 150%;
     ;
-}
-
-.body2 {
-    font-family: Afacad;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 144%;
 }
 
 /*Type for details like dates and categories*/
