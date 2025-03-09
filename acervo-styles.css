@@ -1,0 +1,52 @@
+.obras-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    gap: 3%;
+    padding: 4%;
+}
+
+.obra-card {
+    position: relative;
+    flex: 1 1 17rem;
+    max-width: 17rem;
+    height: 20rem;
+    overflow: hidden;
+    margin-bottom: 3%;
+}
+
+.obra-card .card-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.obra-card .card-img-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.2rem;
+    transition: background-color 0.4s ease, opacity 0.6s ease;
+    mask:linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgb(0, 0, 0) 70%, rgb(0, 0, 0) 100%);
+}
+
+.obra-card:hover .card-img-overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.card-title h4 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.obra-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.obra-info p{
+    margin-bottom: 0rem;
+}

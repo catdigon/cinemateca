@@ -15,7 +15,6 @@
 .events-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
@@ -30,7 +29,6 @@
     display: flex;
     width: calc(33.33%);
     height: 320px;
-    color: white;
     border-radius: 0;
     border: none;
 }
@@ -52,20 +50,18 @@
 
 .card-date-container {
     display: flex;
-    width: 100%;
     justify-content: flex-end;
 }
 
 
 .card-title-container {
     display: flex;
-    width: 100%;
-    justify-content: flex-start;
     height: 100%;
     align-items: flex-end;
     padding: 1rem 1.4rem;
     text-transform: uppercase;
     text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.374);
+    color: white;
 }
 
 .events-cards .card-back {
@@ -110,7 +106,6 @@
     align-self: anchor-center;
     padding: 0 3% 0 10%;
 }
-
 
 .acervo-container .acervo-img-container {
     display: flex;
@@ -168,7 +163,6 @@ ol.custom-list-acervo li::before {
 }
 
 .news-card>.card-top {
-    content: "";
     position: absolute;
     top: 0;
     width: calc(100% - 20px);

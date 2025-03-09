@@ -19,7 +19,7 @@ h6 {
 /*Footer*/
 #footer-container {
     background-color: #100C07;
-    height: 100%rem;
+    height: 100%;
     color: #FCFAF8;
 }
 
@@ -42,15 +42,9 @@ h6 {
 
 #footer-container .footer-menu {
     display: flex;
-    flex-direction: row;
     gap: 4%;
     width: 100%;
     justify-content: center;
-}
-
-#footer-container .footer-container-end {
-    display: flex;
-    flex-direction: column;
 }
 
 #footer-container .footer-return-top {
@@ -62,6 +56,7 @@ h6 {
 }
 
 #footer-container .footer-rights {
+    padding-top: 0.4rem;
     border-top: 1px solid #FCFAF8;
 }
 
@@ -84,14 +79,15 @@ h6 {
 }
 
 @media only screen and (max-width: 576px) {
-    
-
-    /*Footer*/
-    #footer-container .footer-logo {
+        #footer-container .footer-logo {
         display: none;
     }
 
     .footer-container-content {
         padding: 0;
+    }
+
+    #footer-container .footer-container-end {
+        padding: 0 3rem;
     }
 }

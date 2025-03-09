@@ -34,8 +34,8 @@ h3 {
     float: left;
     display: block;
     color: #FCFAF8;
-    padding: 14px 16px;
-    padding-bottom: 6px;
+    padding: 1vw 2vw;
+    padding-bottom: 4vw;
 }
 
 .navbar-menu-container {
@@ -54,14 +54,21 @@ h3 {
 }
 
 .navbar-logo {
-    position: absolute;
-    top: -12%;
-    left: 5%;
+    padding-left: 5%;
 }
+
 
 #navbar img {
     filter: invert(100%);
 }
+.navbar-logo img{
+    height: 160px;
+}
+
+.navbar-menu-icon img {
+    height: 30px
+}
+
 
 #navbar .navbar-open-triangle {
     border-left: 0.6rem solid transparent;
@@ -180,10 +187,6 @@ h3 {
     .navbar-menu-icon {
         float: right;
         display: block;
-    }
-
-    .navbar-menu-icon img {
-        height: 30px;
     }
 
     .navbar-logo {

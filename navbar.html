@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+
+    
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- navbar - icone botão +  botoes com opçoes-->
+    <nav id="navbar">
+        <a class="navbar-logo" href="index.html">
+            <img src="images/logo/logo-cinemateca-museu.svg" class="logo-navbar"
+                alt="Cinemateca Portuguesa">
+        </a>
+        <div class="navbar-menu-container">
+            <div id="navbar-menu">
+                <div class="navbar-menu-options">
+
+                    <a href="javascript:void(0);" onclick="toggleVisibilityElement('#navbar-open-menu-cinemateca')">
+                        <h3>A Cinemateca</h3>
+                    </a>
+
+                    <div id="navbar-open-menu-cinemateca" class="navbar-menu-options-open">
+                        <div class="navbar-open-triangle"></div>
+                        <a>
+                            <div class="body-menu-navbar option-menu-container"> Apresentação</div>
+                        </a>
+                        <a>
+                            <div class="body-menu-navbar option-menu-container">História</div>
+                        </a>
+                        <a>
+                            <div class="body-menu-navbar option-menu-container">Missão e atividades</div>
+                        </a>
+                        <a>
+                            <div class="body-menu-navbar option-menu-container">Agenda</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-menu-options">
+                    <a href="javascript:void(0);" onclick="toggleVisibilityElement('#navbar-open-menu-acervo')">
+                        <h3>Acervo Digital</h3>
+                    </a>
+                    <div id="navbar-open-menu-acervo" class="navbar-menu-options-open">
+                        <div class="navbar-open-triangle"></div>
+                        <a>
+                            <div class="body-menu-navbar option-menu-container">Filme</div>
+                        </a>
+                        <a>
+                            <div class="body-menu-navbar option-menu-container">Imagem</div>
+                        </a>
+                        <a>
+                            <div class="body-menu-navbar option-menu-container">Texto</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-menu-options">
+                    <a>
+                        <h3>Notícias</h3>
+                    </a>
+                </div>
+                <div class="navbar-menu-options">
+                    <a href="javascript:void(0);" onclick="toggleVisibilityElement('#navbar-open-menu-contacts')">
+                        <h3>Contactos</h3>
+                    </a>
+
+                    <div id="navbar-open-menu-contacts" class="navbar-menu-options-open">
+                        <div class="navbar-open-triangle"></div>
+                        <a>
+                            <div class="body-menu-navbar option-menu-container">Localização</div>
+                        </a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="navbar-menu-icon" onclick="toggleVisibilityElement('.navbar-hamburguer-container')">
+                    <img src="Icon/menu.svg" alt="Menu"> </a>
+            </div>
+        </div>
+
+        <div class="navbar-hamburguer-container">
+            <div class="navbar-hamburguer">
+                <a>
+                    <h3>A Cinemateca</h3>
+                </a>
+                <a>
+                    <div class="body-menu-navbar"> Apresentação</div>
+                </a>
+
+                <a>
+                    <div class="body-menu-navbar">História</div>
+                </a>
+
+                <a>
+                    <div class="body-menu-navbar">Missão e atividades</div>
+                </a>
+
+                <a>
+                    <div class="body-menu-navbar">Agenda</div>
+                </a>
+            </div>
+            <div class="navbar-hamburguer">
+                <a>
+                    <h3>Acervo Digital</h3>
+                </a>
+                <a>
+                    <div class="body-menu-navbar">Filme</div>
+                </a>
+                <a>
+                    <div class="body-menu-navbar">Imagem</div>
+                </a>
+                <a>
+                    <div class="body-menu-navbar">Texto</div>
+                </a>
+            </div>
+            <div class="navbar-hamburguer">
+                <a>
+                    <h3>Notícias</h3>
+                </a>
+            </div>
+            <div class="navbar-hamburguer">
+                <a>
+                    <h3>Contactos</h3>
+                </a>
+                <a>
+                    <div class="body-menu-navbar">Localização</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar imagem fundo + barra amarela-->
+    <div id="header-container">
+        <img src="images/header-index-total.png" alt="Cinemateca" class="header-image">
+</div>
+
+</body>
+
+</html>

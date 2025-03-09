@@ -6,6 +6,15 @@ h1 {
     font-weight: 750;
     font-variant: small-caps;
 }
+
+h4 {
+    font-family: Afacad;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height:  108%;
+}
+
 /*News-Tittles*/
 h5 {
     font-family: Afacad;
