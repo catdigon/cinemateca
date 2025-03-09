@@ -2,7 +2,7 @@
     content: "";
     background-position: center;
     height: 1rem; 
-    background-image: url('Icon/arrow-bread-crumbs.svg'); 
+    background-image: url('../Icon/arrow-bread-crumbs.svg'); 
     background-repeat: no-repeat; 
     margin: 0.4rem; 
   }
