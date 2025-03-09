@@ -1,0 +1,16 @@
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "";
+    background-position: center;
+    height: 1rem; 
+    background-image: url('Icon/arrow-bread-crumbs.svg'); 
+    background-repeat: no-repeat; 
+    margin: 0.4rem; 
+  }
+
+.breadcrumb-item a {
+    color:#100C07}
+
+.breadcrumb-item.active{
+    font-weight: 700;
+    color: #100C07;
+}

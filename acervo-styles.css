@@ -17,22 +17,23 @@
 
 .obra-card .card-image {
     height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
 .obra-card .card-img-overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(42, 42, 42, 0.85);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 1.2rem;
     transition: background-color 0.4s ease, opacity 0.6s ease;
-    mask:linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgb(0, 0, 0) 70%, rgb(0, 0, 0) 100%);
+    mask:linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, rgb(0, 0, 0) 86%, rgb(0, 0, 0) 100%);
 }
 
 .obra-card:hover .card-img-overlay {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .card-title h4 {
