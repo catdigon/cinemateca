@@ -1,3 +1,92 @@
+.broad-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.filters-menu-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 2rem;
+    gap: 1rem;
+}
+
+.btn-categories-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.add-remove-btn-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Acordion*/
+.accordion {
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    position: relative;
+  }
+
+  .accordion:after {
+    content: '';
+    position: absolute;
+    right: 1rem; 
+    width: 1rem; 
+    height: 0.5rem;
+    background-image: url('../Icon/arrow-filters.svg'); 
+    background-repeat: no-repeat;
+    align-self: anchor-center;
+  }
+
+  .accordion.active:after {
+    background-image: url('../Icon/arrow-filters.svg'); 
+    transform: rotate(180deg);/* Caminho do seu ícone SVG */
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion-filters .filter-option {
+    display: flex; 
+    align-items: center; 
+}
+
+.accordion-filters .filter-option:hover {
+    font-weight: 600;
+}
+
+.accordion-filters .filter-option p::before {
+    content: '';
+    display: none;
+    width: 1rem; 
+    height: 0.5rem;
+    background-image: url('../Icon/X.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+  }
+
+  .accordion-filters .filter-option.add-filter p::before {
+    display: inline-block;
+}
+.accordion-filters .filter-option.add-filter p{
+text-align: left;}
+
+  .accordion-filters {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+/*Cards*/
 .obras-card-container {
     display: flex;
     flex-wrap: wrap;

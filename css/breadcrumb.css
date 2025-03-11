@@ -10,7 +10,7 @@
 .breadcrumb-item a {
     color:#100C07}
 
-.breadcrumb-item.active{
+.breadcrumb-item.now{
     font-weight: 700;
     color: #100C07;
 }
