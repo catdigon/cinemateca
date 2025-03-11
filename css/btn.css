@@ -1,7 +1,7 @@
 /*Botons*/
 
 .btn-primary {
-    width: 200px;
+    min-width: 200px;
     height: 40px;
     color: #100C07;
     border: 2px solid #100C07;
@@ -20,11 +20,11 @@
 }
 
 .btn-secondary {
-    width: 200px;
+    min-width: 200px;
     height: 40px;
     background-color: #100C07;
     color: #FCFAF8;
-    border: 2px solid #FCFAF8;
+    border: 2px solid #100C07;
     font-family: Afacad;
     font-size: 1rem;
     font-style: normal;
@@ -39,11 +39,54 @@
     border: 2px solid #FCFAF8;
 }
 
+.filtros-cartegories {
+    border: none;
+    height: 40px;
+    background-color: #C9C8C8;
+    text-transform: uppercase;
+    font-family: Afacad;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 162%;
+}
 
-.btn-filter-accordion{
+.filtros-cartegories:hover {
+    background-color: #100C07;
+    color: #FCFAF8;
+}
+
+.filtros-cartegories.ative {
+    background-color: #100C07;
+    color: #FCFAF8;
+}
+
+.btn-filter-accordion {
     border: none;
     background: none;
 }
+
+.btn-icon{
+    margin-top: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+ 
+.btn-icon:before {
+    content: '';
+    position: initial;
+    width: 1rem;
+    height: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .btn-icon img {
+    padding-left: 1.5rem; 
+  }
+
 
 @media only screen and (max-width: 320px) {
     .btn-primary {

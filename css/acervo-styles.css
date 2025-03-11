@@ -3,23 +3,53 @@
     flex-direction: row;
 }
 
-.filters-menu-container{
+.filters-menu-container {
     display: flex;
     flex-direction: column;
-    padding: 1.2rem 2rem;
+    min-width: 17rem;
+    padding: 0rem 0rem 1.2rem 2rem;
     gap: 1rem;
 }
 
-.btn-categories-container{
+.btn-categories-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.6rem;
 }
 
-.add-remove-btn-container{
+.add-remove-btn-container {
     display: flex;
     flex-direction: column;
+}
+
+.filter-title p {
+    margin-block-end: 0.3rem;
+}
+
+.form-search {
+    border: none;
+    border-bottom: 1px solid #100C07;
+}
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/*btns*/
+.btn-return-acervo:before{
+    background-image: url('../Icon/arrow-return.svg');
+}
+
+
+.btn-add:before{
+     background-image: url('../Icon/check.svg');
+}
+
+.btn-remove:before{
+    background-image: url('../Icon/X.svg');
 }
 
 /*Acordion*/
@@ -30,34 +60,41 @@
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
     transition: 0.4s;
     position: relative;
-  }
+}
 
-  .accordion:after {
+.accordion:after {
     content: '';
     position: absolute;
-    right: 1rem; 
-    width: 1rem; 
+    right: 1rem;
+    width: 1rem;
     height: 0.5rem;
-    background-image: url('../Icon/arrow-filters.svg'); 
+    background-image: url('../Icon/arrow-filters.svg');
     background-repeat: no-repeat;
     align-self: anchor-center;
-  }
+}
 
-  .accordion.active:after {
-    background-image: url('../Icon/arrow-filters.svg'); 
-    transform: rotate(180deg);/* Caminho do seu ícone SVG */
-  }
-  
-  .active, .accordion:hover {
+.accordion.active:after {
+    background-image: url('../Icon/arrow-filters.svg');
+    transform: rotate(180deg);
+    /* Caminho do seu ícone SVG */
+}
+
+.active,
+.accordion:hover {
     background-color: #ccc;
-  }
-  
-  .accordion-filters .filter-option {
-    display: flex; 
-    align-items: center; 
+}
+
+.accordion-filters .filter-option {
+    display: flex;
+    align-items: center;
+    padding-block-end: 0;
+    padding-right: 0.3rem;
+}
+
+.accordion-filters .filter-option p {
+    margin-bottom: 0.3rem;
 }
 
 .accordion-filters .filter-option:hover {
@@ -67,24 +104,26 @@
 .accordion-filters .filter-option p::before {
     content: '';
     display: none;
-    width: 1rem; 
+    width: 1rem;
     height: 0.5rem;
-    background-image: url('../Icon/X.svg'); 
-    background-size: contain; 
+    background-image: url('../Icon/X.svg');
+    background-size: contain;
     background-repeat: no-repeat;
-  }
+}
 
-  .accordion-filters .filter-option.add-filter p::before {
+.accordion-filters .filter-option.add-filter p::before {
     display: inline-block;
 }
-.accordion-filters .filter-option.add-filter p{
-text-align: left;}
 
-  .accordion-filters {
+.accordion-filters .filter-option.add-filter p {
+    text-align: left;
+}
+
+.accordion-filters {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
+}
 
 /*Cards*/
 .obras-card-container {
@@ -93,6 +132,7 @@ text-align: left;}
     color: white;
     gap: 3%;
     padding: 4%;
+    justify-content: center;
 }
 
 .obra-card {
@@ -101,7 +141,6 @@ text-align: left;}
     max-width: 17rem;
     height: 20rem;
     overflow: hidden;
-    margin-bottom: 3%;
 }
 
 .obra-card .card-image {
@@ -118,7 +157,7 @@ text-align: left;}
     justify-content: flex-end;
     padding: 1.2rem;
     transition: background-color 0.4s ease, opacity 0.6s ease;
-    mask:linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, rgb(0, 0, 0) 86%, rgb(0, 0, 0) 100%);
+    mask: linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, rgb(0, 0, 0) 86%, rgb(0, 0, 0) 100%);
 }
 
 .obra-card:hover .card-img-overlay {
@@ -129,7 +168,7 @@ text-align: left;}
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.obra-info{
+.obra-info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -137,6 +176,6 @@ text-align: left;}
     align-items: center;
 }
 
-.obra-info p{
+.obra-info p {
     margin-bottom: 0rem;
 }

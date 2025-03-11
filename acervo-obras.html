@@ -34,22 +34,22 @@
     </nav>
 
     <div class="broad-container">
-        
+
         <nav class="filters-menu-container">
             <!-- botao voltar atrás-->
-            <button class="btn-primary btn-events">Voltar ao acervo digital</button>
+            <button class="btn-primary btn-icon btn-return-acervo">Voltar ao acervo digital</button>
 
             <!-- form pesquisa-->
             <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar ..." aria-label="Search">
+                <input class="form-search body-small" type="search" placeholder="Pesquisar ..." aria-label="Search">
             </form>
-            
+
             <!-- filtros categoria obras-->
             <div class="btn-categories-container">
-                <button class="btn-filters">Ver tudo</button>
-                <button class="btn-filters">Filme</button>
-                <button class="btn-filters">Imagem</button>
-                <button class="btn-filters">Texto</button>
+                <button class="btn-filters filtros-cartegories">Ver tudo</button>
+                <button class="btn-filters filtros-cartegories">Filme</button>
+                <button class="btn-filters filtros-cartegories">Imagem</button>
+                <button class="btn-filters filtros-cartegories">Texto</button>
             </div>
 
             <!-- form autocomplete titulo-->
@@ -57,85 +57,143 @@
                 <div class="filter-title">
                     <p>Título</p>
                 </div>
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar título" aria-label="Search">
+                <input class="form-search body-small" type="search" placeholder="Pesquisar título" aria-label="Search">
             </form>
 
             <!-- form autocomplete assunto-->
             <form class="form-inline">
-                <div class="filter-title"><p>Assunto</p></div>
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar assunto" aria-label="Search">
-              </form>
+                <div class="filter-title">
+                    <p>Assunto</p>
+                </div>
+                <input class="form-search body-small" type="search" placeholder="Pesquisar assunto" aria-label="Search">
+            </form>
 
-              <!-- form dropdown ano -->
-              <form class="form-inline">
-                <div class="filter-title"><p>Ano</p></div>
-                <input class="form-control mr-sm-2" type="search" placeholder="Selecionar ano" aria-label="Search">
-              </form>
-              
-              
-        <!-- filtros dropdown colecao -->
-        <button class="accordion" aria-expanded="false">Coleção</button>
-        <div class="accordion-filters">
-          <button class="btn-filter-accordion filter-option"><p>FilMar</p></button>
-          <button class="btn-filter-accordion filter-option"><p>Imagens de Portugal</p></button>
-          <button class="btn-filter-accordion filter-option"><p>Imagens em Movimento</p></button>
-          <button class="btn-filter-accordion filter-option"><p>Aurélio da Paz dos Reis</p></button>
-          <button class="btn-filter-accordion filter-option"><p>Fotografias de Rodagem</p></button>
-          <button class="btn-filter-accordion"><p class="subtitle">Ver mais...</p></button>
-        </div>
-        
-        <!-- filtros dropdown genero -->
-        <button class="accordion" aria-expanded="false">Género</button>
-        <div class="accordion-filters">
-            <button class="btn-filter-accordion filter-option"><p>Animação</p></button>
-            <button class="btn-filter-accordion filter-option"><p>Documentário</p></button>
-            <button class="btn-filter-accordion filter-option"><p>Experimental</p></button>
-            <button class="btn-filter-accordion filter-option"><p>Ficção</p></button>
-           </div>
-        
-        <!-- filtros dropdown tipo documentacao -->
-        <button class="accordion" aria-expanded="false">Tipo de Documentação</button>
-        <div class="accordion-filters">
-            <button class="btn-filter-accordion filter-option"><p>Fotografias</p></button>
-            <button class="btn-filter-accordion filter-option"><p>Lobby Cards</p></button>
-            <button class="btn-filter-accordion filter-option"><p>Retrato</p></button>
-            <button class="btn-filter-accordion filter-option"><p>Ilustração</p></button>
-            <button class="btn-filter-accordion filter-option"><p>Manuscrito</p></button>
-            <button class="btn-filter-accordion"><p class="subtitle">Ver mais...</p></button>
-        </div>
+            <!-- form dropdown ano -->
+            <form class="form-inline">
+                <div class="filter-title">
+                    <p>Ano</p>
+                </div>
+                <input class="form-search body-small" type="search" placeholder="Selecionar ano" aria-label="Search">
+            </form>
 
-        <!-- filtros dropdown formato -->
-        <button class="accordion" aria-expanded="false">Formato</button>
-        <div class="accordion-filters">
-            <button class="btn-filter-accordion filter-option"><p>Vídeo</p></button>
-            <button class="btn-filter-accordion filter-option"><p>Analógico</p></button>
-            <button class="btn-filter-accordion filter-option"><p>35 mm</p></button>
-            <button class="btn-filter-accordion filter-option"><p>16 mm</p></button>
-            <button class="btn-filter-accordion"><p class="subtitle">Ver mais...</p></button> 
-        </div>
-        <!-- filtros dropdown cor -->
-        <button class="accordion" aria-expanded="false">Cor</button>
-        <div class="accordion-filters">
-            <button class="btn-filter-accordion filter-option"><p>Preto e Branco (PB)</p></button>
-            <button class="btn-filter-accordion filter-option"><p>Cor</p></button>
-            <button class="btn-filter-accordion filter-option"><p>Negativo</p></button>
-        </div>
-        <!-- filtros dropdown som -->
-        <button class="accordion" aria-expanded="false">Som</button>
-        <div class="accordion-filters">
-            <button class="btn-filter-accordion filter-option"><p>Com som</p></button>
-            <button class="btn-filter-accordion filter-option"><p>Sem som</p></button>
-        </div>
-        <!-- botoes aplicar/remover filtro -->
 
-        <div class="add-remove-btn-container">
-        <button class="btn-primary btn-events">Aplicar filtros</button>
-        <button class="btn-primary btn-events">Remover filtros</button>
-</div>
+            <!-- filtros dropdown colecao -->
+            <div class="accordion-container">
+                <button class="accordion" aria-expanded="false">Coleção</button>
+                <div class="accordion-filters">
+                    <button class="btn-filter-accordion filter-option">
+                        <p class="body-small">FilMar</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Imagens de Portugal</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Imagens em Movimento</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Aurélio da Paz dos Reis</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Fotografias de Rodagem</p>
+                    </button>
+                    <button class="btn-filter-accordion">
+                        <p class="subtitle">Ver mais...</p>
+                    </button>
+                </div>
+
+                <!-- filtros dropdown genero -->
+                <button class="accordion" aria-expanded="false">Género</button>
+                <div class="accordion-filters">
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Animação</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Documentário</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Experimental</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Ficção</p>
+                    </button>
+                </div>
+
+                <!-- filtros dropdown tipo documentacao -->
+                <button class="accordion" aria-expanded="false">Tipo de Documentação</button>
+                <div class="accordion-filters">
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Fotografias</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Lobby Cards</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Retrato</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Ilustração</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Manuscrito</p>
+                    </button>
+                    <button class="btn-filter-accordion">
+                        <p class="subtitle">Ver mais...</p>
+                    </button>
+                </div>
+
+                <!-- filtros dropdown formato -->
+                <button class="accordion" aria-expanded="false">Formato</button>
+                <div class="accordion-filters">
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Vídeo</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Analógico</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>35 mm</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>16 mm</p>
+                    </button>
+                    <button class="btn-filter-accordion">
+                        <p class="subtitle">Ver mais...</p>
+                    </button>
+                </div>
+                <!-- filtros dropdown cor -->
+                <button class="accordion" aria-expanded="false">Cor</button>
+                <div class="accordion-filters">
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Preto e Branco (PB)</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Cor</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Negativo</p>
+                    </button>
+                </div>
+                <!-- filtros dropdown som -->
+                <button class="accordion" aria-expanded="false">Som</button>
+                <div class="accordion-filters">
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Com som</p>
+                    </button>
+                    <button class="btn-filter-accordion filter-option">
+                        <p>Sem som</p>
+                    </button>
+                </div>
+            </div>
+            <!-- botoes aplicar/remover filtro -->
+
+            <div class="add-remove-btn-container">
+                <button class="btn-secondary btn-icon btn-add">Adicionar filtros</button>
+                <button class="btn-primary btn-icon btn-remove">Remover filtros</button>
+            </div>
         </nav>
-          
-        
-        
+
+
+
 
         <!-- barra filtros adicionados -->
 
@@ -350,4 +408,5 @@
 
 </body>
 <script src="main.js"></script>
+
 </html>
