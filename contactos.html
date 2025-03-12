@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/breadcrumb.css">
     <link rel="stylesheet" href="css/lateral-menu.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contacts-style.css">
 </head>
 
@@ -34,111 +35,113 @@
     </nav>
     <!-- menu lateral botao- 2-->
     <div class="page-container">
-        <div class="vertical-menu col-3" aria-label="Menu Lateral">
-            <a href="#" class="menu-item contatos active">
-                <div class="menu-item-overlay"></div>
-                <p class="font-detail">Contactos</p>
-            </a>
-            <a href="#" class="menu-item localizacao">
-                <div class="menu-item-overlay"></div>
-                <p class="font-detail">Localização</p>
-            </a>
-        </div>
+        <div class="menu-contacts-container">
+            <div class="vertical-menu col-4" aria-label="Menu Lateral">
+                <a href="#" class="menu-item contatos active">
+                    <div class="menu-item-overlay"></div>
+                    <p class="font-detail">Contactos</p>
+                </a>
+                <a href="#" class="menu-item localizacao">
+                    <div class="menu-item-overlay"></div>
+                    <p class="font-detail">Localização</p>
+                </a>
+            </div>
 
-        <div class="page-text-container">
-            <div class="contacts-container">
-
-                <!-- titulo contactos-->
-                <h2>Contactos</h2>
-                <!-- 3 colunas com contactos-->
-                <div class="contacts-details">
-                    <div class="contacts-places">
-                        <h3>Sede</h3>
-                        <div class="contacts-icon day">
-                            <p>segunda a sexta</p>
+            <div class="page-text-container">
+                <div class="contacts-container">
+                    <!-- titulo contactos-->
+                    <h2>Contactos</h2>
+                    <!-- 3 colunas com contactos-->
+                    <div class="contacts-details">
+                        <div class="contacts-places">
+                            <h3>Sede</h3>
+                            <div class="contacts-icon day">
+                                <p>segunda a sexta</p>
+                            </div>
+                            <div class="contacts-icon hour">
+                                <p>09:30 - 17:30</p>
+                            </div>
+                            <div class="contacts-icon phone">
+                                <p>+351 213 596 200</p>
+                            </div>
+                            <div class="contacts-icon mail">
+                                <p>cinemateca@cinemateca.pt</p>
+                            </div>
                         </div>
-                        <div class="contacts-icon hour">
-                            <p>09:30 - 17:30</p>
+                        <div class="contacts-places">
+                            <h3>Biblioteca</h3>
+                            <div class="contacts-icon day">
+                                <p>segunda a sexta</p>
+                            </div>
+                            <div class="contacts-icon hour">
+                                <p>14:00 - 19:30</p>
+                            </div>
+                            <div class="contacts-icon phone">
+                                <p>+351 213 596 212</p>
+                            </div>
+                            <div class="contacts-icon mail">
+                                <p>documentacao@cinemateca.pt</p>
+                            </div>
                         </div>
-                        <div class="contacts-icon phone">
-                            <p>+351 213 596 200</p>
-                        </div>
-                        <div class="contacts-icon mail">
-                            <p>cinemateca@cinemateca.pt</p>
-                        </div>
-                    </div>
-                    <div class="contacts-places">
-                        <h3>Biblioteca</h3>
-                        <div class="contacts-icon day">
-                            <p>segunda a sexta</p>
-                        </div>
-                        <div class="contacts-icon hour">
-                            <p>14:00 - 19:30</p>
-                        </div>
-                        <div class="contacts-icon phone">
-                            <p>+351 213 596 212</p>
-                        </div>
-                        <div class="contacts-icon mail">
-                            <p>documentacao@cinemateca.pt</p>
-                        </div>
-                    </div>
-                    <div class="contacts-places">
-                        <h3>Centro de Conservação</h3>
-                        <div class="contacts-icon day">
-                            <p>segunda a sexta</p>
-                        </div>
-                        <div class="contacts-icon hour">
-                            <p>09:30 - 17:30</p>
-                        </div>
-                        <div class="contacts-icon phone">
-                            <p>+351 219 689 400</p>
-                        </div>
-                        <div class="contacts-icon mail">
-                            <p>acesso@cinemateca.pt</p>
+                        <div class="contacts-places">
+                            <h3>Centro de Conservação</h3>
+                            <div class="contacts-icon day">
+                                <p>segunda a sexta</p>
+                            </div>
+                            <div class="contacts-icon hour">
+                                <p>09:30 - 17:30</p>
+                            </div>
+                            <div class="contacts-icon phone">
+                                <p>+351 219 689 400</p>
+                            </div>
+                            <div class="contacts-icon mail">
+                                <p>acesso@cinemateca.pt</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="form-container">
+            <div class="form-inputs">
+                <p>Deixe-nos a sua mensagem</p>
 
-            <div class="form-container">
-                <div class="form-inputs">
-                    <p>Deixe-nos a sua mensagem</p>
-
-                    <form>
-
+                <form>
+                    <div class="form-group">
+                        <label for="fassunto">Assunto</label>
+                        <input type="text" id="fassunto" class="form-input" name="Assunto" placeholder="Your name..">
+                    </div>
+                    <div class="form-group-line">
                         <div class="form-group">
-                            <label for="Assunto">Assunto</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                        </div>
-                        <div class="form-group-line">
-                            <div class="form-group">
-                                <label for="Nome">Nome</label>
-                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                            </div>
-                            <div class="form-group">
-                                <label for="Email">Email</label>
-                                <input type="email" id="lname" name="lastname" placeholder="nome@examplo.com">
-                            </div>
+                            <label for="lname">Nome</label>
+                            <input type="text" id="lname" class="form-input" name="Nome" placeholder="Your last name..">
                         </div>
                         <div class="form-group">
-                            <label for="Mensagem">Mensagem</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="lmail">Email</label>
+                            <input type="email" id="lmail" class="form-input" name="Email" placeholder="nome@examplo.com">
                         </div>
-                        <div class="form-group-inline">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">Li e aceito os Avisos Legais e Política de Privacidade.
-                            </label>
-                        </div>
-                        <input type="submit" class="btn-secondary" value="Enivar">
-
-                    </form>
-                    <!-- form contactos --> <!-- + alertas campos não preenchidos -->
-                    <!-- assunto -->
-                    <!-- nome --> <!-- email-->
-                    <!-- mensagem -->
-                    <!-- privacidae + checkbox -->
-                    <!-- botao enviar -->
-                </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fmensage">Mensagem</label>
+                        <textarea id="fmensage" class="form-input" name="Mensagem" rows="3"></textarea>
+                    </div>
+                    <div class="form-group-line">
+                        <input class="form-check-input" type="checkbox" value="" id="fcheck">
+                        <label class="form-check-label"  id="tac" name="Termos e Condições" for="fcheck">Li e aceito os Avisos Legais e Política
+                            de
+                            Privacidade.
+                        </label>
+                    </div>
+                    <div class="btn-form-submit">
+                    <input type="submit" class="btn-secondary" value="Enivar">
+</div>
+                </form>
+                <!-- form contactos --> <!-- + alertas campos não preenchidos -->
+                <!-- assunto -->
+                <!-- nome --> <!-- email-->
+                <!-- mensagem -->
+                <!-- privacidae + checkbox -->
+                <!-- botao enviar -->
             </div>
         </div>
     </div>
@@ -150,7 +153,6 @@
     <!-- mensagem de erro - contacto -->
 
     <!-- footer com logos e links-->
-
     <script src="main.js"></script>
 </body>
 

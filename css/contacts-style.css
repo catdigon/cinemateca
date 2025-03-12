@@ -1,11 +1,14 @@
-
-
-.contacts-container{
-    margin: 0rem 2rem;
-    padding-left: 18rem;
+.menu-contacts-container {
+    display: flex;
 }
 
-.contacts-details{
+.contacts-container {
+    margin: 0rem 2rem;
+    height: 90%;
+    align-content: center;
+}
+
+.contacts-details {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -13,42 +16,42 @@
 }
 
 .contacts-places {
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 0 1rem;
     border-left: 1.5px solid #100C07;
 }
 
-.contacts-places h3{
+.contacts-places h3 {
     font-size: 1.2rem;
 }
 
-.contacts-places p{
+.contacts-places p {
     font-size: 1rem;
 }
 
-.contacts-icon{
+.contacts-icon {
     display: flex;
     position: relative;
     gap: 0.5rem;
 }
- 
-.contacts-icon p{
+
+.contacts-icon p {
     margin-block-end: 0;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
-.contacts-icon::before{
+
+.contacts-icon::before {
     content: "";
     display: inline-block;
     width: 1.2rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
-  
-.day::before{
+.day::before {
     background-image: url('../Icon/calendar.svg');
 }
 
@@ -64,17 +67,23 @@
     background-image: url('../Icon/email.svg');
 }
 
-.form-container{
-    background-color: #100C07;
+.form-container {
+    background: #100C07;
+    width: 100%;
+    margin-top: -2rem;
+    z-index: -1;
+    position: relative;
     color: #FCFAF8;
+    padding-left: 19rem;
+    padding-bottom: 3rem;
 }
 
-.form-container .form-inputs{
-    margin-inline-start: 21rem;
+.form-container .form-inputs {
+    margin-inline-start: 2rem;
     padding-top: 1rem;
 }
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -85,4 +94,26 @@
     flex-direction: row;
     gap: 1rem;
     width: 80%;
+}
+
+.form-input{
+background: none;
+    border: none;
+    border-bottom: 1px solid #FCFAF8;
+    margin-bottom: 1rem;
+}
+
+.btn-form-submit{
+    display: flex;
+    margin-top: 1.5rem;
+    width: 80%;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 992px) {
+    .form-group-line{
+        flex-wrap: wrap;
+        gap: 0rem;
+        width: 100%;
+    }
 }
