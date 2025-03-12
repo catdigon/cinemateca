@@ -1,3 +1,9 @@
+.breadcrumb{
+    margin: 1rem 2rem 2rem 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid #100c0750;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
     content: "";
     background-position: center;
@@ -8,7 +14,9 @@
   }
 
 .breadcrumb-item a {
-    color:#100C07}
+    color:#100C07;
+    text-decoration: none;}
+    
 
 .breadcrumb-item.now{
     font-weight: 700;

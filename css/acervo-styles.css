@@ -1,6 +1,7 @@
 .broad-container {
     display: flex;
     flex-direction: row;
+    padding-block-start: 0.5rem;
 }
 
 .filters-menu-container {
@@ -9,6 +10,8 @@
     min-width: 17rem;
     padding: 0rem 0rem 1.2rem 2rem;
     gap: 1rem;
+    max-height: 90rem;
+    overflow: visible;
 }
 
 .btn-categories-container {
@@ -52,6 +55,10 @@
     background-image: url('../Icon/X.svg');
 }
 
+.btn-filter-added::before{
+    background-image: url('../Icon/X.svg');
+}
+
 /*Acordion*/
 .accordion {
     background: none;
@@ -78,7 +85,6 @@
 .accordion.active:after {
     background-image: url('../Icon/arrow-filters.svg');
     transform: rotate(180deg);
-    /* Caminho do seu ícone SVG */
 }
 
 .active,
@@ -86,22 +92,23 @@
     background-color: #ccc;
 }
 
-.accordion-filters .filter-option {
+.filter-option {
     display: flex;
     align-items: center;
     padding-block-end: 0;
     padding-right: 0.3rem;
 }
 
-.accordion-filters .filter-option p {
+.filter-option p {
     margin-bottom: 0.3rem;
 }
 
-.accordion-filters .filter-option:hover {
+.filter-option:hover {
     font-weight: 600;
 }
 
-.accordion-filters .filter-option p::before {
+
+.filter-option p::before {
     content: '';
     display: none;
     width: 1rem;
@@ -111,11 +118,11 @@
     background-repeat: no-repeat;
 }
 
-.accordion-filters .filter-option.add-filter p::before {
+ .filter-option.add-filter p::before {
     display: inline-block;
 }
 
-.accordion-filters .filter-option.add-filter p {
+ .filter-option.add-filter p {
     text-align: left;
 }
 
@@ -125,14 +132,31 @@
     transition: max-height 0.2s ease-out;
 }
 
+.results-container{
+    margin-top: 0.5rem;
+    height: 2rem;
+    padding-inline-start: 3rem;
+    padding-inline-end: 3rem;
+}
+
+.filters-added{
+    padding: 1rem 0rem;
+}
+
+.btn-filter-added:hover{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+
 /*Cards*/
 .obras-card-container {
     display: flex;
     flex-wrap: wrap;
     color: white;
     gap: 3%;
-    padding: 4%;
-    justify-content: center;
+    height: 90rem;
+    overflow: hidden;
 }
 
 .obra-card {
