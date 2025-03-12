@@ -10,7 +10,6 @@
     min-width: 17rem;
     padding: 0rem 0rem 1.2rem 2rem;
     gap: 1rem;
-    max-height: 90rem;
     overflow: visible;
 }
 
@@ -49,6 +48,10 @@
 
 .btn-add:before{
      background-image: url('../Icon/check.svg');
+}
+
+.btn-remove{
+    border: none;
 }
 
 .btn-remove:before{
@@ -154,15 +157,15 @@
     display: flex;
     flex-wrap: wrap;
     color: white;
-    gap: 3%;
-    height: 90rem;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .obra-card {
     position: relative;
     flex: 1 1 17rem;
     max-width: 17rem;
+    margin: 1rem;
     height: 20rem;
     overflow: hidden;
 }

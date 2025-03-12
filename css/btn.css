@@ -1,5 +1,4 @@
 /*Botons*/
-
 .btn-primary {
     min-width: 200px;
     height: 40px;
@@ -38,6 +37,14 @@
     background-color: #FCFAF8;
     border: 2px solid #FCFAF8;
 }
+
+#btn-top{
+    border: none;
+    background: none;
+    color: white; 
+    cursor: pointer; 
+  }
+
 
 .filtros-cartegories {
     border: none;

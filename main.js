@@ -1,4 +1,4 @@
-/**Função Trocar: Esconder/Mostrar elementos Menu/Navbar*/
+/**Change: Show/Hide the elements on Menu/Navbar*/
 function  toggleVisibilityElement(selector) {
   var element = document.querySelector(selector);
   if (element.style.display === "flex") {
@@ -8,12 +8,11 @@ function  toggleVisibilityElement(selector) {
   }
 }
 
-/**Função Esconder Sempre Elemento*/
+/**Hide alwaus the element*/
 function hideElementAlways(selector) {
   var element = document.querySelector(selector);
   element.style.display = "none";
 }
-
 
 
 function handleHideHamburguerWhenScreenLarge() {
@@ -23,7 +22,7 @@ function handleHideHamburguerWhenScreenLarge() {
   }
 }
 
-/**Logica corre quando a pagina abre pela 1vez*/
+/**Logic runs when the page loads 1sr time*/
 document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener('resize', handleHideHamburguerWhenScreenLarge);
 });
@@ -51,7 +50,13 @@ var filterOptions = document.getElementsByClassName('filter-option');
 
 for (i = 0; i < filterOptions.length; i++) {
     filterOptions[i].addEventListener('click', function() {
-        // Alterna a classe 'show-icon' para mostrar ou esconder o ícone
+        // Change the class 'show-icon' to show/hide the icon
         this.classList.toggle('add-filter');
     });
+}
+
+//**btn scroll to the top of the document*/
+function returnTopFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
