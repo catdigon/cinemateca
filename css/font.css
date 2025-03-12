@@ -7,6 +7,14 @@ h1 {
     font-variant: small-caps;
 }
 
+h2 {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    font-variant: small-caps;
+}
+
 h3 {
     font-family: 'Julius Sans One';
     font-size: 1.5rem;

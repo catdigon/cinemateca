@@ -1,21 +1,29 @@
-.page-container{
-    display: flex;
-    flex-direction: row;
-}
 
-.page-text-container{
+
+.contacts-container{
     margin: 0rem 2rem;
+    padding-left: 18rem;
 }
 
 .contacts-details{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
-.contacts-sede {
+.contacts-places {
     margin: 1rem;
-    padding: 1rem;
+    padding: 0 1rem;
     border-left: 1.5px solid #100C07;
+}
+
+.contacts-places h3{
+    font-size: 1.2rem;
+}
+
+.contacts-places p{
+    font-size: 1rem;
 }
 
 .contacts-icon{
@@ -56,8 +64,25 @@
     background-image: url('../Icon/email.svg');
 }
 
-.form-contacts{
+.form-container{
     background-color: #100C07;
     color: #FCFAF8;
-    width: 100vw; 
+}
+
+.form-container .form-inputs{
+    margin-inline-start: 21rem;
+    padding-top: 1rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.form-group-line {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 80%;
 }
