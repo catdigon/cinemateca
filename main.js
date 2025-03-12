@@ -60,3 +60,11 @@ function returnTopFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+document.querySelectorAll('.menu-item').forEach(item => {
+  item.addEventListener('click', function(event) {
+      event.preventDefault(); // Evita o recarregamento da página
+      document.querySelectorAll('.menu-item').forEach(i => i.classList.remove('active'));
+      this.classList.add('active');
+  });
+});

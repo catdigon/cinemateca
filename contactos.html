@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/breadcrumb.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="css/lateral-menu.css">
+    <link rel="stylesheet" href="css/contacts-style.css">
 </head>
 
 <body>
@@ -32,30 +33,95 @@
         </ol>
     </nav>
     <!-- menu lateral botao- 2-->
-    <div class="vertical-menu">
-        <a href="#" class="active">Home</a>
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        <a href="#">Link 4</a>
-      </div>
+    <div class="page-container">
 
-    <!-- titulo contactos-->
+        <div class="vertical-menu" aria-label="Menu Lateral">
+            <a href="#" class="menu-item contatos active">
+                <div class="menu-item-overlay"></div>
+                <p class="font-detail">Contactos</p>
+            </a>
+            <a href="#" class="menu-item localizacao">
+                <div class="menu-item-overlay"></div>
+                <p class="font-detail">Localização</p>
+            </a>
+        </div>
 
-    <!-- 3 colunas com contactos-->
+        <div class="page-text-container">
+            <div class="contacts-container">
+                <!-- titulo contactos-->
+                <h1>Contactos</h1>
+                <!-- 3 colunas com contactos-->
+                <div class="contacts-details">
+                    <div class="contacts-sede">
+                        <h3>Sede</h3>
+                        <div class="contacts-icon day">
+                            <p>segunda a sexta</p>
+                        </div>
+                        <div class="contacts-icon hour">
+                            <p>09:30 - 17:30</p>
+                        </div>
+                        <div class="contacts-icon phone">
+                            <p>+351 213 596 200</p>
+                        </div>
+                        <div class="contacts-icon mail">
+                            <p>cinemateca@cinemateca.pt</p>
+                        </div>
+                    </div>
+                    <div class="contacts-sede">
+                        <h3>Biblioteca</h3>
+                        <div class="contacts-icon day">
+                            <p>segunda a sexta</p>
+                        </div>
+                        <div class="contacts-icon hour">
+                            <p>14:00 - 19:30</p>
+                        </div>
+                        <div class="contacts-icon phone">
+                            <p>+351 213 596 212</p>
+                        </div>
+                        <div class="contacts-icon mail">
+                            <p>documentacao@cinemateca.pt</p>
+                        </div>
+                    </div>
+                    <div class="contacts-sede">
+                        <h3>Centro de Conservação</h3>
+                        <div class="contacts-icon day">
+                            <p>segunda a sexta</p>
+                        </div>
+                        <div class="contacts-icon hour">
+                            <p>09:30 - 17:30</p>
+                        </div>
+                        <div class="contacts-icon phone">
+                            <p>+351 219 689 400</p>
+                        </div>
+                        <div class="contacts-icon mail">
+                            <p>acesso@cinemateca.pt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <!-- form contactos --> <!-- + alertas campos não preenchidos -->
+            <div class="form-contacts">
+                <p>Deixe-nos a sua mensagem</p>
+<!-- form contactos --> <!-- + alertas campos não preenchidos -->
     <!-- assunto -->
     <!-- nome --> <!-- email-->
     <!-- mensagem -->
     <!-- privacidae + checkbox -->
     <!-- botao enviar -->
 
+</div>
+        </div>
+    </div>
+
+
+    
+
     <!-- mensagem de confirmação - contacto -->
     <!-- mensagem de erro - contacto -->
 
     <!-- footer com logos e links-->
 
+    <script src="main.js"></script>
 </body>
 
 </html>
