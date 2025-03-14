@@ -1,4 +1,9 @@
-.menu-contacts-container {
+.page-layout-container {
     display: flex;
     width: 100%;
+}
+
+.product-container{
+    margin: 0 0 0 4rem;
+    height: 90%;
 }

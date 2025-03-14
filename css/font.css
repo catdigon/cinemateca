@@ -49,7 +49,24 @@ body {
     line-height: 150%;
 }
 
-body .bold {
+body .bold{
+    font-family: Afacad;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+body .small{
+    font-family: Afacad;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+body .big-bold {
     font-family: Afacad;
     font-size: 2rem;
     font-style: normal;

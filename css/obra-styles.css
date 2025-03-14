@@ -3,17 +3,25 @@
     margin: auto; 
     top: 0; 
     width: 80%;
+    max-height: 45rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .video-container video {
     width: 100%;
     height: auto;
+    max-height: 45rem;
     display: none;
 }
 
 .video-overlay {
     position: relative;
-    top: 0; 
+    width: 100%;
+    height: 100%;
+    max-height: 45rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,6 +31,7 @@
 .video-overlay img.video-placeholder {
     width: 100%;
     height: 100%;
+    max-height: 45rem;
     object-fit: cover;
     z-index: 1;
 }
@@ -47,4 +56,49 @@
 .video-overlay:hover .play-button{
     opacity: 1;
     transform: scale(1.2);
+}
+
+.lateral-container{
+    background-color: #fea01766;
+    width: 30rem; 
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem 6rem 4rem;
+    margin-top: 6.5rem;
+}
+
+.ficha-tecnica {
+    padding: 1rem 1rem 0 0 ;
+}
+
+.ficha-tecnica-details{
+    display: flex;
+    padding: 0.5rem 0;
+    gap: 0.5rem;
+}
+
+.ficha-tecnica-details p{
+    margin-bottom: 0;
+}
+
+.product-container{
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+
+.icone-dot {
+    filter: invert(99);
+    width: 0.3rem;
+}
+
+.country h3{
+    margin-bottom: 0rem;
+}
+
+.resume-text-container{
+    width: 70%;
+    line-height: 1.5rem;
 }

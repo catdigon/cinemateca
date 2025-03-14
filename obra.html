@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>?nome da obra?</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -12,32 +12,32 @@
     <link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Kumbh Sans' rel='stylesheet'>
 
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/breadcrumb.css">
     <link rel="stylesheet" href="css/obra-styles.css">
-    <link rel="stylesheet" href="css/lateral-menu.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/layout.css">
 </head>
 
 <body>
 
-    
+
     <!-- navbar - icone botão +  botoes com opçoes-->
     <!-- navbar imagem fundo-->
 
     <!-- video reproduçao-->
-   
+
     <div class="video-container">
         <div class="video-overlay" onclick="playVideo()">
             <img src="images/acervo/sobreiro2.png" class="video-placeholder" alt="Vídeo Placeholder">
             <div class="video-filter-overlay"></div>
             <img src="Icon/play.svg" class="play-button" alt="Play">
         </div>
-        <video id="video" controls >
+        <video id="video" controls>
             <source src="video/o sobreiro.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -55,39 +55,83 @@
     </nav>
 
     <div class="page-container">
-        <div class="menu-contacts-container">
-            <div class="vertical-menu col-4" aria-label="Menu Lateral">
+        <div class="page-layout-container">
+            <div class="lateral-container col-4" aria-label="Ficha Técnica">
                 <h3>Ficha técnica</h3>
                 <div class="ficha-tecnica">
-                    <p class="bold">Realizador</p>
-                    <p>João Neves</p>
+                    <div class="ficha-tecnica-details">
+                        <p class="bold">Realizador</p>
+                        <p>João Neves</p>
+                    </div>
+                    <div class="ficha-tecnica-details">
+                        <p class="bold">Género</p>
+                        <p>Documentário</p>
+                    </div>
+                    <div class="ficha-tecnica-details">
+                        <p class="bold">Duração</p>
+                        <p class="time">00:19:50</p>
+                        <p>,</p>
+                        <p class="frames">24 fps</p>
+                    </div>
+                    <div class="ficha-tecnica-details">
+                        <p class="bold">Formato</p>
+                        <p class="format">35mm</p>
+                        <p>,</p>
+                        <p class="color">Cor</p>
+                        <p>,</p>
+                        <p class="sound">com som</p>
+                    </div>
+                    <div class="ficha-tecnica-details">
+                        <p class="bold">AR</p>
+                        <p>1:1,37</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="primay-content-container">
-                <div class="contacts-container">
-                    <!-- titulo contactos-->
-                    <h2>O Sobreiro: Alguns Aspectos do seu Cultivo </h2>
-                    
-                        <div class="contacts-places">
-                            <h3>Centro de Conservação</h3>
-                            <div class="contacts-icon day">
-                                <p>segunda a sexta</p>
-                            </div>
-                            <div class="contacts-icon hour">
-                                <p>09:30 - 17:30</p>
-                            </div>
-                            <div class="contacts-icon phone">
-                                <p>+351 219 689 400</p>
-                            </div>
-                            <div class="contacts-icon mail">
-                                <p>acesso@cinemateca.pt</p>
-                            </div>
-                        </div>
+                <div class="ficha-tecnica">
+                    <p class="small">Detentor de Direitos: Por favor contacte a Cinemateca Portuguesa-Museu do Cinema
+                        para
+                        obter
+                        informações sobre os detentores de direitos. | Please contact the Cinemateca Portuguesa-Museu do
+                        Cinema for information about the rights holders.</p>
+                </div>
+                <div class="ficha-tecnica">
+                    <div class="ficha-tecnica-details">
+                        <p class="id-deposito">ID CP-MC</p>
+                        <p class="id-number">7001249</p>
                     </div>
                 </div>
             </div>
+
+            <div class="primary-content-container">
+                <div class="product-container">
+                    <!-- titulo contactos-->
+                    <h1>O Sobreiro: Alguns Aspectos do seu Cultivo </h1>
+
+                    <div class="ficha-tecnica-details">
+                        <div class="country">
+                            <h3>Portugal</h3>
+                        </div>
+                        <img src="Icon/dot.svg" class="icone-dot">
+                        <div class="year">
+                            <p>1961</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="ficha-tecnica">
+                            <p class="bold">Descrição</p>
+                            <div class="resume-text-container">
+                                <p>Do lançar da semente à tiragem da cortiça; recolha e transporte; arrumação em pilhas.
+                                    Aplicações e importância económica. A bolota alimenta o porco; lenha transforma-se
+                                    em carvão. Aplicações da cortiça. Riscos de destruição da floresta.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
+    </div>
+    </div>
     <!-- ficha tecnica lateral-->
 
     <!-- titulo-->
@@ -105,7 +149,7 @@
     <!-- botao ver noticias -->
 
     <!-- footer com logos e links-->
-     
+
     <script src="js/acervo.js"></script>
 </body>
 
