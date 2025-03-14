@@ -12,22 +12,84 @@
     <link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/breadcrumb.css">
+    <link rel="stylesheet" href="css/obra-styles.css">
+    <link rel="stylesheet" href="css/lateral-menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 
 <body>
 
     
-
-
     <!-- navbar - icone botão +  botoes com opçoes-->
     <!-- navbar imagem fundo-->
 
     <!-- video reproduçao-->
+   
+    <div class="video-container">
+        <div class="video-overlay" onclick="playVideo()">
+            <img src="images/acervo/sobreiro2.png" class="video-placeholder" alt="Vídeo Placeholder">
+            <div class="video-filter-overlay"></div>
+            <img src="Icon/play.svg" class="play-button" alt="Play">
+        </div>
+        <video id="video" controls >
+            <source src="video/o sobreiro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
 
     <!-- breadcrumbs-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Entrada</a></li>
+            <li class="breadcrumb-item"><a href="#">Acervo Digital</a></li>
+            <li class="breadcrumb-item"><a href="#">Ver acervo</a></li>
+            <li class="breadcrumb-item now" aria-current="page">Nome filme</li>
+        </ol>
+    </nav>
 
+    <div class="page-container">
+        <div class="menu-contacts-container">
+            <div class="vertical-menu col-4" aria-label="Menu Lateral">
+                <h3>Ficha técnica</h3>
+                <div class="ficha-tecnica">
+                    <p class="bold">Realizador</p>
+                    <p>João Neves</p>
+                </div>
+            </div>
 
+            <div class="primay-content-container">
+                <div class="contacts-container">
+                    <!-- titulo contactos-->
+                    <h2>O Sobreiro: Alguns Aspectos do seu Cultivo </h2>
+                    
+                        <div class="contacts-places">
+                            <h3>Centro de Conservação</h3>
+                            <div class="contacts-icon day">
+                                <p>segunda a sexta</p>
+                            </div>
+                            <div class="contacts-icon hour">
+                                <p>09:30 - 17:30</p>
+                            </div>
+                            <div class="contacts-icon phone">
+                                <p>+351 219 689 400</p>
+                            </div>
+                            <div class="contacts-icon mail">
+                                <p>acesso@cinemateca.pt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- ficha tecnica lateral-->
+
     <!-- titulo-->
 
     <!-- titulo obra -->
@@ -44,7 +106,7 @@
 
     <!-- footer com logos e links-->
      
-    <script src="main.js"></script>
+    <script src="js/acervo.js"></script>
 </body>
 
 </html>

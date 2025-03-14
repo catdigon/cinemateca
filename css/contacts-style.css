@@ -1,9 +1,5 @@
-.menu-contacts-container {
-    display: flex;
-}
-
 .contacts-container {
-    margin: 0rem 2rem;
+    margin: 0 0 0 4rem;
     height: 90%;
     align-content: center;
 }
@@ -17,7 +13,7 @@
 
 .contacts-places {
     margin: 1rem 0;
-    padding: 0 1rem;
+    padding: 0 4rem 0 1rem;
     border-left: 1.5px solid #100C07;
 }
 
@@ -67,53 +63,3 @@
     background-image: url('../Icon/email.svg');
 }
 
-.form-container {
-    background: #100C07;
-    width: 100%;
-    margin-top: -2rem;
-    z-index: -1;
-    position: relative;
-    color: #FCFAF8;
-    padding-left: 19rem;
-    padding-bottom: 3rem;
-}
-
-.form-container .form-inputs {
-    margin-inline-start: 2rem;
-    padding-top: 1rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-}
-
-.form-group-line {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    width: 80%;
-}
-
-.form-input{
-background: none;
-    border: none;
-    border-bottom: 1px solid #FCFAF8;
-    margin-bottom: 1rem;
-}
-
-.btn-form-submit{
-    display: flex;
-    margin-top: 1.5rem;
-    width: 80%;
-    justify-content: flex-end;
-}
-
-@media only screen and (max-width: 992px) {
-    .form-group-line{
-        flex-wrap: wrap;
-        gap: 0rem;
-        width: 100%;
-    }
-}

@@ -1,6 +1,6 @@
 .vertical-menu {
-    width: 18rem; 
-    height: 22rem;
+    width: 22rem; 
+    height: 26rem;
     display: flex;
     flex-direction: column;
 }

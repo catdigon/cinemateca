@@ -49,6 +49,14 @@ body {
     line-height: 150%;
 }
 
+body .bold {
+    font-family: Afacad;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
 
 /*Type for details like dates and categories*/
 p.font-detail {
