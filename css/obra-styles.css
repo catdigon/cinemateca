@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     padding: 4rem 1rem 6rem 4rem;
-    margin-top: 6.5rem;
+    margin-top: 5rem;
 }
 
 .ficha-tecnica {
@@ -101,4 +101,42 @@
 .resume-text-container{
     width: 70%;
     line-height: 1.5rem;
+}
+
+.generate-pdf,
+.social-media-share {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.share-container p{
+    margin-bottom: 0;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #100C07;
+    margin-top: 3rem;
+    padding-top: 0.9rem;
+    width: 75%;
+}
+
+.news-cards-container{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.new-card{
+    width: 17rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1.5rem 0 2.5rem 0;
 }

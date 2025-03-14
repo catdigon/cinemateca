@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>?nome da obra?</title>
+    <title>O Sobreiro: Alguns Aspectos do seu Cultivo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -19,8 +19,9 @@
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/breadcrumb.css">
     <link rel="stylesheet" href="css/obra-styles.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/news-styles.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -50,12 +51,13 @@
             <li class="breadcrumb-item"><a href="#">Entrada</a></li>
             <li class="breadcrumb-item"><a href="#">Acervo Digital</a></li>
             <li class="breadcrumb-item"><a href="#">Ver acervo</a></li>
-            <li class="breadcrumb-item now" aria-current="page">Nome filme</li>
+            <li class="breadcrumb-item now" aria-current="page">O Sobreiro: Alguns Aspectos do seu Cultivo</li>
         </ol>
     </nav>
 
     <div class="page-container">
         <div class="page-layout-container">
+            <!-- ficha tecnica lateral-->
             <div class="lateral-container col-4" aria-label="Ficha Técnica">
                 <h3>Ficha técnica</h3>
                 <div class="ficha-tecnica">
@@ -101,11 +103,12 @@
                 </div>
             </div>
 
-            <div class="primary-content-container">
-                <div class="product-container">
-                    <!-- titulo contactos-->
-                    <h1>O Sobreiro: Alguns Aspectos do seu Cultivo </h1>
 
+            <div class="primary-content-container ">
+                <div class="product-container">
+                    <!-- titulo obra -->
+                    <h1>O Sobreiro: Alguns Aspectos do seu Cultivo </h1>
+                    <!-- pais + ano -->
                     <div class="ficha-tecnica-details">
                         <div class="country">
                             <h3>Portugal</h3>
@@ -115,7 +118,7 @@
                             <p>1961</p>
                         </div>
                     </div>
-
+                    <!-- descrição/sinopse -->
                     <div>
                         <div class="ficha-tecnica">
                             <p class="bold">Descrição</p>
@@ -127,26 +130,90 @@
                         </div>
                     </div>
 
+                    <div class="share-container">
+                        <!-- exportar pdf-->
+                        <div class="generate-pdf">
+                            <img src="Icon/chain.svg" alt="pdf">
+                            <p class="bold">Exportar em PDF</p>
+                        </div>
+                        <div class="social-media-share">
+                            <!-- partilhar + icones -->
+                            <p class="bold">Partilhar</p>
+                            <img src="Icon/facebook.svg" alt="facebook">
+                            <img src="Icon/instagram.svg" alt="Instagram">
+                            <img src="Icon/email.svg" alt="Email">
+                        </div>
+                    </div>
+
+                    <!-- linha -->
+                    <div class="news-container">
+                        <!-- titulo noticias relacionadas -->
+                        <p class="big-bold">Notícias relacionadas</p>
+                        <div class="news-cards-container">
+                            <!-- card noticia 1-->
+                            <div class="new-card">
+                                <div class="img-card-container"> <img src="images/news/Gente da Praia da Vieira.jpg"
+                                        alt="Fotograma do filme: Gente da Praia da Vieira"></div>
+                                <div class="news-card-class">
+                                    <div class="card-detail-yellow">
+                                        <p class="font-detail">Programação</p>
+                                    </div>
+                                    <div class="news-date">
+                                        <p class="font-detail">19 OUT 2024</p>
+                                    </div>
+                                </div>
+                                <div class="new-title">
+                                    <h5>FILMar inicia ÚLTIMA VAGA</h5>
+                                </div>
+                            </div>
+
+                            <!-- card noticia 2-->
+                            <div class="new-card">
+                                <div class="img-card-container"> <img src="images/news/Ilhas encantadas.jpg"
+                                        alt="Fotograma do filme: Ilhas Encantadas"></div>
+                                <div class="news-card-class">
+                                    <div class="card-detail-yellow">
+                                        <p class="font-detail">Programação</p>
+                                    </div>
+                                    <div class="news-date">
+                                        <p class="font-detail">10 SET 2024</p>
+                                    </div>
+                                </div>
+                                <div class="new-title">
+                                    <h5>O mar português no DocLisboa</h5>
+                                </div>
+                            </div>
+
+                            <!-- card noticia 3-->
+                            <div class="new-card">
+                                <div class="img-card-container"> <img src="images/news/Imagens de pt.jpg"
+                                        alt="Fotograma: Imagens de Portugal"></div>
+                                <div class="news-card-class">
+                                    <div class="card-detail-yellow">
+                                        <p class="font-detail">Património</p>
+                                    </div>
+                                    <div class="news-date">
+                                        <p class="font-detail">01 DEZ 2023</p>
+                                    </div>
+                                </div>
+                                <div class="new-title">
+                                    <h5>Imagens de Portugal em curtas-metragens dos anos 1920-70</h5>
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- botao ver noticias -->
+                        <div class="btn-container">
+                            <button class="btn-primary btn-news">Ler todas as notícias</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <!-- ficha tecnica lateral-->
 
-    <!-- titulo-->
 
-    <!-- titulo obra -->
-    <!-- pais + ano -->
-    <!-- descrição/sinopse -->
-    <!-- texto descriçao/sinopse -->
-    <!-- exportar pdf-->
-    <!-- partilhar + icones -->
 
-    <!-- linha -->
-    <!-- titulo noticias relacionadas -->
-    <!-- card noticias-->
-    <!-- botao ver noticias -->
 
     <!-- footer com logos e links-->
 

@@ -3,14 +3,6 @@
     padding: 0 15%;
 }
 
-/*Yellow detail card and news*/
-.card-detail-yellow {
-    padding: 0 0.7rem;
-    color: #100C07;
-    background-color: #FEA017;
-}
-
-
 /*Events - index page*/
 .events-container {
     display: flex;
@@ -160,6 +152,7 @@ ol.custom-list-acervo li::before {
     position: relative;
     width: 50%;
     padding: 0.3rem 0.5rem 0rem 1rem;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .news-card>.card-top {
@@ -167,18 +160,6 @@ ol.custom-list-acervo li::before {
     top: 0;
     width: calc(100% - 20px);
     border-top: 1px solid #100C07;
-}
-
-.news-date {
-    margin-inline-start: 0.6rem;
-}
-
-.news-card-class {
-    display: flex;
-}
-
-.news-card:hover {
-    background-color: #9b9895;
 }
 
 .btn-news {
