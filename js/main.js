@@ -1,3 +1,19 @@
+/**Load components to pages*/
+function loadComponent(id, file) {
+  fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      })
+      .catch(error => console.error(`Error loading ${file}:`, error));
+}
+
+/**Load navbar and footer */
+window.addEventListener("DOMContentLoaded", () => {
+  loadComponent("navbar-placeholder", "navbar.html");
+  loadComponent("footer-placeholder", "footer.html");
+});
+
 /**Change: Show/Hide the elements on Menu/Navbar*/
 function  toggleVisibilityElement(selector) {
   var element = document.querySelector(selector);

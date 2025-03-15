@@ -27,7 +27,7 @@
     <!-- navbar imagem fundo-->
     <div id="header-container">
         <img src="images/headers/acervo.png" alt="Acervo" class="header-image">
-</div>
+    </div>
 
     <!-- breadcrumbs-->
     <nav aria-label="breadcrumb">
@@ -38,15 +38,16 @@
         </ol>
     </nav>
 
+
     <div class="broad-container">
 
-        <nav class="filters-menu-container">
+        <nav class="filters-menu-container" role="complementary">
             <!-- botao voltar atrás-->
             <button class="btn-primary btn-icon btn-return-acervo">Voltar ao acervo digital</button>
 
             <!-- form pesquisa-->
             <form class="form-inline">
-                <input class="form-search body-small" type="search" placeholder="Pesquisar ..." aria-label="Search">
+                <input class="form-search body-small" type="search" placeholder="Pesquisar ..." role="search" aria-label="Search">
             </form>
 
             <!-- filtros categoria obras-->
@@ -58,7 +59,7 @@
             </div>
 
             <!-- form autocomplete titulo-->
-            <form class="form-inline">
+            <form class="form-inline" role="search">
                 <div class="filter-title">
                     <p>Título</p>
                 </div>
@@ -66,7 +67,7 @@
             </form>
 
             <!-- form autocomplete assunto-->
-            <form class="form-inline">
+            <form class="form-inline" role="search">
                 <div class="filter-title">
                     <p>Assunto</p>
                 </div>
@@ -74,7 +75,7 @@
             </form>
 
             <!-- form dropdown ano -->
-            <form class="form-inline">
+            <form class="form-inline" role="search">
                 <div class="filter-title">
                     <p>Ano</p>
                 </div>
@@ -84,21 +85,21 @@
 
             <!-- filtros dropdown colecao -->
             <div class="accordion-container">
-                <button class="accordion" aria-expanded="false">Coleção</button>
+                <button class="accordion" aria-expanded="false" role="listbox" aria-multiselectable="true" aria-labelledby="filter-label">Coleção</button>
                 <div class="accordion-filters">
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p class="body-small">FilMar</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Imagens de Portugal</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Imagens em Movimento</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Aurélio da Paz dos Reis</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Fotografias de Rodagem</p>
                     </button>
                     <button class="btn-filter-accordion">
@@ -107,84 +108,84 @@
                 </div>
 
                 <!-- filtros dropdown genero -->
-                <button class="accordion" aria-expanded="false">Género</button>
+                <button class="accordion" aria-expanded="false" role="listbox" aria-multiselectable="true" aria-labelledby="filter-label">Género</button>
                 <div class="accordion-filters">
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Animação</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Documentário</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Experimental</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Ficção</p>
                     </button>
                 </div>
 
                 <!-- filtros dropdown tipo documentacao -->
-                <button class="accordion" aria-expanded="false">Tipo de Documentação</button>
+                <button class="accordion" aria-expanded="false" role="listbox" aria-multiselectable="true" aria-labelledby="filter-label">Tipo de Documentação</button>
                 <div class="accordion-filters">
-                    <button class="btn-filter-accordion filter-option">
-                        <p>Fotografias</p>
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
+                        <p>Fotografias</p> 
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Lobby Cards</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Retrato</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Ilustração</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Manuscrito</p>
                     </button>
-                    <button class="btn-filter-accordion">
+                    <button class="btn-filter-accordion" role="option" aria-selected="false" tabindex="0">
                         <p class="subtitle">Ver mais...</p>
                     </button>
                 </div>
 
                 <!-- filtros dropdown formato -->
-                <button class="accordion" aria-expanded="false">Formato</button>
+                <button class="accordion" aria-expanded="false" role="listbox" aria-multiselectable="true" aria-labelledby="filter-label">Formato</button>
                 <div class="accordion-filters">
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Vídeo</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Analógico</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0"> 
                         <p>35 mm</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>16 mm</p>
                     </button>
-                    <button class="btn-filter-accordion">
+                    <button class="btn-filter-accordion" role="option" aria-selected="false" tabindex="0">
                         <p class="subtitle">Ver mais...</p>
                     </button>
                 </div>
                 <!-- filtros dropdown cor -->
-                <button class="accordion" aria-expanded="false">Cor</button>
+                <button class="accordion" aria-expanded="false" role="listbox" aria-multiselectable="true" aria-labelledby="filter-label">Cor</button>
                 <div class="accordion-filters">
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Preto e Branco (PB)</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Cor</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Negativo</p>
                     </button>
                 </div>
                 <!-- filtros dropdown som -->
-                <button class="accordion" aria-expanded="false">Som</button>
+                <button class="accordion" aria-expanded="false" role="listbox" aria-multiselectable="true" aria-labelledby="filter-label">Som</button>
                 <div class="accordion-filters">
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Com som</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option">
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Sem som</p>
                     </button>
                 </div>
@@ -198,221 +199,225 @@
         </nav>
 
 
+        <main>
+            <!-- barra filtros adicionados -->
+            <div class="results-container">
+                <div class="filters-added">
+                    <button class="btn-icon btn-filter-added">FilMar</button>
+                </div>
+                <!-- card obras - nome+autor+ano -->
+                <div class="obras-card-container">
 
+                    <!--obra1-->
+                    <div class="obra-card">
+                        <img class="card-image" src="images/acervo/arte e justica.jpg" alt="Filme: A arte e a justiça">
+                        <div class="card-img-overlay">
 
-        <!-- barra filtros adicionados -->
-        <div class="results-container">
-            <div class="filters-added">
-                <button class="btn-icon btn-filter-added">FilMar</button>
+                            <div class="obra-title">
+                                <h4>A arte e a justiça</h4>
+                            </div>
+                            <div class="obra-info">
+                                <p>Perdigão Queiroga</p>
+                                <img src="Icon/dot.svg" class="icone-dot">
+                                <p>1967</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--obra2-->
+                    <div class="obra-card">
+                        <img class="card-image" src="images/acervo/zeca.jpg"
+                            alt="Filme: A Extraordinária Aventura do Zéca">
+                        <div class="card-img-overlay">
+
+                            <div class="obra-title">
+                                <h4>A Extraordinária Aventura do Zéca</h4>
+                            </div>
+                            <div class="obra-info">
+                                <p>Adolfo Celho</p>
+                                <img src="Icon/dot.svg" class="icone-dot">
+                                <p>1939</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--obra3-->
+                    <div class="obra-card">
+                        <img class="card-image" src="images/acervo/exposicao mundo.jpg"
+                            alt="Filme: A Exposição do Mundo Português">
+                        <div class="card-img-overlay">
+
+                            <div class="obra-title">
+                                <h4>A Exposição do Mundo Português</h4>
+                            </div>
+                            <div class="obra-info">
+                                <p>F. Carneiro Mendes</p>
+                                <img src="Icon/dot.svg" class="icone-dot">
+                                <p>1940</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--obra4-->
+                    <div class="obra-card">
+                        <img class="card-image" src="images/acervo/vida soldado.jpg" alt="Imagem: A Vida do Soldado">
+                        <div class="card-img-overlay">
+
+                            <div class="obra-title">
+                                <h4>A Vida do Soldado</h4>
+                            </div>
+                            <div class="obra-info">
+                                <p>Aníbal Contreiras</p>
+                                <img src="Icon/dot.svg" class="icone-dot">
+                                <p>1930</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--obra5-->
+                    <div class="obra-card">
+                        <img class="card-image" src="images/acervo/raid.jpg"
+                            alt="Imagem:O raid aéreo Lisboa-Rio de Janeiro">
+                        <div class="card-img-overlay">
+
+                            <div class="obra-title">
+                                <h4>O raid aéreo Lisboa-Rio de Janeiro</h4>
+                            </div>
+                            <div class="obra-info">
+                                <p>Henrique Alegria</p>
+                                <img src="Icon/dot.svg" class="icone-dot">
+                                <p>1922</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--obra6-->
+                    <div class="obra-card">
+                        <img class="card-image" src="images/acervo/guine.jpg"
+                            alt="Filme: Guiné: Aspectos Industriais e Agricultura">
+                        <div class="card-img-overlay">
+
+                            <div class="obra-title">
+                                <h4>Guiné: Aspectos Industriais e Agricultura</h4>
+                            </div>
+                            <div class="obra-info">
+                                <p>Augusto Seara</p>
+                                <img src="Icon/dot.svg" class="icone-dot">
+                                <p>1929</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--obra7-->
+                    <div class="obra-card">
+                        <img class="card-image" src="images/acervo/sobreiro.png"
+                            alt="Filme: O Sobreiro: Alguns Aspectos do seu Cultivo">
+                        <div class="card-img-overlay">
+
+                            <div class="obra-title">
+                                <h4>O Sobreiro: Alguns Aspectos do seu Cultivo</h4>
+                            </div>
+                            <div class="obra-info">
+                                <p>João Mendes</p>
+                                <img src="Icon/dot.svg" class="icone-dot">
+                                <p>1959</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--obra8-->
+                    <div class="obra-card">
+                        <img class="card-image" src="images/acervo/producao cinematografica.jpg"
+                            alt="Texto: A Producção Cinematographica em Portugal">
+                        <div class="card-img-overlay">
+
+                            <div class="obra-title">
+                                <h4>A Producção Cinematographica em Portugal</h4>
+                            </div>
+                            <div class="obra-info">
+                                <p>Cine-revista, nº33</p>
+                                <img src="Icon/dot.svg" class="icone-dot">
+                                <p>1919</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--obra9-->
+                    <div class="obra-card">
+                        <img class="card-image" src="images/acervo/riqueza termal.jpg"
+                            alt="Filme: A Nossa Riqueza Termal">
+                        <div class="card-img-overlay">
+
+                            <div class="obra-title">
+                                <h4>A Nossa Riqueza Termal</h4>
+                            </div>
+                            <div class="obra-info">
+                                <p>Cândido Costa Pinto</p>
+                                <img src="Icon/dot.svg" class="icone-dot">
+                                <p>1961</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--obra10-->
+                    <div class="obra-card">
+                        <img class="card-image" src="images/acervo/industria baleia.png"
+                            alt="Filme: A Indústria da Baleia">
+                        <div class="card-img-overlay">
+
+                            <div class="obra-title">
+                                <h4>A Indústria da Baleia</h4>
+                            </div>
+                            <div class="obra-info">
+                                <p>António Antunes da Mata</p>
+                                <img src="Icon/dot.svg" class="icone-dot">
+                                <p>1932</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--obra11-->
+                    <div class="obra-card">
+                        <img class="card-image" src="images/acervo/lobos.jpg" alt="Filme: Os Lobos">
+                        <div class="card-img-overlay">
+
+                            <div class="obra-title">
+                                <h4>Os Lobos</h4>
+                            </div>
+                            <div class="obra-info">
+                                <p>Rino Lupo</p>
+                                <img src="Icon/dot.svg" class="icone-dot">
+                                <p>1923</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--obra12-->
+                    <div class="obra-card">
+                        <img class="card-image" src="images/acervo/alfama.jpg"
+                            alt="Texto: Alfama : Um Belo Documentário">
+                        <div class="card-img-overlay">
+
+                            <div class="obra-title">
+                                <h4>Alfama : Um Belo Documentário</h4>
+                            </div>
+                            <div class="obra-info">
+                                <p>Cinéfilo, nº 72</p>
+                                <img src="Icon/dot.svg" class="icone-dot">
+                                <p>1930</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- paginacao -->
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a> ... </a>
+                    <a href="#">20</a>
+                    <a href="#">&raquo;</a>
+                </div>
+
             </div>
-            <!-- card obras - nome+autor+ano -->
-            <div class="obras-card-container">
-
-                <!--obra1-->
-                <div class="obra-card">
-                    <img class="card-image" src="images/acervo/arte e justica.jpg" alt="Filme: A arte e a justiça">
-                    <div class="card-img-overlay">
-
-                        <div class="obra-title">
-                            <h4>A arte e a justiça</h4>
-                        </div>
-                        <div class="obra-info">
-                            <p>Perdigão Queiroga</p>
-                            <img src="Icon/dot.svg" class="icone-dot">
-                            <p>1967</p>
-                        </div>
-                    </div>
-                </div>
-                <!--obra2-->
-                <div class="obra-card">
-                    <img class="card-image" src="images/acervo/zeca.jpg" alt="Filme: A Extraordinária Aventura do Zéca">
-                    <div class="card-img-overlay">
-
-                        <div class="obra-title">
-                            <h4>A Extraordinária Aventura do Zéca</h4>
-                        </div>
-                        <div class="obra-info">
-                            <p>Adolfo Celho</p>
-                            <img src="Icon/dot.svg" class="icone-dot">
-                            <p>1939</p>
-                        </div>
-                    </div>
-                </div>
-                <!--obra3-->
-                <div class="obra-card">
-                    <img class="card-image" src="images/acervo/exposicao mundo.jpg"
-                        alt="Filme: A Exposição do Mundo Português">
-                    <div class="card-img-overlay">
-
-                        <div class="obra-title">
-                            <h4>A Exposição do Mundo Português</h4>
-                        </div>
-                        <div class="obra-info">
-                            <p>F. Carneiro Mendes</p>
-                            <img src="Icon/dot.svg" class="icone-dot">
-                            <p>1940</p>
-                        </div>
-                    </div>
-                </div>
-                <!--obra4-->
-                <div class="obra-card">
-                    <img class="card-image" src="images/acervo/vida soldado.jpg" alt="Imagem: A Vida do Soldado">
-                    <div class="card-img-overlay">
-
-                        <div class="obra-title">
-                            <h4>A Vida do Soldado</h4>
-                        </div>
-                        <div class="obra-info">
-                            <p>Aníbal Contreiras</p>
-                            <img src="Icon/dot.svg" class="icone-dot">
-                            <p>1930</p>
-                        </div>
-                    </div>
-                </div>
-                <!--obra5-->
-                <div class="obra-card">
-                    <img class="card-image" src="images/acervo/raid.jpg"
-                        alt="Imagem:O raid aéreo Lisboa-Rio de Janeiro">
-                    <div class="card-img-overlay">
-
-                        <div class="obra-title">
-                            <h4>O raid aéreo Lisboa-Rio de Janeiro</h4>
-                        </div>
-                        <div class="obra-info">
-                            <p>Henrique Alegria</p>
-                            <img src="Icon/dot.svg" class="icone-dot">
-                            <p>1922</p>
-                        </div>
-                    </div>
-                </div>
-                <!--obra6-->
-                <div class="obra-card">
-                    <img class="card-image" src="images/acervo/guine.jpg"
-                        alt="Filme: Guiné: Aspectos Industriais e Agricultura">
-                    <div class="card-img-overlay">
-
-                        <div class="obra-title">
-                            <h4>Guiné: Aspectos Industriais e Agricultura</h4>
-                        </div>
-                        <div class="obra-info">
-                            <p>Augusto Seara</p>
-                            <img src="Icon/dot.svg" class="icone-dot">
-                            <p>1929</p>
-                        </div>
-                    </div>
-                </div>
-                <!--obra7-->
-                <div class="obra-card">
-                    <img class="card-image" src="images/acervo/sobreiro.png"
-                        alt="Filme: O Sobreiro: Alguns Aspectos do seu Cultivo">
-                    <div class="card-img-overlay">
-
-                        <div class="obra-title">
-                            <h4>O Sobreiro: Alguns Aspectos do seu Cultivo</h4>
-                        </div>
-                        <div class="obra-info">
-                            <p>João Mendes</p>
-                            <img src="Icon/dot.svg" class="icone-dot">
-                            <p>1959</p>
-                        </div>
-                    </div>
-                </div>
-                <!--obra8-->
-                <div class="obra-card">
-                    <img class="card-image" src="images/acervo/producao cinematografica.jpg"
-                        alt="Texto: A Producção Cinematographica em Portugal">
-                    <div class="card-img-overlay">
-
-                        <div class="obra-title">
-                            <h4>A Producção Cinematographica em Portugal</h4>
-                        </div>
-                        <div class="obra-info">
-                            <p>Cine-revista, nº33</p>
-                            <img src="Icon/dot.svg" class="icone-dot">
-                            <p>1919</p>
-                        </div>
-                    </div>
-                </div>
-                <!--obra9-->
-                <div class="obra-card">
-                    <img class="card-image" src="images/acervo/riqueza termal.jpg" alt="Filme: A Nossa Riqueza Termal">
-                    <div class="card-img-overlay">
-
-                        <div class="obra-title">
-                            <h4>A Nossa Riqueza Termal</h4>
-                        </div>
-                        <div class="obra-info">
-                            <p>Cândido Costa Pinto</p>
-                            <img src="Icon/dot.svg" class="icone-dot">
-                            <p>1961</p>
-                        </div>
-                    </div>
-                </div>
-                <!--obra10-->
-                <div class="obra-card">
-                    <img class="card-image" src="images/acervo/industria baleia.png" alt="Filme: A Indústria da Baleia">
-                    <div class="card-img-overlay">
-
-                        <div class="obra-title">
-                            <h4>A Indústria da Baleia</h4>
-                        </div>
-                        <div class="obra-info">
-                            <p>António Antunes da Mata</p>
-                            <img src="Icon/dot.svg" class="icone-dot">
-                            <p>1932</p>
-                        </div>
-                    </div>
-                </div>
-                <!--obra11-->
-                <div class="obra-card">
-                    <img class="card-image" src="images/acervo/lobos.jpg" alt="Filme: Os Lobos">
-                    <div class="card-img-overlay">
-
-                        <div class="obra-title">
-                            <h4>Os Lobos</h4>
-                        </div>
-                        <div class="obra-info">
-                            <p>Rino Lupo</p>
-                            <img src="Icon/dot.svg" class="icone-dot">
-                            <p>1923</p>
-                        </div>
-                    </div>
-                </div>
-                <!--obra12-->
-                <div class="obra-card">
-                    <img class="card-image" src="images/acervo/alfama.jpg" alt="Texto: Alfama : Um Belo Documentário">
-                    <div class="card-img-overlay">
-
-                        <div class="obra-title">
-                            <h4>Alfama : Um Belo Documentário</h4>
-                        </div>
-                        <div class="obra-info">
-                            <p>Cinéfilo, nº 72</p>
-                            <img src="Icon/dot.svg" class="icone-dot">
-                            <p>1930</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- paginacao -->
-            <div class="pagination">
-                <a href="#">&laquo;</a>
-                <a class="active" href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a> ... </a>
-                <a href="#">20</a>
-                <a href="#">&raquo;</a>
-            </div>
-
-        </div>
+        </main>
     </div>
 
 
 
 
     <!-- footer com logos e links-->
-<script src="js/main.js"></script>    
+    <script src="js/main.js"></script>
 </body>
 
 </html>

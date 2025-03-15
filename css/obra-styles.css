@@ -89,6 +89,10 @@
     gap: 2.2rem;
 }
 
+.product-description-container{
+    width: 83%;
+}
+
 .icone-dot {
     filter: invert(99);
     width: 0.3rem;
