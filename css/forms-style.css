@@ -2,7 +2,7 @@
     background: #100C07;
     width: 100%;
     margin-top: -2rem;
-    z-index: -1;
+    z-index: 0;
     position: relative;
     color: #FCFAF8;
     padding-left: 24rem;

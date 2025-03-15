@@ -3,6 +3,7 @@
     height: 26rem;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
 .menu-item {
