@@ -7,11 +7,6 @@
     margin-block-end: 0.3rem;
 }
 
-.form-search {
-    border: none;
-    border-bottom: 1px solid #100C07;
-}
-
 .accordion-container {
     display: flex;
     flex-direction: column;

@@ -5,7 +5,7 @@
     z-index: 0;
     position: relative;
     color: #FCFAF8;
-    padding-left: 24rem;
+    padding-left: 25%;
     padding-bottom: 3rem;
 }
 
@@ -30,7 +30,7 @@
     font-weight: 400;
 }
 
-
+.line,
 .form-group-line {
     display: flex;
     flex-direction: row;

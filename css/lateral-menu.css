@@ -1,6 +1,6 @@
 .vertical-menu {
-    width: 22rem; 
-    height: 26rem;
+    width: 23.5%; 
+    height: 100%;
     display: flex;
     flex-direction: column;
     z-index: 1;
@@ -9,7 +9,7 @@
 .menu-item {
     position: relative;
     width: 100%;
-    height: 50%;
+    height: 15rem;
     color: white;
     display: flex;
     align-items: flex-end;
@@ -42,9 +42,25 @@
 }
 
 .contatos {
-    background-image: url('../images/menu-lateral/carta-guerra.jpg'); /* Substitua pelo caminho da imagem */
+    background-image: url('../images/menu-lateral/carta-guerra.jpg');
 }
 
 .localizacao {
-    background-image: url('../images/menu-lateral/tras-montes.jpg'); /* Substitua pelo caminho da imagem */
+    background-image: url('../images/menu-lateral/tras-montes.jpg');
+}
+
+.apresentacao {
+    background-image: url('../images/menu-lateral/cinemateca.jpg');
+}
+
+.historia {
+    background-image: url('../images/menu-lateral/verdes-anos.jpg');
+}
+
+.missao{
+    background-image: url('../images/menu-lateral/anim.jpg');
+}
+
+.agenda {
+    background-image: url('../images/menu-lateral/sala\ cinema.webp');
 }

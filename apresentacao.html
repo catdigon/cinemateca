@@ -13,21 +13,78 @@
     <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/breadcrumb.css">
+    <link rel="stylesheet" href="css/lateral-menu.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/footer.css">
    
    </head>
 
 <body>
 
+    
     <!-- navbar - icone botão +  botoes com opçoes--> 
     <!-- navbar imagem fundo--> 
+    <div id="header-container">
+        <img src="images/headers/about.png" alt="Acervo" class="header-image">
+    </div>
 
+    <!-- breadcrumbs-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Entrada</a></li>
+            <li class="breadcrumb-item now" aria-current="page">Contactos</li>
+        </ol>
+    </nav>
     <!-- breadcrumbs--> 
 
-    <!-- menu lateral botao- 4--> 
-
-    <!-- apresentaçao titulo--> 
-    <!-- texto apresentacao-->
+    
+    <main>
+        <div class="page-container">
+            <div class="page-layout-container">
+                <!-- menu lateral botao- 4--> 
+                <div class="vertical-menu col-4" role="navigation" aria-label="Menu Lateral">
+                    <a href="#" class="menu-item apresentacao active">
+                        <div class="menu-item-overlay"></div>
+                        <p class="font-detail">Apresentação</p>
+                    </a>
+                    <a href="#" class="menu-item historia">
+                        <div class="menu-item-overlay"></div>
+                        <p class="font-detail">História</p>
+                    </a>
+                    <a href="#" class="menu-item missao">
+                        <div class="menu-item-overlay"></div>
+                        <p class="font-detail">Missão e atividades</p>
+                    </a>
+                    <a href="#" class="menu-item agenda">
+                        <div class="menu-item-overlay"></div>
+                        <p class="font-detail">Agenda</p>
+                    </a>
+                </div>
+                
+            
+                <div class="primary-content-container">
+                    <div class="product-container">
+                        <!-- apresentaçao titulo--> 
+                        <h2>Apresentação</h2>
+                        <!-- texto apresentacao-->
+                        <div id="text-container">
+                            <p class="bold">A Cinemateca Portuguesa - Museu do Cinema  é organismo nacional que tem como missão a salvaguarda e divulgação do património cinematográfico português.</p>
+                            <p>A instituição foi fundada nos anos 50, por Manuel Félix Ribeiro, um dos pioneiros das cinemateca europeias. </p>
+                            <p>Em 1996, o Arquivo Fílmico e Videográfico Nacional (ANIM) foi criado nos arredores de Lisboa. Todas as atividades de preservação e pesquisa técnica da Cinemateca são desenvolvidas no ANIM.</p>
+                            <p>A Cinemateca tem desempenhado um papel decisivo na criação e desenvolvimento da rede de instituições europeias dedicadas à preservação do património cinematográfico europeu, sendo co-fundadora da Associação Europeia de Cinematecas (ACE) e participando em diversos programas,  tais como: Projecto LUMIÈRE (Programa Europeu Media I, 1991-1995, que teve sede em Lisboa); ARCHIMEDIA - Rede Europeia de Formação  para a Promoção do Património Cinematográfico; «Urgent: Nitrate Can't Wait» (programa Raphael); European Film Gateway (2008-2011). </p>
+                            <p>Em 2018, a Cinemateca recebeu a Medalha de Mérito Cultural, como "um gesto de reconhecimento e de gratidão pelo Governo Português pela excelência do trabalho desenvolvido, ao longo de 70 anos, na preservação e promoção do património cinematográfico português e mundial".</p>
+                            <p>Mais recentemente, desde 2020, a Cinemateca lidera o projeto educativo internacional CINED, lançado no eixo Cinema-Educação e apoiado no âmbito do programa “Europa Criativa” (Programa MEDIA da União Europeia).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+    
 
     <!-- footer com logos e links--> 
 
