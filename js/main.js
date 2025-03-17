@@ -24,7 +24,7 @@ function  toggleVisibilityElement(selector) {
   }
 }
 
-/**Hide alwaus the element*/
+/**Hide always the element*/
 function hideElementAlways(selector) {
   var element = document.querySelector(selector);
   element.style.display = "none";
@@ -69,6 +69,16 @@ for (i = 0; i < filterOptions.length; i++) {
         // Change the class 'show-icon' to show/hide the icon
         this.classList.toggle('add-filter');
     });
+}
+
+
+//** */
+function showCardDetails(cardId) {
+  var targetCard = document.querySelector(`#${cardId}`);
+  var targetCardBack = document.querySelector(`#${cardId}Back`);
+
+  targetCard.classList.toggle('hidden')
+  targetCardBack.classList.toggle('hidden')
 }
 
 //**btn scroll to the top of the document*/

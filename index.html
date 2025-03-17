@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/event-cards.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/news-styles.css">
     <link rel="stylesheet" href="css/btn.css">
@@ -158,7 +159,8 @@
             <!-- cards agenda-->
             <div class="events-cards">
                 <!--event1-->
-                <div class="card">
+                <div id="Event1" class="card" onmouseenter="showCardDetails('Event1')"
+                    onmouseleave="showCardDetails('Event1')">
                     <img class="card-image" src="images/agenda/midnight in paris.jpg" alt="Filme: Midnight in Paris">
                     <div class="card-img-overlay">
                         <div class="card-date-container">
@@ -167,12 +169,33 @@
                             </div>
                         </div>
                         <div class="card-title-container">
-                            <h5 class="card-title">Midnight in Paris</h5>
+                            <h4 class="card-title">Midnight in Paris</h4>
                         </div>
                     </div>
                 </div>
+                <!--event1-back-->
+                <div id="Event1Back" class="card card-back hidden" onmouseenter="showCardDetails('Event1')"
+                    onmouseleave="showCardDetails('Event1')">
+                    <div class="card-type">
+                        <img src="Icon/dot.svg" class="icone-dot dot-big">
+                        <p>Filme</p>
+                    </div>
+                    <h4 class="card-title"> Midnight in Paris</h4>
+                    <div class="events-card-details">
+                        <p> 11 Nov 2024</p>
+                        <img src="Icon/dot.svg" class="icone-dot dot-small">
+                        <p> 18:30</p>
+                    </div>
+                    <div>
+                        <p>Sala M. Félix Ribeiro</p>
+                    </div>
+                    <p class="event-description small">Durante uma viagem a Paris com a família de seu noivo, um roteirista nostálgico se
+                        vê misteriosamente voltando para a década de 1920 todos os dias à meia-noite.</p>
+                </div>
+
                 <!--event2-->
-                <div class="card">
+                <div id="Event2" class="card" onmouseenter="showCardDetails('Event2')"
+                    onmouseleave="showCardDetails('Event2')">
                     <img class="card-image" src="images/agenda/lejos de africa.jpg" alt="Filme: Lejos de África">
                     <div class="card-img-overlay">
                         <div class="card-date-container">
@@ -185,8 +208,29 @@
                         </div>
                     </div>
                 </div>
+                <!--event2-back-->
+                <div id="Event2Back" class="card card-back hidden" onmouseenter="showCardDetails('Event2')"
+                    onmouseleave="showCardDetails('Event2')">
+                    <div class="card-type">
+                        <img src="Icon/dot.svg" class="icone-dot dot-big">
+                        <p>Filme</p>
+                    </div>
+                    <h4 class="card-title"> Lejos de África</h4>
+                    <div class="events-card-details">
+                        <p> 27 NOV 2024</p>
+                        <img src="Icon/dot.svg" class="icone-dot dot-small">
+                        <p> 18:30</p>
+                    </div>
+                    <div>
+                        <p>Sala Luís de Pina</p>
+                    </div>
+                    <p class="event-description small">Uma menina branca e uma negra iniciam uma amizade na colônia espanhola da Guiana
+                        Equatorial dos anos 50. A relação multicultural leva as duas a explorarem além das suas
+                        fronteiras.</p>
+                </div>
                 <!--event3-->
-                <div class="card">
+                <div id="Event3" class="card" onmouseenter="showCardDetails('Event3')"
+                    onmouseleave="showCardDetails('Event3')">
                     <img class="card-image" src="images/agenda/cinetracts.png" alt="Filme: Cinétracts">
                     <div class="card-img-overlay">
                         <div class="card-date-container">
@@ -199,8 +243,29 @@
                         </div>
                     </div>
                 </div>
+                <!--event3-Back-->
+                <div id="Event3Back" class="card card-back hidden" onmouseenter="showCardDetails('Event3')"
+                    onmouseleave="showCardDetails('Event3')">
+                    <div class="card-type">
+                        <img src="Icon/dot.svg" class="icone-dot dot-big">
+                        <p>Filme</p>
+                    </div>
+                    <h4 class="card-title"> Cinétracts</h4>
+                    <div class="events-card-details">
+                        <p> 29 NOV 2024</p>
+                        <img src="Icon/dot.svg" class="icone-dot dot-small">
+                        <p> 18:30</p>
+                    </div>
+                    <div>
+                        <p>Sala M. Félix Ribeiro</p>
+                    </div>
+                    <p class="event-description small">Uma série de 41 curtas documentários silenciosos dirigidas (sem crédito) por
+                        cineastas politicamente comprometidos para os eventos de 68 de maio.</p>
+                </div>
+
                 <!--event4-->
-                <div class="card">
+                <div id="Event4" class="card" onmouseenter="showCardDetails('Event4')"
+                    onmouseleave="showCardDetails('Event4')">
                     <img class="card-image" src="images/agenda/oficina-animacao.jpg"
                         alt="Oficina: Técnicas de Cinema de Animação">
                     <div class="card-img-overlay">
@@ -214,8 +279,28 @@
                         </div>
                     </div>
                 </div>
+                <!--event4-Back-->
+                <div id="Event4Back" class="card card-back hidden" onmouseenter="showCardDetails('Event4')"
+                    onmouseleave="showCardDetails('Event4')">
+                    <div class="card-type">
+                        <img src="Icon/dot.svg" class="icone-dot dot-big">
+                        <p>Ofícina</p>
+                    </div>
+                    <h4 class="card-title"> Técnicas de Cinema de Animação</h4>
+                    <div class="events-card-details">
+                        <p> 14 DEZ 2024</p>
+                        <img src="Icon/dot.svg" class="icone-dot dot-small">
+                        <p> 10:30</p>
+                    </div>
+                    <div>
+                        <p>Salão Foz</p>
+                    </div>
+                    <p class="event-description small">Posso fazer um filme em animação? Nesta
+                        oficina vamos perceber que podemos fazer animação de diversas formas.</p>
+                </div>
                 <!--event5-->
-                <div class="card card-big">
+                <div id="Event5" class="card card-big" onmouseenter="showCardDetails('Event5')"
+                onmouseleave="showCardDetails('Event5')">
                     <img class="card-image" src="images/agenda/noemia.jpg" alt="Exposição: Noémia.">
                     <div class="card-img-overlay">
                         <div class="card-date-container">
@@ -227,6 +312,24 @@
                             <h5 class="card-title">Noémia.</h5>
                         </div>
                     </div>
+                </div>
+                <!--event5-Back-->
+                <div id="Event5Back" class="card card-big card-back hidden" onmouseenter="showCardDetails('Event5')"
+                    onmouseleave="showCardDetails('Event5')">
+                    <div class="card-type">
+                        <img src="Icon/dot.svg" class="icone-dot dot-big">
+                        <p>Exposição</p>
+                    </div>
+                    <h4 class="card-title"> Técnicas de Cinema de Animação</h4>
+                    <div class="events-card-details">
+                        <p> ATÉ 16 DEZ 2024</p>
+                        <img src="Icon/dot.svg" class="icone-dot dot-small">
+                        <p>14h00 às 19h30</p>
+                    </div>
+                    <div>
+                        <p>Sala dos Carvalhos</p>
+                    </div>
+                    <p class="event-description small">Para noémia., desarrumámos o arquivo pessoal de Noémia Delgado e insinuamos a figura poligonal da realizadora de MÁSCARAS, num percurso avesso à linearidade e errante como foi a sua carreira. </p>
                 </div>
             </div>
             <!-- botao agenda-->
