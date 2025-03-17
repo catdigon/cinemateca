@@ -62,5 +62,9 @@
 }
 
 .agenda {
-    background-image: url('../images/menu-lateral/sala\ cinema.webp');
+    background-image: url('../images/menu-lateral/sala-cinema.webp');
+}
+
+.acervo {
+    background-image: url('../images/menu-lateral/Almadraba-atuneira.jpg');
 }

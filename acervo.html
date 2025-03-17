@@ -14,26 +14,86 @@
     <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
 
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/breadcrumb.css">
+    <link rel="stylesheet" href="css/lateral-menu.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
 
-    <!-- navbar - icone botão +  botoes com opçoes--> 
-    <!-- navbar imagem fundo--> 
+    <!-- navbar - icone botão +  botoes com opçoes-->
+    <!-- navbar imagem fundo-->
+    <div id="header-container">
+        <img src="images/headers/acervo.png" alt="Acervo" class="header-image">
+    </div>
 
-    <!-- breadcrumbs--> 
+    <!-- breadcrumbs-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Entrada</a></li>
+            <li class="breadcrumb-item now" aria-current="page">Acervo digital</li>
+        </ol>
+    </nav>
 
 
-    <!-- menu lateral botao- 1--> 
+    <main>
+        <div class="page-container">
+            <div class="page-layout-container">
+                <!-- menu lateral botao- 1-->
+                <div class="vertical-menu col-4" role="navigation" aria-label="Menu Lateral">
+                    <a href="#" class="menu-item acervo active">
+                        <div class="menu-item-overlay"></div>
+                        <p class="font-detail">Acervo digital</p>
+                    </a>
+                </div>
 
-    <!-- acervo titulo--> 
-    <!-- acervo texto-->
-    <!-- link acervo-->
+                <div class="primary-content-container">
+                    <div class="product-container">
+                        <!-- acervo titulo-->
+                        <h2>Acervo Digital</h2>
+                        <!-- acervo texto-->
+                        <div id="text-container">
+                            <p class="bold">
+                                Como organismo nacional, a Cinemateca Portuguesa - Museu do Cinema tem como missão a
+                                salvaguarda e divulgação do património cinematográfico português.
+                            </p>
+                            <p>
+                                A Cinemateca Digital nasceu em 2011, através do projeto European Film Gateway que
+                                agregou 16 cinematecas e arquivos fílmicos europeus enquanto fornecedores de conteúdos
+                                de 6 entidades fornecedoras de serviços tecnológicos.
 
-    <!-- footer com logos e links--> 
+                            </p>
+                            <p>
+                                A seleção inicial do acervo teve como âmbito a Produção portuguesa de não-ficção do
+                                período 1896 a 1931. Atualmente, a lista têm vindo a aumentar, e tem mais de 1300 filmes
+                                disponíveis nesta plataforma
+                            </p>
+                            <p>
+                                A Cinemateca Digital não quer parar de crescer, e procura sempre amplicar o acesso ao
+                                património fílmico através da conservação e preservação de obras e documentos
+                                audiovisuais pela Cinemateca.
+                            </p>
+                            <p>
+                                <!-- link acervo-->
+                            <span>
+                                <img src="Icon/arrow-link.svg">
+                                <a href="" class="">Ver o Acervo Digital Completo</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-<script src="js/main.js"></script>     
+    
+
+    <!-- footer com logos e links-->
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
