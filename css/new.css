@@ -1,0 +1,51 @@
+#main-container {
+    margin: 1rem 15% 2rem 15%;
+}
+
+.img-container{
+    padding: 2% 0;
+    width: 100%;
+    height: 25rem;
+    margin: 1rem 0
+    }
+
+.img-container img{
+    background-image: url('../images/news/camoes.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-yellow-container{
+    position: relative;
+    top: -12%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.new-columns{
+    column-count: 2;
+    column-gap: 7%;
+    padding: 2.5% 0;
+}
+
+.generate-pdf,
+.social-media-share {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.share-container p{
+    margin-bottom: 0;
+}
+
+.btn-return-news {
+    margin-top: 1.5rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: flex-end;
+}
