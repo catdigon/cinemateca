@@ -5,7 +5,7 @@
 .img-container{
     padding: 2% 0;
     width: 100%;
-    height: 25rem;
+    height: 28rem;
     margin: 1rem 0
     }
 
@@ -28,7 +28,7 @@
 .new-columns{
     column-count: 2;
     column-gap: 7%;
-    padding: 2.5% 0;
+    margin: 3% 0;
 }
 
 .generate-pdf,
@@ -48,4 +48,22 @@
 .btn-container{
     display: flex;
     justify-content: flex-end;
+}
+
+.writter-container{
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.writter-container p{
+    margin-block-end: 0
+}
+
+.new-details-container{
+    margin-bottom: 1.3rem;
+}
+
+.new-container p{
+    margin-bottom: 1.5rem;
 }

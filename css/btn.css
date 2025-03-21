@@ -10,12 +10,15 @@
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
+    border-radius: 0;
+    transition: background-color 0.3s linear;
 }
 
 .btn-primary:hover {
     color: #FCFAF8;
     background-color: #100C07;
     border: 2px solid #100C07;
+    transition: background-color 0.3s linear;
 }
 
 .btn-secondary {
@@ -30,12 +33,15 @@
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
+    border-radius: 0;
+    transition: background-color 0.3s linear;
 }
 
 .btn-secondary:hover {
     color: #100C07;
     background-color: #FCFAF8;
     border: 2px solid #FCFAF8;
+    transition: background-color 0.3s linear;
 }
 
 #btn-top{
@@ -61,6 +67,7 @@
 .filtros-cartegories:hover {
     background-color: #100C07;
     color: #FCFAF8;
+    transition: background-color 0.4s ease;
 }
 
 .filtros-cartegories.ative {
@@ -103,11 +110,7 @@
   }
 
 @media only screen and (max-width: 320px) {
-    .btn-primary {
-        width: 100px;
-        height: 40px;
-    }
-
+    .btn-primary,
     .btn-secondary {
         width: 100px;
         height: 40px;

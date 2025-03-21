@@ -92,3 +92,8 @@ p.subtitle {
     font-weight: 400;
     line-height: normal;
 }
+
+a {
+    color: #100C07;
+    text-decoration: none;
+}
