@@ -71,6 +71,7 @@ for (i = 0; i < filterOptions.length; i++) {
     filterOptions[i].addEventListener('click', function() {
         // Change the class 'show-icon' to show/hide the icon
         this.classList.toggle('add-filter');
+        this.classList.toggle('bold-text');
     });
 }
 

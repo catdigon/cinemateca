@@ -97,3 +97,7 @@ a {
     color: #100C07;
     text-decoration: none;
 }
+
+.bold-text {
+    font-weight: 600;
+}

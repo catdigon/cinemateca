@@ -1,6 +1,7 @@
 .pagination {
     justify-self: self-end;
-    margin-top: 1rem;
+    margin-top: 1.6rem;
+    margin-bottom: 3rem;
 }
 
 .pagination a {
@@ -15,6 +16,5 @@
     font-weight: 700;
   }
   
-
   .pagination a:hover:not(.active) {
     background-color: #C9C8C8;}
