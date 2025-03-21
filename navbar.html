@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Navbar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
-
-    
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
     <!-- navbar - icone botão +  botoes com opçoes-->
     <nav id="navbar">
         <a class="navbar-logo" href="index.html">
@@ -28,15 +7,14 @@
         </a>
         <div class="navbar-menu-container">
             <div id="navbar-menu">
-                <div class="navbar-menu-options">
 
-                    <a href="javascript:void(0);" onclick="toggleVisibilityElement('#navbar-open-menu-cinemateca')">
+                <div class="navbar-menu-options" onmouseleave="hideElementAlways('#navbar-open-menu-cinemateca')">
+                    <a href="/cinemateca/index.html" onmouseenter="toggleVisibilityElement('#navbar-open-menu-cinemateca')">
                         <h3>A Cinemateca</h3>
                     </a>
-
                     <div id="navbar-open-menu-cinemateca" class="navbar-menu-options-open">
                         <div class="navbar-open-triangle"></div>
-                        <a>
+                        <a href="/cinemateca/apresentacao.html">
                             <div class="body-menu-navbar option-menu-container"> Apresentação</div>
                         </a>
                         <a>
@@ -50,8 +28,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="navbar-menu-options">
-                    <a href="javascript:void(0);" onclick="toggleVisibilityElement('#navbar-open-menu-acervo')">
+                <div class="navbar-menu-options" onmouseleave="hideElementAlways('#navbar-open-menu-acervo')">
+                    <a href="/cinemateca/acervo.html" onmouseenter="toggleVisibilityElement('#navbar-open-menu-acervo')">
                         <h3>Acervo Digital</h3>
                     </a>
                     <div id="navbar-open-menu-acervo" class="navbar-menu-options-open">
@@ -68,12 +46,12 @@
                     </div>
                 </div>
                 <div class="navbar-menu-options">
-                    <a>
+                    <a href="/cinemateca/noticias.html">
                         <h3>Notícias</h3>
                     </a>
                 </div>
-                <div class="navbar-menu-options">
-                    <a href="javascript:void(0);" onclick="toggleVisibilityElement('#navbar-open-menu-contacts')">
+                <div class="navbar-menu-options" onmouseleave="hideElementAlways('#navbar-open-menu-contacts')">
+                    <a href="/cinemateca/contactos.html" onmouseenter="toggleVisibilityElement('#navbar-open-menu-contacts')">
                         <h3>Contactos</h3>
                     </a>
 
@@ -89,13 +67,14 @@
             </div>
         </div>
 
+        <!-- MenuHamburguer - Side -->
         <div class="navbar-hamburguer-container">
             <div class="navbar-hamburguer">
-                <a>
+                <a href="/cinemateca/index.html">
                     <h3>A Cinemateca</h3>
                 </a>
-                <a>
-                    <div class="body-menu-navbar"> Apresentação</div>
+                <a href="/cinemateca/apresentacao.html">
+                    <div class="body-menu-navbar">Apresentação</div>
                 </a>
 
                 <a>
@@ -111,7 +90,7 @@
                 </a>
             </div>
             <div class="navbar-hamburguer">
-                <a>
+                <a href="/cinemateca/acervo.html">
                     <h3>Acervo Digital</h3>
                 </a>
                 <a>
@@ -125,12 +104,12 @@
                 </a>
             </div>
             <div class="navbar-hamburguer">
-                <a>
+                <a href="/cinemateca/noticias.html">
                     <h3>Notícias</h3>
                 </a>
             </div>
-            <div class="navbar-hamburguer">
-                <a>
+            <div class="navbar-hamburguer navbar-hamburguer-last">
+                <a href="/cinemateca/contactos.html">
                     <h3>Contactos</h3>
                 </a>
                 <a>
@@ -139,13 +118,3 @@
             </div>
         </div>
     </nav>
-
-    <!-- navbar imagem fundo + barra amarela-->
-    <div id="header-container">
-        <img src="images/header-index-total.png" alt="Cinemateca" class="header-image">
-</div>
-
-<script src="js/main.js"></script>
-</body>
-
-</html>

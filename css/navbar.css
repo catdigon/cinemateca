@@ -95,20 +95,38 @@ h3 {
     justify-self: anchor-center;
 }
 
-.navbar-hambuguer a {
-    display: none;
-}
-
 .navbar-hamburguer-container {
     display: none;
     position: fixed;
-    top: 65px;
     width: 100%;
     flex-direction: column;
     align-items: flex-end;
-    right: 7%;
     color: #FCFAF8;
 }
+
+.navbar-hamburguer {
+    padding-top: 1.2rem;
+    background-color: #100c07dc;
+    width: 100%;
+}
+
+.navbar-hamburguer-last{
+    padding-bottom: 1.2rem;
+}
+
+.navbar-hamburguer-container a {
+    color: #FCFAF8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.1rem;
+    margin: 0.2rem;
+}
+
+.navbar-hamburguer-container a:hover {
+    background-color: #FEA017;
+}
+
 
 @media only screen and (max-width: 1470px) {
     h3 {
@@ -199,18 +217,6 @@ h3 {
         top: 12%;
         right: 7%;
     }
-
-    .navbar-hamburguer-container a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #100c07dc;
-        width: 9rem;
-    }
-
-    .navbar-hamburguer-container a:hover {
-        background-color: #FEA017;
-    }
 }
 
 
@@ -230,9 +236,6 @@ h3 {
         right: 7%;
     }
 
-    .navbar-hamburguer-container {
-        top: 55px;
-    }
 }
 
 @media only screen and (max-width: 320px) {

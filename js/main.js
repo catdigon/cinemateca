@@ -8,7 +8,7 @@ function loadComponent(id, file) {
       .catch(error => console.error(`Error loading ${file}:`, error));
 }
 
-/**Load navbar and footer */
+/**Load and place navbar and footer */
 window.addEventListener("DOMContentLoaded", () => {
   loadComponent("navbar-placeholder", "navbar.html");
   loadComponent("footer-placeholder", "footer.html");
@@ -30,21 +30,23 @@ function hideElementAlways(selector) {
   element.style.display = "none";
 }
 
-
+/**Hide Hamburguer if display is large */
 function handleHideHamburguerWhenScreenLarge() {
   var navbarHamburguer = document.querySelector(".navbar-hamburguer-container");
   if (window.innerWidth > 768 && navbarHamburguer) {
     navbarHamburguer.style.display = "none";
   }
 }
-
 /**Logic runs when the page loads 1sr time*/
 document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener('resize', handleHideHamburguerWhenScreenLarge);
 });
 
-var acordionFilters = document.getElementsByClassName("accordion");
+
 var i;
+
+/*Open/Close filters */
+var acordionFilters = document.getElementsByClassName("accordion");
 
 for (i = 0; i < acordionFilters.length; i++) {
   acordionFilters[i].addEventListener("click", function() {
@@ -62,6 +64,7 @@ for (i = 0; i < acordionFilters.length; i++) {
   });
 }
 
+/*Add/Remove ative filters */
 var filterOptions = document.getElementsByClassName('filter-option');
 
 for (i = 0; i < filterOptions.length; i++) {
@@ -72,7 +75,7 @@ for (i = 0; i < filterOptions.length; i++) {
 }
 
 
-//** */
+//**Flip events card*/
 function showCardDetails(cardId) {
   var targetCard = document.querySelector(`#${cardId}`);
   var targetCardBack = document.querySelector(`#${cardId}Back`);
