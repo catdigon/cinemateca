@@ -8,7 +8,7 @@ function loadComponent(id, file) {
       .catch(error => console.error(`Error loading ${file}:`, error));
 }
 
-/**Load and place navbar and footer */
+/**Load and place navbar and footer*/
 window.addEventListener("DOMContentLoaded", () => {
   loadComponent("navbar-placeholder", "navbar.html");
   loadComponent("footer-placeholder", "footer.html");
@@ -30,7 +30,7 @@ function hideElementAlways(selector) {
   element.style.display = "none";
 }
 
-/**Hide Hamburguer if display is large */
+/**Hide Hamburguer if display is large*/
 function handleHideHamburguerWhenScreenLarge() {
   var navbarHamburguer = document.querySelector(".navbar-hamburguer-container");
   if (window.innerWidth > 768 && navbarHamburguer) {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 var i;
 
-/*Open/Close filters */
+/*Open/Close filters*/
 var acordionFilters = document.getElementsByClassName("accordion");
 
 for (i = 0; i < acordionFilters.length; i++) {
@@ -64,7 +64,7 @@ for (i = 0; i < acordionFilters.length; i++) {
   });
 }
 
-/*Add/Remove ative filters */
+/*Add/Remove ative filters*/
 var filterOptions = document.getElementsByClassName('filter-option');
 
 for (i = 0; i < filterOptions.length; i++) {
@@ -74,7 +74,6 @@ for (i = 0; i < filterOptions.length; i++) {
         this.classList.toggle('bold-text');
     });
 }
-
 
 //**Flip events card*/
 function showCardDetails(cardId) {
@@ -97,4 +96,15 @@ document.querySelectorAll('.menu-item').forEach(item => {
       document.querySelectorAll('.menu-item').forEach(i => i.classList.remove('active'));
       this.classList.add('active');
   });
+});
+
+/**Navbar scrool*/
+window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("navbar");
+
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
 });

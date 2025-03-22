@@ -11,6 +11,7 @@
 
 .news-card-class {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .news-date {
@@ -36,35 +37,35 @@
 }
 
 .big-news-container{
-    width: 50rem;
+    width: 50wv;
     margin: 1rem 0
     }
 
 .big-size {
-    width: 50rem;
-    height: 30rem;
+    width: 50vw;
+    height: 30vw;
 }
 
 .medium-news-container {
-    width: 24rem;
+    width: 24vw;
     margin: 1rem 0
 }
 
 .medium-size {
-    width: 24rem;
-    height: 15rem;
+    width: 24vw;
+    height: 15vw;
 }
 
 .small-size {
-    width: 17rem;
-    height: 12rem;
+    width: 17vw;
+    height: 12vw;
 }
 .other-new-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 50rem;
+    max-width: 50vw;
 }
 
 .img-card-container img {
