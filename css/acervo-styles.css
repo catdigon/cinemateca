@@ -13,28 +13,6 @@
     gap: 0.5rem;
 }
 
-/*btns*/
-.btn-return-acervo:before{
-    background-image: url('../Icon/arrow-return.svg');
-}
-
-
-.btn-add:before{
-     background-image: url('../Icon/check.svg');
-}
-
-.btn-remove{
-    border: none;
-}
-
-.btn-remove:before{
-    background-image: url('../Icon/X.svg');
-}
-
-.btn-filter-added::before{
-    background-image: url('../Icon/X.svg');
-}
-
 /*Acordion*/
 .accordion {
     background: none;

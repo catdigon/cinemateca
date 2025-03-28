@@ -121,6 +121,9 @@
                             <label for="fassunto">Assunto</label>
                             <input type="text" id="fassunto" class="form-input" name="Assunto"
                                 placeholder="Qual o motivo do seu contacto?">
+                                <small id="assuntoHelp" class="form-help">
+                                        Recorde-nos o motivo do seu contacto
+                                </small>
                         </div>
 
                         <div class="form-group-line">
@@ -129,12 +132,18 @@
                                 <label for="lname">Nome</label>
                                 <input type="text" id="lname" class="form-input" name="Nome"
                                     placeholder="Como se chama?">
+                                    <small id="nameHelp" class="form-help">
+                                        Não se esqueça de nos dizer o seu nome
+                                </small>
                             </div>
                             <!-- email-->
                             <div class="form-group">
                                 <label for="lmail">Email</label>
                                 <input type="email" id="lmail" class="form-input" autocomplete="on" name="Email"
                                     placeholder="nome@exemplo.com">
+                                    <small id="emailHelp" class="form-help">
+                                        Esqueceu-se de nos deixar o seu email
+                                </small>
                             </div>
                         </div>
                         <!-- mensagem -->
@@ -142,9 +151,13 @@
                             <label for="fmensage">Mensagem</label>
                             <textarea id="fmensage" class="form-input" name="Mensagem" rows="3"
                                 placeholder="Como o podemos ajudar? Se quiser, também pode deixar um elogio!"></textarea>
-                        </div>
+                                <small id="mensageHelp" class="form-help">
+                                    Não se esqueça de nos deixar a sua mensagem
+                            </small>
+                            </div>
                         <!-- privacidade + checkbox -->
-                        <div class="form-group line">
+                        <div class="form-group">
+                            <div class="line">
                             <input class="form-check-input" type="checkbox" value="" id="fcheck">
                             <label class="form-check-label" id="tac" name="Termos e Condições" for="fcheck">Li e aceito
                                 os
@@ -155,11 +168,29 @@
                                     class="form-link">Política de Privacidade</a>.
                             </label>
                         </div>
+                            <small id="mensageHelp" class="form-help">
+                                Lembre-se de ler os documentos
+                        </small>
+                        </div>
                         <!-- botao enviar -->
                         <div class="btn-form-submit">
                             <button type="submit" class="btn-secondary">Enviar</button>
                         </div>
                     </form>
+
+                    <div class="modal-submit">
+                    <div class="line modal-line">
+                        <img src="/cinemateca/images/GIF/Smile.gif" width="120vw" height="120vw">
+                        <div> 
+                            <h6>Recebemos o seu email.</h6>
+                            <p>Iremos entrar em contacto o mais brevemente possível.</p>
+                        </div>
+                        
+                    </div>
+                        <button class="btn-primary btn-icon btn-return-back">                            
+                            Voltar ao acervo digital</button>
+                    </div>
+
                 </div>
             </div>
         </div>

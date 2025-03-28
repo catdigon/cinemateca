@@ -21,6 +21,14 @@
     transition: background-color 0.3s linear;
 }
 
+.btn-primary svg {
+    width: 15px;
+    height: 15px;
+    fill: currentColor;
+    transition: fill 0.3s linear;
+}
+
+
 .btn-secondary {
     min-width: 200px;
     height: 40px;
@@ -86,28 +94,31 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    gap: 3px;
 }
- 
-.btn-icon:before {
-    content: '';
-    position: initial;
-    width: 1rem;
-    height: 1rem;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .btn-icon img {
-    padding-left: 1.5rem; 
-  }
 
-  .btn-filter-added{
+.btn-primary:hover svg{
+    filter: invert(1);
+}
+
+.btn-primary span {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-filter-added{
     border: none;
     background: none;
     font-family: Montserrat;
     font-weight: 600;
     font-variant: small-caps;
   }
+
+.btn-remove{
+    border: none;
+}
 
 @media only screen and (max-width: 320px) {
     .btn-primary,
