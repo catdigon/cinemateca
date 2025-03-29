@@ -29,6 +29,18 @@
 .form-group textarea {
     font-size: 1rem;
     font-weight: 400;
+    color: #fcfaf89c;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+    width: 15px;
+    margin-top: 0;
+}
+
+.form-check-input:checked {
+    background-color: #FEA017;
+    border-color: #FEA017;
 }
 
 .line,
@@ -37,6 +49,7 @@
     flex-direction: row;
     gap: 1rem;
     width: 70%;
+    align-items: center;
 }
 
 .form-input{
@@ -50,6 +63,7 @@
     color: #FF5454;
     font-size: 0.875rem;
     font-style: italic;
+    visibility: hidden;
 }
 
 .form-link{
