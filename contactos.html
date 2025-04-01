@@ -115,7 +115,7 @@
                 <div class="form-inputs">
                     <p class="big-bold">Deixe-nos a sua mensagem</p>
 
-                    <form>
+                    <form id="messageForm">
                         <!-- assunto -->
                         <div class="form-group">
                             <label for="fassunto">Assunto</label>
@@ -129,8 +129,8 @@
                         <div class="form-group-line">
                             <!-- nome -->
                             <div class="form-group">
-                                <label for="lname">Nome</label>
-                                <input type="text" id="lname" class="form-input" name="Nome"
+                                <label for="fname">Nome</label>
+                                <input type="text" id="fname" class="form-input" name="Nome"
                                     placeholder="Como se chama?">
                                     <small id="nameHelp" class="form-help">
                                         Não se esqueça de nos dizer o seu nome
@@ -138,10 +138,10 @@
                             </div>
                             <!-- email-->
                             <div class="form-group">
-                                <label for="lmail">Email</label>
-                                <input type="email" id="lmail" class="form-input" autocomplete="on" name="Email"
+                                <label for="fmail">Email</label>
+                                <input type="email" id="fmail" class="form-input" autocomplete="on" name="Email"
                                     placeholder="nome@exemplo.com">
-                                    <small id="emailHelp" class="form-help">
+                                    <small id="mailHelp" class="form-help">
                                         Esqueceu-se de nos deixar o seu email
                                 </small>
                             </div>
@@ -168,7 +168,7 @@
                                     class="form-link">Política de Privacidade</a>.
                             </label>
                         </div>
-                            <small id="mensageHelp" class="form-help">
+                            <small id="checkHelp" class="form-help">
                                 Lembre-se de ler os documentos
                         </small>
                         </div>
@@ -177,9 +177,10 @@
                             <button type="submit" class="btn-secondary" id="btnSendEmail">Enviar</button>
                         </div>
                     </form>
+                    <div class="submit-modal">
                     <div id="emailSent-placeholder"></div>
                     <div id="emailError-placeholder"></div>
-
+                    </div>
                 </div>
             </div>
         </div>
