@@ -166,10 +166,10 @@ async function validateField(fieldId, errorMensageId) {
   const messageError = document.querySelector(errorMensageId);
   const isEmpty = !formField.value.trim();
 
-   messageError.style.visibility = isEmpty ? "visible" : "hidden";
- 
-   return isEmpty;
-};
+  messageError.style.visibility = isEmpty ? "visible" : "hidden";
+
+  return isEmpty;
+}
 
 /**validate emailField and show error message*/
 async function validateEmail(fieldId, errorMensageId) {
@@ -180,31 +180,49 @@ async function validateEmail(fieldId, errorMensageId) {
   const isEmpty = !inputValue;
   const isEmailInvalid = inputValue && !emailRegulator.test(inputValue)
   const hasError = isEmpty || isEmailInvalid
-  
-    if (isEmpty){
-      messageError.style.visibility = "visible"
-      messageError.textContent = "Esqueceu-se de nos deixar o seu email";
-    } else if (isEmailInvalid) {
-      messageError.style.visibility = "visible"
-      messageError.textContent = "Por favor, insira um e-mail válido."
-    } else {
-      messageError.style.visibility = "hidden"
-    }
- 
-    return hasError;
+
+  if (isEmpty) {
+    messageError.style.visibility = "visible"
+    messageError.textContent = "Esqueceu-se de nos deixar o seu email";
+  } else if (isEmailInvalid) {
+    messageError.style.visibility = "visible"
+    messageError.textContent = "Por favor, insira um e-mail válido."
+  } else {
+    messageError.style.visibility = "hidden"
   }
+
+  return hasError;
+}
 
 /**validate checkboxField and show error message*/
 async function validateCheckbox(fieldId, errorMensageId) {
   const formField = document.querySelector(fieldId);
-  const messageError =  document.querySelector(errorMensageId);
+  const messageError = document.querySelector(errorMensageId);
   const isEmpty = !formField.checked
   const isCheckbox = formField.type === "checkbox";
-  
+
   messageError.style.visibility = isCheckbox && isEmpty ? "visible" : "hidden"
 
   return isEmpty
 }
+
+
+/**Validate on input change */
+document.querySelector("#fassunto").addEventListener("change", (e) => {
+  validateField("#fassunto", "#assuntoHelp")
+})
+document.querySelector("#fname").addEventListener("change", (e) => {
+  validateField("#fname", "#nameHelp")
+})
+document.querySelector("#fmensage").addEventListener("change", (e) => {
+  validateField("#fmensage", "#mensageHelp")
+})
+document.querySelector("#fmail").addEventListener("change", (e) => {
+  validateEmail("#fmail", "#mailHelp")
+})
+document.querySelector("#fcheck").addEventListener("change", (e) => {
+  validateCheckbox("#fcheck", "#checkHelp")
+})
 
 /**Find the trigger and open the modal (messages)*/
 document.querySelector("#btnSendEmail").addEventListener("click", async function (e) {
@@ -250,7 +268,7 @@ function resetForm() {
 
 /**Close positive form and clean values */
 async function returnFormClean() {
-  
+
   const fassuntoError = await validateField("#fassunto", "#assuntoHelp")
   const fnameError = await validateField("#fname", "#nameHelp")
   const fmensageError = await validateField("#fmensage", "#mensageHelp")
