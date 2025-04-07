@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .events-cards {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 0.8rem;
+    margin: 2rem 0;
     overflow: hidden;
 }
 
@@ -94,10 +94,9 @@ text-transform: uppercase;
 }
 
 @media only screen and (max-width: 992px) {
-    
     .event-description{
     display: none;
-}
+    }
 }
 
 

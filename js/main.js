@@ -1,11 +1,15 @@
 /**Load components to pages*/
 async function loadComponent(id, file) {
   await fetch(file)
-    .then(response => response.text())
+    .then(async response => {
+      return await response.text()
+    })
     .then(data => {
       document.getElementById(id).innerHTML = data;
     })
-    .catch(error => console.error(`Error loading ${file}:`, error));
+    .catch(error => {
+      console.error(`Error loading ${file}:`, error)
+    });
 }
 
 /**Load and place navbar and footer*/
@@ -92,7 +96,7 @@ function returnTopFunction() {
 
 document.querySelectorAll('.menu-item').forEach(item => {
   item.addEventListener('click', function (event) {
-    event.preventDefault(); // Evita o recarregamento da página
+    event.preventDefault(); // Prevent load page
     document.querySelectorAll('.menu-item').forEach(i => i.classList.remove('active'));
     this.classList.add('active');
   });
@@ -156,70 +160,51 @@ function searchBtnIcons() {
   });
 }
 
-/**When click submit - validate fields and show error message*/
+/**validate fields and show error message*/
 async function validateField(fieldId, errorMensageId) {
-  const formField = document.querySelector(fieldId)
-  const messageError = document.querySelector(errorMensageId)
+  const formField = document.querySelector(fieldId);
+  const messageError = document.querySelector(errorMensageId);
+  const isEmpty = !formField.value.trim();
 
-  //Verife if its a checkbox
-    const isCheckbox = formField.type === "checkbox";
-    const isEmpty = isCheckbox ? !formField.checked : !formField.value.trim();
-
-  //Validate email
-    const emailRegulator = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const isEmail = document.querySelector("#fmail").value.trim();
-    const emailError = document.querySelector("#mailHelp");
-
-    //If fiedl its empty, show error
-    if (isEmpty) {
-    document.querySelector(".submit-modal").style.display = "flex";
-    await loadComponent("emailError-placeholder", "modal-email-error.html");
-    /*add icon svg*/
-    searchBtnIcons()
-    messageError.style.visibility = "visible";
-
-      formField.addEventListener("input", function () {
-        if (formField.value.trim() !== "") {
-          // If was text, hide the error
-          messageError.style.visibility = "hidden";
-        } else {
-          // If its again empty, show error
-          messageError.style.visibility = "visible";
-        }
-      });
-
-    if (isEmail === "") {
-      mailHelp.style.visibility = "visible";
-      emailError.textContent = "Esqueceu-se de nos deixar o seu email";
-    } 
-    else if (!emailRegulator.test(isEmail)) {
-      mailHelp.style.visibility = "visible";
-      emailError.textContent = "Por favor, insira um e-mail válido.";
-      }
-    else {
-      mailHelp.style.visibility = "hidden";
-      emailError.textContent = "Esqueceu-se de nos deixar o seu email";
-   };
-
-    if (isCheckbox) {
-      formField.addEventListener("input", function() {
-        if (formField.checked) {
-          messageError.style.visibility = "hidden";
-        }
-        else {
-          // If its again empty, show error
-          messageError.style.visibility = "visible";
-        }
-      });
-    }
-
-    return true;
-  }
-
-  document.querySelector(".submit-modal").style.display = "flex";
-  return false;
+   messageError.style.visibility = isEmpty ? "visible" : "hidden";
+ 
+   return isEmpty;
 };
 
+/**validate emailField and show error message*/
+async function validateEmail(fieldId, errorMensageId) {
+  const emailRegulator = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const inputValue = document.querySelector(fieldId).value.trim();
+  const messageError = document.querySelector(errorMensageId);
+
+  const isEmpty = !inputValue;
+  const isEmailInvalid = inputValue && !emailRegulator.test(inputValue)
+  const hasError = isEmpty || isEmailInvalid
+  
+    if (isEmpty){
+      messageError.style.visibility = "visible"
+      messageError.textContent = "Esqueceu-se de nos deixar o seu email";
+    } else if (isEmailInvalid) {
+      messageError.style.visibility = "visible"
+      messageError.textContent = "Por favor, insira um e-mail válido."
+    } else {
+      messageError.style.visibility = "hidden"
+    }
+ 
+    return hasError;
+  }
+
+/**validate checkboxField and show error message*/
+async function validateCheckbox(fieldId, errorMensageId) {
+  const formField = document.querySelector(fieldId);
+  const messageError =  document.querySelector(errorMensageId);
+  const isEmpty = !formField.checked
+  const isCheckbox = formField.type === "checkbox";
+  
+  messageError.style.visibility = isCheckbox && isEmpty ? "visible" : "hidden"
+
+  return isEmpty
+}
 
 /**Find the trigger and open the modal (messages)*/
 document.querySelector("#btnSendEmail").addEventListener("click", async function (e) {
@@ -228,14 +213,22 @@ document.querySelector("#btnSendEmail").addEventListener("click", async function
 
   const fassuntoError = await validateField("#fassunto", "#assuntoHelp")
   const fnameError = await validateField("#fname", "#nameHelp")
-  const fmailError = await validateField("#fmail", "#mailHelp")
   const fmensageError = await validateField("#fmensage", "#mensageHelp")
-  const fcheckError = await validateField("#fcheck", "#checkHelp")
+  const fmailError = await validateEmail("#fmail", "#mailHelp")
+  const fcheckError = await validateCheckbox("#fcheck", "#checkHelp")
 
+  //open modal
+  document.querySelector(".submit-modal").style.display = "flex";
+
+  //error
   if (fassuntoError || fnameError || fmailError || fmensageError || fcheckError) {
+    await loadComponent("emailError-placeholder", "modal-email-error.html");
+    /*add icon svg*/
+    searchBtnIcons()
     return;
   }
 
+  //submited
   await loadComponent("emailSent-placeholder", "modal-email-sent.html");
   /*add icon svg*/
   searchBtnIcons()
@@ -255,13 +248,14 @@ function resetForm() {
   form.reset();
 }
 
+/**Close positive form and clean values */
 async function returnFormClean() {
   
   const fassuntoError = await validateField("#fassunto", "#assuntoHelp")
   const fnameError = await validateField("#fname", "#nameHelp")
-  const fmailError = await validateField("#fmail", "#mailHelp")
   const fmensageError = await validateField("#fmensage", "#mensageHelp")
-  const fcheckError = await validateField("#fcheck", "#checkHelp")
+  const fmailError = await validateEmail("#fmail", "#mailHelp")
+  const fcheckError = await validateCheckbox("#fcheck", "#checkHelp")
 
   if (fassuntoError || fnameError || fmailError || fmensageError || fcheckError) {
     return;
@@ -270,4 +264,5 @@ async function returnFormClean() {
   resetForm();
   closeModal();
 }
+
 

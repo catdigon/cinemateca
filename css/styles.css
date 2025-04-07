@@ -82,7 +82,7 @@ ol.custom-list-acervo li::before {
     flex-direction: column;
     align-items: flex-end;
     padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .news-card-container {

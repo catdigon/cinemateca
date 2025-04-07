@@ -47,11 +47,12 @@
     <div class="board-container">
         <nav class="filters-menu-container" role="complementary">
             <!-- botao voltar atrás-->
-            <button class="btn-primary btn-icon btn-return-back">Voltar ao acervo digital</button>
+            <button class="btn-primary btn-icon btn-return-back" onclick="history.back()">Voltar ao acervo digital</button>
 
             <!-- form pesquisa-->
             <form class="form-inline">
-                <input class="form-search body-small" type="search" placeholder="Pesquisar ..." role="search" aria-label="Search">
+                <input id="search-form" class="body-small" type="search" placeholder="Pesquisar ..." role="search"
+                    aria-label="Search">
             </form>
 
             <!-- filtros categoria obras-->
