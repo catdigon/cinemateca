@@ -67,6 +67,7 @@ h3 {
 }
 
 .navbar-menu-icon {
+    margin-top: 2vw;
     display: none;
 }
 
@@ -81,9 +82,15 @@ h3 {
     height: 160px;
 }
 
-.navbar-menu-icon img {
+.navbar-menu-icon svg {
+    fill: #FCFAF8;
     height: 30px;
-    margin-top: 2.4rem;
+    transition: all 0.2s linear;
+}
+
+.navbar-menu-icon svg:hover {
+    fill: #FEA017;
+    transition: all 0.2s linear;
 }
 
 #navbar .navbar-open-triangle {
@@ -106,7 +113,6 @@ h3 {
     background: #fea217;
 }
 
-
 #navbar .navbar-menu-options-open {
     display: none;
     flex-direction: column;
@@ -123,6 +129,7 @@ h3 {
     color: #FCFAF8;
 }
 
+.close-hamburguer-container,
 .navbar-hamburguer {
     padding-top: 1.2rem;
     background-color: #100c07dc;
@@ -142,10 +149,34 @@ h3 {
     margin: 0.2rem;
 }
 
-.navbar-hamburguer-container a:hover {
-    background-color: #FEA017;
+.navbar-hamburguer a:hover {
+    background-color: #fea217d4;
+    transition: all 0.4s linear;
 }
 
+.close-hamburguer-container{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2vw;
+    padding-right: 6.5vw;
+}
+
+.close-hamburguer-icon{
+    width: 1.3rem;
+}
+
+.hamburguer-hover svg{
+    fill: #FCFAF8;
+    stroke: #FCFAF8;
+    stroke-width: 0.5px;
+    transition: all 0.2s linear;
+}
+
+.hamburguer-hover svg:hover{
+    fill: #FEA017;
+    stroke: #FEA017;
+    transition: all 0.2s linear;
+}
 
 @media only screen and (max-width: 1470px) {
     h3 {

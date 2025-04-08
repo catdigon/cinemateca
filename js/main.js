@@ -21,10 +21,13 @@ window.addEventListener("DOMContentLoaded", () => {
 /**Change: Show/Hide the elements on Menu/Navbar*/
 function toggleVisibilityElement(selector) {
   var element = document.querySelector(selector);
+  const icon = document.querySelector(".navbar-menu-icon")
   if (element.style.display === "flex") {
     element.style.display = "none";
+    icon.style.opacity = "1"
   } else {
     element.style.display = "flex";
+    icon.style.opacity = "0"
   }
 }
 
@@ -45,7 +48,6 @@ function handleHideHamburguerWhenScreenLarge() {
 document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener('resize', handleHideHamburguerWhenScreenLarge);
 });
-
 
 var i;
 

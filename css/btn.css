@@ -63,6 +63,12 @@
     cursor: pointer; 
   }
 
+#btn-none{
+    all: unset;
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+}
 
 .filtros-cartegories {
     border: none;

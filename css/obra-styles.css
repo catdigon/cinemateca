@@ -1,13 +1,17 @@
-.video-container {
+.video-main-container{
+    width: 100%;
     position: relative;
-    margin: auto; 
-    top: 0; 
-    width: 80%;
-    max-height: 45rem;
-    overflow: hidden;
+    margin-top: -17vw;
+    margin-bottom: 3vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.video-container {
+    top: 0; 
+    max-width: 80%;
+    max-height: 45rem;
+    overflow: hidden;
 }
 
 .video-container video {
@@ -142,5 +146,35 @@
 .btn-container{
     display: flex;
     justify-content: flex-end;
-    margin: 1.5rem 0 2.5rem 0;
+    margin: 2rem 0 5rem 0;
+}
+
+@media (max-width: 768px) {
+    .page-layout-container {
+        display: flex;
+        flex-direction: column;  
+     }
+
+     .lateral-container{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        padding: 3rem 1rem 3rem 6rem;
+     }
+
+     .ficha-tecnica {
+        padding: 0;
+    }
+
+     .product-description-container {
+        width: 90%;
+    }
+
+     .news-container {
+        width: 90%;
+     }
+
+     .news-cards-container {
+        flex-wrap: unset;
+     }
 }
