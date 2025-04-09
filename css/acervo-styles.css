@@ -108,9 +108,9 @@
 .obra-card {
     position: relative;
     flex: 0.5 0.5 14.5rem;
-    max-width: 14.5vw;
-    margin: 1rem;
-    height: 18vw;
+    width: 14rem;
+    margin: 1vw;
+    height: 18rem;
     overflow: hidden;
 }
 

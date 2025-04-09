@@ -73,7 +73,7 @@ ol.custom-list-acervo li::before {
 }
 
 .btn-container-acervo {
-    padding-top: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 /*News - Index page*/

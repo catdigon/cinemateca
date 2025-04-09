@@ -70,7 +70,7 @@
     cursor: pointer;
 }
 
-.filtros-cartegories {
+.filtros-categories {
     border: none;
     height: 40px;
     background-color: #C9C8C8;
@@ -82,13 +82,13 @@
     line-height: 162%;
 }
 
-.filtros-cartegories:hover {
+.filtros-categories:hover {
     background-color: #100C07;
     color: #FCFAF8;
     transition: background-color 0.4s ease;
 }
 
-.filtros-cartegories.ative {
+.filtros-categories.active {
     background-color: #100C07;
     color: #FCFAF8;
 }
@@ -132,10 +132,23 @@
     border: none;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 992px) {
+    .filtros-categories {
+        height: 30px;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .btn-primary,
     .btn-secondary {
         width: 100px;
         height: 40px;
     }
+
+    .filtros-categories {
+        height: 25px;
+        font-size: 0.65rem;
+    }
+
 }

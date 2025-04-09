@@ -45,9 +45,9 @@
 
 
     <div class="board-container">
-        <nav class="filters-menu-container" role="complementary">
+        <nav id="filters-modal" class="filters-menu-container" role="complementary">
             <!-- botao voltar atrás-->
-            <button class="btn-primary btn-icon btn-return-back" onclick="history.back()">Voltar ao acervo digital</button>
+            <button class="btn-primary btn-icon btn-return-back" id="btn-return-back" onclick="history.back()">Voltar ao acervo digital</button>
 
             <!-- form pesquisa-->
             <form class="form-inline">
@@ -57,10 +57,10 @@
 
             <!-- filtros categoria obras-->
             <div class="btn-categories-container">
-                <button class="btn-filters filtros-cartegories ative">Ver tudo</button>
-                <button class="btn-filters filtros-cartegories">Filme</button>
-                <button class="btn-filters filtros-cartegories">Imagem</button>
-                <button class="btn-filters filtros-cartegories">Texto</button>
+                <button class="btn-filters filtros-categories active">Ver tudo</button>
+                <button class="btn-filters filtros-categories">Filme</button>
+                <button class="btn-filters filtros-categories">Imagem</button>
+                <button class="btn-filters filtros-categories">Texto</button>
             </div>
 
             <!-- form autocomplete titulo-->
@@ -198,7 +198,7 @@
             <!-- botoes aplicar/remover filtro -->
 
             <div class="add-remove-btn-container">
-                <button class="btn-primary btn-icon btn-x">Remover filtros</button>
+                <button class="btn-primary btn-icon btn-x" id="btn-remove">Remover filtros</button>
             </div>
         </nav>
 

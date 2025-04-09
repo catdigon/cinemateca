@@ -44,10 +44,34 @@ function handleHideHamburguerWhenScreenLarge() {
     navbarHamburguer.style.display = "none";
   }
 }
+
 /**Logic runs when the page loads 1sr time*/
 document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener('resize', handleHideHamburguerWhenScreenLarge);
 });
+
+
+/**Hide text if display is small*/
+//function handleReduceText(elementId, newText) {
+  //var textElement = document.querySelector(elementId);
+  //var defaultTextElement = textElement.textContent;
+
+  //function updateText (){
+  //  if (window.innerWidth < 768) {
+    //  textElement.textContent = newText;
+   // } else {
+   //   textElement.textContent = defaultTextElement
+   // }
+  // }
+
+  // window.addEventListener("resize", updateText)
+
+  // updateText()
+ //}
+
+// handleReduceText("#btn-return-back", "Voltar atrás")
+//handleReduceText("#btn-remove", "Remover")
+
 
 var i;
 
@@ -96,6 +120,7 @@ function returnTopFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+//Change (navigate) - lateral menu
 document.querySelectorAll('.menu-item').forEach(item => {
   item.addEventListener('click', function (event) {
     event.preventDefault(); // Prevent load page
@@ -103,6 +128,48 @@ document.querySelectorAll('.menu-item').forEach(item => {
     this.classList.add('active');
   });
 });
+
+//Change filters (contacts and acervo)
+document.querySelectorAll('.filtros-categories').forEach(item => {
+  item.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent load page
+    document.querySelectorAll('.filtros-categories').forEach(i => i.classList.remove('active'));
+    this.classList.add('active');
+
+    const filterText = this.textContent.trim();
+    console.log("botão clicado diz", filterText)
+
+    searchLabelContent(filterText)
+  });
+});
+
+
+function searchLabelContent(filterContent) {
+  const contentLabel = document.querySelectorAll(".card-detail-yellow")
+  const newArticles = document.querySelectorAll(".new-search")
+
+  if (filterContent === "Ver tudo") {
+    newArticles.forEach(article => {
+    article.style.display = "block";  
+    })
+    return;
+  }
+
+  contentLabel.forEach((label, index) => {
+    const labelText = label.textContent.trim();
+    const article = newArticles[index];
+ 
+  article.style.display = "block";
+    
+  if (labelText === filterContent) {
+   
+  } else {
+    article.style.display = "none";
+    return
+  }
+  })
+}
+
 
 /**Navbar scrool*/
 window.addEventListener("scroll", function () {
