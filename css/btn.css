@@ -59,7 +59,7 @@
 #btn-top{
     border: none;
     background: none;
-    color: white; 
+    color: #FCFAF8; 
     cursor: pointer; 
   }
 
@@ -131,6 +131,15 @@
 .btn-remove{
     border: none;
 }
+
+.btn-clean{
+    border: none;
+    font-size: 0.8rem;
+    color: #FCFAF8;
+    background-color: rgba(0, 0, 0, 0);
+    padding-block: 0px;
+}
+
 
 @media only screen and (max-width: 992px) {
     .filtros-categories {

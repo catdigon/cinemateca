@@ -58,7 +58,8 @@
     padding: 1.3rem;
     display: flex;
     gap: 0.4rem;
-    color: #100C07
+    color: #100C07;
+    background-color: #d9d9d9aa;
 }
 
 .card-type,

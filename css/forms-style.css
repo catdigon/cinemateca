@@ -74,7 +74,9 @@
     display: flex;
     margin-top: 1.5rem;
     width: 70%;
+    gap: 1rem;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .modal-submit {

@@ -40,8 +40,10 @@ function hideElementAlways(selector) {
 /**Hide Hamburguer if display is large*/
 function handleHideHamburguerWhenScreenLarge() {
   var navbarHamburguer = document.querySelector(".navbar-hamburguer-container");
+  const icon = document.querySelector(".navbar-menu-icon")
   if (window.innerWidth > 768 && navbarHamburguer) {
     navbarHamburguer.style.display = "none";
+    icon.style.opacity = "1"
   }
 }
 
@@ -137,39 +139,40 @@ document.querySelectorAll('.filtros-categories').forEach(item => {
     this.classList.add('active');
 
     const filterText = this.textContent.trim();
-    console.log("botão clicado diz", filterText)
+    console.log("BTN says", filterText)
 
-    searchLabelContent(filterText)
+    searchLabelContent(filterText, ".card-detail-yellow", ".new-search");
+    searchLabelContent(filterText, "#film-category", ".obra-card");
   });
 });
 
-
-function searchLabelContent(filterContent) {
-  const contentLabel = document.querySelectorAll(".card-detail-yellow")
-  const newArticles = document.querySelectorAll(".new-search")
+    
+    
+function searchLabelContent(filterContent, contentId, AreaId) {
+  const contentLabel = document.querySelectorAll(contentId)
+  const contentArea = document.querySelectorAll(AreaId)
 
   if (filterContent === "Ver tudo") {
-    newArticles.forEach(article => {
-    article.style.display = "block";  
+    contentArea.forEach(content => {
+      content.style.display = "flex";  
     })
     return;
   }
 
   contentLabel.forEach((label, index) => {
     const labelText = label.textContent.trim();
-    const article = newArticles[index];
+    const content = contentArea[index];
  
-  article.style.display = "block";
+    content.style.display = "flex";
     
   if (labelText === filterContent) {
    
   } else {
-    article.style.display = "none";
+    content.style.display = "none";
     return
   }
   })
 }
-
 
 /**Navbar scrool*/
 window.addEventListener("scroll", function () {
