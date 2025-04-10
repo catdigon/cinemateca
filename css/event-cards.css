@@ -59,7 +59,8 @@
     display: flex;
     gap: 0.4rem;
     color: #100C07;
-    background-color: #d9d9d9aa;
+    background: rgb(217,217,217);
+    background: radial-gradient(ellipse, rgba(217,217,217,1) 25%, rgba(217,217,217,0) 70%);
 }
 
 .card-type,

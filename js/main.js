@@ -146,29 +146,31 @@ document.querySelectorAll('.filtros-categories').forEach(item => {
   });
 });
 
-    
-    
+ 
 function searchLabelContent(filterContent, contentId, AreaId) {
-  const contentLabel = document.querySelectorAll(contentId)
-  const contentArea = document.querySelectorAll(AreaId)
+  const contentLabel = document.querySelectorAll(contentId);
+  const contentArea = document.querySelectorAll(AreaId);
+  const pagination = document.querySelector(".pagination")
+
 
   if (filterContent === "Ver tudo") {
     contentArea.forEach(content => {
       content.style.display = "flex";  
-    })
+      pagination.style.display = "flex";
+    });
     return;
   }
 
   contentLabel.forEach((label, index) => {
     const labelText = label.textContent.trim();
     const content = contentArea[index];
- 
-    content.style.display = "flex";
-    
+     
   if (labelText === filterContent) {
-   
+   content.style.display = "flex";
+   pagination.style.display = "none";
   } else {
     content.style.display = "none";
+    pagination.style.display = "none";
     return
   }
   })
@@ -341,7 +343,7 @@ function resetForm() {
 }
 
 document.getElementById("btnCleanForm").addEventListener("click" , function(event) {
-  event.preventDefault();
+  event.preventDefault(); // Prevent load page
   resetForm()
 })
 
