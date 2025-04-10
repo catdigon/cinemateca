@@ -335,8 +335,15 @@ function closeModal() {
 /**Clean values if the form is submited */
 function resetForm() {
   const form = document.querySelector("#messageForm");
-  form.reset();
+  const messageError = document.querySelector("#mensageHelp");
+  form.reset(); 
+  messageError.style.visibility = "hidden";
 }
+
+document.getElementById("btnCleanForm").addEventListener("click" , function(event) {
+  event.preventDefault();
+  resetForm()
+})
 
 /**Close positive form and clean values */
 async function returnFormClean() {
