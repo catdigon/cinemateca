@@ -40,7 +40,7 @@ function hideElementAlways(selector) {
 /**Hide Hamburguer if display is large*/
 function handleHideHamburguerWhenScreenLarge() {
   var navbarHamburguer = document.querySelector(".navbar-hamburguer-container");
-  const icon = document.querySelector(".navbar-menu-icon")
+  const icon = document.querySelector("#navbar-hamburguer-icon")
   if (window.innerWidth > 768 && navbarHamburguer) {
     navbarHamburguer.style.display = "none";
     icon.style.opacity = "1"

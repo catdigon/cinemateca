@@ -55,7 +55,7 @@ h3 {
     padding: 1.5vw 1.5vw 0 1.5vw;
 }
 
-#navbar a h3:hover {
+#navbar-menu a h3:hover {
     color: #FEA017;
 }
 
@@ -129,8 +129,7 @@ h3 {
     display: none;
     position: fixed;
     width: 100%;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: column !important;
     color: #FCFAF8;
 }
 
@@ -154,9 +153,14 @@ h3 {
     margin: 0.2rem;
 }
 
+.navbar-hamburguer-container menu{
+    flex-direction: column !important;
+}
+
 .navbar-hamburguer a:hover {
     background-color: #fea217d4;
     transition: all 0.4s linear;
+    width: 100%;
 }
 
 .close-hamburguer-container{
@@ -182,6 +186,18 @@ h3 {
     stroke: #FEA017;
     transition: all 0.2s linear;
 }
+
+#navbar menu, 
+#navbar li {
+    all: unset; 
+    display: flex;
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    unicode-bidi: isolate;
+    justify-content: center;
+  }
 
 @media only screen and (max-width: 992px) {
     .body-menu-navbar {

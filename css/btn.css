@@ -1,10 +1,9 @@
 /*Botons*/
-.btn-primary {
+.btn-primary,
+.btn-secondary{
+    max-width: 200px;
     min-width: 200px;
     height: 40px;
-    color: #100C07;
-    border: 2px solid #100C07;
-    font-family: Afacad;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -12,6 +11,15 @@
     text-transform: uppercase;
     border-radius: 0;
     transition: background-color 0.3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    color: #100C07;
+    border: 2px solid #100C07;
+    font-family: Afacad;
 }
 
 .btn-primary:hover {
@@ -22,19 +30,9 @@
 }
 
 .btn-secondary {
-    min-width: 200px;
-    height: 40px;
     background-color: #100C07;
     color: #FCFAF8;
     border: 2px solid #FCFAF8;
-    font-family: Afacad;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-    border-radius: 0;
-    transition: background-color 0.3s linear;
 }
 
 .btn-secondary:hover {
@@ -52,8 +50,28 @@
 }
 
 .btn-primary svg path,
-.btn-secondary svg path {
+.btn-secondary svg path,
+.btn-primary:hover svg path,
+.btn-secondary:hover svg path{
     fill: currentColor;
+}
+
+.btn-primary span, 
+.btn-secondary span {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-icon {
+    max-width: 300px;
+    margin-top: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 3px;
 }
 
 #btn-top{
@@ -98,28 +116,6 @@
     background: none;
 }
 
-.btn-icon {
-    margin-top: 0rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    gap: 3px;
-}
-
-.btn-primary:hover svg path,
-.btn-secondary:hover svg path{
-    fill: currentColor;
-}
-
-.btn-primary span, 
-.btn-secondary span {
-    all: unset;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .btn-filter-added{
     border: none;
     background: none;
@@ -132,32 +128,14 @@
     border: none;
 }
 
+.btn-none{
+    all: unset;
+}
+
 .btn-clean{
     border: none;
     font-size: 0.8rem;
     color: #FCFAF8;
     background-color: rgba(0, 0, 0, 0);
     padding-block: 0px;
-}
-
-
-@media only screen and (max-width: 992px) {
-    .filtros-categories {
-        height: 30px;
-        font-size: 0.8rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .btn-primary,
-    .btn-secondary {
-        width: 100px;
-        height: 40px;
-    }
-
-    .filtros-categories {
-        height: 25px;
-        font-size: 0.65rem;
-    }
-
 }

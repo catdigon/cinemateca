@@ -97,11 +97,6 @@
     width: 83%;
 }
 
-.icone-dot {
-    filter: invert(99);
-    width: 0.3rem;
-}
-
 .country h3{
     margin-bottom: 0rem;
 }
@@ -114,7 +109,7 @@
 .generate-pdf,
 .social-media-share {
     display: flex;
-    gap: 0.4rem;
+    gap: 0.5rem;
 }
 
 .share-container p{

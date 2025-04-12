@@ -92,6 +92,8 @@
 
 .filters-added{
     padding: 1rem 0rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .btn-filter-added:hover{

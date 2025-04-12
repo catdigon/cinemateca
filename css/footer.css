@@ -51,7 +51,6 @@ h6:hover,
 #footer-container .footer-menu {
     display: flex;
     gap: 4%;
-    width: 100%;
     justify-content: center;
     margin-inline-start: 5vw;
 }
@@ -70,6 +69,12 @@ h6:hover,
     border-top: 1px solid #FCFAF8;
     margin-bottom: 1.5rem;
 }
+
+footer ul, 
+footer li {
+    all: unset; 
+    width: 100%;
+  }
 
 @media only screen and (max-width: 768px) {
 

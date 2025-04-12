@@ -4,25 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nesta página é possível aceder aos arquivos em acervo digital.">
+</head>
 
-    <title>Acervo Digital</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+<title>Acervo Digital</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
 
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/breadcrumb.css">
-    <link rel="stylesheet" href="css/btn.css">
-    <link rel="stylesheet" href="css/search.css">
-    <link rel="stylesheet" href="css/pagination.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/acervo-styles.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/breadcrumb.css">
+<link rel="stylesheet" href="css/btn.css">
+<link rel="stylesheet" href="css/search.css">
+<link rel="stylesheet" href="css/pagination.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/acervo-styles.css">
 </head>
 
 <body>
@@ -45,14 +47,15 @@
 
 
     <div class="board-container">
-        <nav id="filters-modal" class="filters-menu-container" role="complementary">
+        <div role="toolbar" aria-label="Filter controls" class="filters-menu-container">
             <!-- botao voltar atrás-->
-            <button class="btn-primary btn-icon btn-return-back" id="btn-return-back" onclick="history.back()">Voltar ao acervo digital</button>
+            <button class="btn-primary btn-icon btn-return-back" id="btn-return-back" onclick="history.back()">Voltar ao
+                acervo digital</button>
 
             <!-- form pesquisa-->
-            <form class="form-inline">
-                <input id="search-form" class="body-small" type="search" placeholder="Pesquisar ..." role="search"
-                    aria-label="Search">
+            <form class="form-inline" role="search">
+                <input id="search-form" class="body-small" type="search" placeholder="Pesquisar ..."
+                    aria-label="Pesquisar no site">
             </form>
 
             <!-- filtros categoria obras-->
@@ -68,7 +71,8 @@
                 <div class="filter-title">
                     <p>Título</p>
                 </div>
-                <input id="search-form" class="body-small" type="search" placeholder="Pesquisar título" aria-label="Search">
+                <input id="search-form" class="body-small" type="search" placeholder="Pesquisar título"
+                    aria-label="Search">
             </form>
 
             <!-- form autocomplete assunto-->
@@ -76,7 +80,8 @@
                 <div class="filter-title">
                     <p>Assunto</p>
                 </div>
-                <input id="search-form" class="body-small" type="search" placeholder="Pesquisar assunto" aria-label="Search">
+                <input id="search-form" class="body-small" type="search" placeholder="Pesquisar assunto"
+                    aria-label="Search">
             </form>
 
             <!-- form dropdown ano -->
@@ -84,15 +89,18 @@
                 <div class="filter-title">
                     <p>Ano</p>
                 </div>
-                <input id="search-form" class="body-small" type="search" placeholder="Selecionar ano" aria-label="Search">
+                <input id="search-form" class="body-small" type="search" placeholder="Selecionar ano"
+                    aria-label="Search">
             </form>
 
 
             <!-- filtros dropdown colecao -->
             <div class="accordion-container">
-                <button class="accordion" aria-expanded="false" role="listbox" aria-multiselectable="true" aria-labelledby="filter-label">Coleção</button>
-                <div class="accordion-filters">
-                    <button class="btn-filter-accordion filter-option add-filter bold-text" role="option" aria-selected="false" tabindex="0">
+                <button class="accordion" role="button" aria-expanded="false" aria-controls="filtros-colecao"
+                    aria-label="Filtrar por coleção"> <span id="filter-colecao">Coleção</span></button>
+                <div class="accordion-filters" role="listbox" aria-labelledby="filter-colecao">
+                    <button class="btn-filter-accordion filter-option add-filter bold-text" role="option"
+                        aria-selected="true" tabindex="0">
                         <p class="body-small">FilMar</p>
                     </button>
                     <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
@@ -107,14 +115,15 @@
                     <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Fotografias de Rodagem</p>
                     </button>
-                    <button class="btn-filter-accordion">
+                    <button class="btn-filter-accordion"role="option" aria-selected="false" tabindex="0">
                         <p class="subtitle">Ver mais...</p>
                     </button>
                 </div>
 
                 <!-- filtros dropdown genero -->
-                <button class="accordion" aria-expanded="false" role="listbox" aria-multiselectable="true" aria-labelledby="filter-label">Género</button>
-                <div class="accordion-filters">
+                <button class="accordion" role="button" aria-expanded="false" aria-controls="filtros-genero"
+                    aria-label="Filtrar por género"> <span id="filter-genero">Género</span> </button>
+                <div class="accordion-filters" role="listbox" aria-labelledby="filter-genero">
                     <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Animação</p>
                     </button>
@@ -130,10 +139,12 @@
                 </div>
 
                 <!-- filtros dropdown tipo documentacao -->
-                <button class="accordion" aria-expanded="false" role="listbox" aria-multiselectable="true" aria-labelledby="filter-label">Tipo de Documentação</button>
-                <div class="accordion-filters">
+                <button class="accordion" role="button" aria-expanded="false" aria-controls="filtros-tipo-documentaçao"
+                    aria-label="Filtrar por tipo de documentacao"> <span id="filter-document">Tipo de
+                        Documentação</span></button>
+                <div class="accordion-filters" role="listbox" aria-labelledby="filter-document">
                     <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
-                        <p>Fotografias</p> 
+                        <p>Fotografias</p>
                     </button>
                     <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Lobby Cards</p>
@@ -153,15 +164,16 @@
                 </div>
 
                 <!-- filtros dropdown formato -->
-                <button class="accordion" aria-expanded="false" role="listbox" aria-multiselectable="true" aria-labelledby="filter-label">Formato</button>
-                <div class="accordion-filters">
+                <button class="accordion" role="button" aria-expanded="false" aria-controls="filtros-formato"
+                    aria-label="Filtrar por formato"><span id="filter-formato">Formato</span></button>
+                <div class="accordion-filters" role="listbox" aria-labelledby="filter-formato">
                     <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Vídeo</p>
                     </button>
                     <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Analógico</p>
                     </button>
-                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0"> 
+                    <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>35 mm</p>
                     </button>
                     <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
@@ -172,8 +184,9 @@
                     </button>
                 </div>
                 <!-- filtros dropdown cor -->
-                <button class="accordion" aria-expanded="false" role="listbox" aria-multiselectable="true" aria-labelledby="filter-label">Cor</button>
-                <div class="accordion-filters">
+                <button class="accordion" role="button" aria-expanded="false" aria-controls="filtros-cor"
+                    aria-label="Filtrar por cor"><span id="filter-cor">Cor</span></button>
+                <div class="accordion-filters" role="listbox" aria-labelledby="filter-cor">
                     <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Preto e Branco (PB)</p>
                     </button>
@@ -185,8 +198,10 @@
                     </button>
                 </div>
                 <!-- filtros dropdown som -->
-                <button class="accordion" aria-expanded="false" role="listbox" aria-multiselectable="true" aria-labelledby="filter-label">Som</button>
-                <div class="accordion-filters">
+                <button class="accordion" role="button" aria-expanded="false" aria-controls="filtros-som"
+                    aria-label="Filtrar por som"> <span id="filter-som">Som</span></button>
+
+                <div class="accordion-filters" role="listbox" aria-labelledby="filter-som">
                     <button class="btn-filter-accordion filter-option" role="option" aria-selected="false" tabindex="0">
                         <p>Com som</p>
                     </button>
@@ -200,13 +215,28 @@
             <div class="add-remove-btn-container">
                 <button class="btn-primary btn-icon btn-x" id="btn-remove">Remover filtros</button>
             </div>
-        </nav>
+        </div>
 
 
         <main id="main-container">
-            <!-- barra filtros adicionados -->
             <div class="results-container">
+
+                <!--btn to open filters when mobile-->
+                <button class="btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Filtros</button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <nav id="filters-mobile"> </nav>
+                </div>
+
+                <!-- barra filtros adicionados -->
                 <div class="filters-added">
+
                     <button class="btn-icon btn-x btn-filter-added">FilMar</button>
                 </div>
                 <!-- card obras - nome+autor+ano -->
@@ -222,7 +252,14 @@
                             </div>
                             <div class="obra-info">
                                 <p>Perdigão Queiroga</p>
-                                <img src="Icon/dot.svg" class="icone-dot">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                    viewBox="0 0 3 3" fill="none">
+                                    <g id="Ã&shy;cone/dot">
+                                        <path id="Vector"
+                                            d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                            fill="#FCFAF8" />
+                                    </g>
+                                </svg>
                                 <p>1967</p>
                                 <p style="display: none" id="film-category">Filme</p>
                             </div>
@@ -239,7 +276,14 @@
                             </div>
                             <div class="obra-info">
                                 <p>Adolfo Celho</p>
-                                <img src="Icon/dot.svg" class="icone-dot">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                    viewBox="0 0 3 3" fill="none">
+                                    <g id="Ã&shy;cone/dot">
+                                        <path id="Vector"
+                                            d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                            fill="#FCFAF8" />
+                                    </g>
+                                </svg>
                                 <p>1939</p>
                                 <p style="display: none" id="film-category">Filme</p>
                             </div>
@@ -256,7 +300,14 @@
                             </div>
                             <div class="obra-info">
                                 <p>F. Carneiro Mendes</p>
-                                <img src="Icon/dot.svg" class="icone-dot">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                    viewBox="0 0 3 3" fill="none">
+                                    <g id="Ã&shy;cone/dot">
+                                        <path id="Vector"
+                                            d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                            fill="#FCFAF8" />
+                                    </g>
+                                </svg>
                                 <p>1940</p>
                                 <p style="display: none" id="film-category">Filme</p>
                             </div>
@@ -272,7 +323,14 @@
                             </div>
                             <div class="obra-info">
                                 <p>Aníbal Contreiras</p>
-                                <img src="Icon/dot.svg" class="icone-dot">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                    viewBox="0 0 3 3" fill="none">
+                                    <g id="Ã&shy;cone/dot">
+                                        <path id="Vector"
+                                            d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                            fill="#FCFAF8" />
+                                    </g>
+                                </svg>
                                 <p>1930</p>
                                 <p style="display: none" id="film-category">Imagem</p>
                             </div>
@@ -289,7 +347,14 @@
                             </div>
                             <div class="obra-info">
                                 <p>Henrique Alegria</p>
-                                <img src="Icon/dot.svg" class="icone-dot">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                    viewBox="0 0 3 3" fill="none">
+                                    <g id="Ã&shy;cone/dot">
+                                        <path id="Vector"
+                                            d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                            fill="#FCFAF8" />
+                                    </g>
+                                </svg>
                                 <p>1922</p>
                                 <p style="display: none" id="film-category">Imagem</p>
                             </div>
@@ -306,7 +371,14 @@
                             </div>
                             <div class="obra-info">
                                 <p>Augusto Seara</p>
-                                <img src="Icon/dot.svg" class="icone-dot">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                    viewBox="0 0 3 3" fill="none">
+                                    <g id="Ã&shy;cone/dot">
+                                        <path id="Vector"
+                                            d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                            fill="#FCFAF8" />
+                                    </g>
+                                </svg>
                                 <p>1929</p>
                                 <p style="display: none" id="film-category">Filme</p>
                             </div>
@@ -315,20 +387,28 @@
                     <!--obra7-->
                     <div class="obra-card">
                         <a href="obra.html" class="obra-card-link">
-                        <img class="card-image" src="images/acervo/sobreiro.png"
-                            alt="Filme: O Sobreiro: Alguns Aspectos do seu Cultivo">
-                        <div class="card-img-overlay">
+                            <img class="card-image" src="images/acervo/sobreiro.png"
+                                alt="Filme: O Sobreiro: Alguns Aspectos do seu Cultivo">
+                            <div class="card-img-overlay">
 
-                            <div class="obra-title">
-                                <h4>O Sobreiro: Alguns Aspectos do seu Cultivo</h4>
+                                <div class="obra-title">
+                                    <h4>O Sobreiro: Alguns Aspectos do seu Cultivo</h4>
+                                </div>
+                                <div class="obra-info">
+                                    <p>João Mendes</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                        viewBox="0 0 3 3" fill="none">
+                                        <g id="Ã&shy;cone/dot">
+                                            <path id="Vector"
+                                                d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                                fill="#FCFAF8" />
+                                        </g>
+                                    </svg>
+                                    <p>1959</p>
+                                    <p style="display: none" id="film-category">Filme</p>
+                                </div>
                             </div>
-                            <div class="obra-info">
-                                <p>João Mendes</p>
-                                <img src="Icon/dot.svg" class="icone-dot">
-                                <p>1959</p>
-                                <p style="display: none" id="film-category">Filme</p>
-                            </div>
-                        </div></a>
+                        </a>
                     </div>
                     <!--obra8-->
                     <div class="obra-card">
@@ -341,7 +421,14 @@
                             </div>
                             <div class="obra-info">
                                 <p>Cine-revista, nº33</p>
-                                <img src="Icon/dot.svg" class="icone-dot">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                    viewBox="0 0 3 3" fill="none">
+                                    <g id="Ã&shy;cone/dot">
+                                        <path id="Vector"
+                                            d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                            fill="#FCFAF8" />
+                                    </g>
+                                </svg>
                                 <p>1919</p>
                                 <p style="display: none" id="film-category">Texto</p>
                             </div>
@@ -358,7 +445,14 @@
                             </div>
                             <div class="obra-info">
                                 <p>Cândido Costa Pinto</p>
-                                <img src="Icon/dot.svg" class="icone-dot">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                    viewBox="0 0 3 3" fill="none">
+                                    <g id="Ã&shy;cone/dot">
+                                        <path id="Vector"
+                                            d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                            fill="#FCFAF8" />
+                                    </g>
+                                </svg>
                                 <p>1961</p>
                                 <p style="display: none" id="film-category">Filme</p>
                             </div>
@@ -375,7 +469,14 @@
                             </div>
                             <div class="obra-info">
                                 <p>António Antunes da Mata</p>
-                                <img src="Icon/dot.svg" class="icone-dot">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                    viewBox="0 0 3 3" fill="none">
+                                    <g id="Ã&shy;cone/dot">
+                                        <path id="Vector"
+                                            d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                            fill="#FCFAF8" />
+                                    </g>
+                                </svg>
                                 <p>1932</p>
                                 <p style="display: none" id="film-category">Filme</p>
                             </div>
@@ -391,7 +492,14 @@
                             </div>
                             <div class="obra-info">
                                 <p>Rino Lupo</p>
-                                <img src="Icon/dot.svg" class="icone-dot">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                    viewBox="0 0 3 3" fill="none">
+                                    <g id="Ã&shy;cone/dot">
+                                        <path id="Vector"
+                                            d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                            fill="#FCFAF8" />
+                                    </g>
+                                </svg>
                                 <p>1923</p>
                                 <p style="display: none" id="film-category">Filme</p>
                             </div>
@@ -408,7 +516,14 @@
                             </div>
                             <div class="obra-info">
                                 <p>Cinéfilo, nº 72</p>
-                                <img src="Icon/dot.svg" class="icone-dot">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                    viewBox="0 0 3 3" fill="none">
+                                    <g id="Ã&shy;cone/dot">
+                                        <path id="Vector"
+                                            d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                            fill="#FCFAF8" />
+                                    </g>
+                                </svg>
                                 <p>1930</p>
                                 <p style="display: none" id="film-category">Texto</p>
                             </div>
@@ -421,7 +536,7 @@
                     <a class="active" href="#">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
-                    <a> ... </a>
+                    <a href="#"> ... </a>
                     <a href="#">20</a>
                     <a href="#">&raquo;</a>
                 </div>
@@ -434,6 +549,7 @@
     <div id="footer-placeholder"></div>
 
     <script src="js/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

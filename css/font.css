@@ -1,6 +1,6 @@
 /*TypeFont*/
 h1 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     font-style: normal;
     font-weight: 750;
@@ -8,7 +8,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 800;
@@ -24,7 +24,7 @@ h3 {
 }
 
 h4 {
-    font-family: Afacad;
+    font-family: 'Afacad', sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
@@ -33,7 +33,7 @@ h4 {
 
 /*News-Tittles*/
 h5 {
-    font-family: Afacad;
+    font-family: 'Afacad', sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
@@ -42,15 +42,15 @@ h5 {
 
 /*Body text*/
 body {
-    font-family: Afacad;
+    font-family: 'Afacad', sans-serif;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
 }
-
+ 
 body .bold{
-    font-family: Afacad;
+    font-family: 'Afacad', sans-serif;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 600;
@@ -58,7 +58,7 @@ body .bold{
 }
 
 body .small{
-    font-family: Afacad;
+    font-family: 'Afacad', sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -67,7 +67,7 @@ body .small{
 
 
 body .big-bold {
-    font-family: Afacad;
+    font-family: 'Afacad', sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 600;
@@ -77,7 +77,7 @@ body .big-bold {
 
 /*Type for details like dates and categories*/
 p.font-detail {
-    font-family: Karla;
+    font-family: 'Karla', sans-serif;
     font-size: 0.9rem;
     font-style: normal;
     font-weight: 500;
@@ -86,7 +86,7 @@ p.font-detail {
 }
 
 p.subtitle {
-    font-family: Afacad;
+    font-family: 'Afacad', sans-serif;
     font-size: 0.8rem;
     font-style: normal;
     font-weight: 400;

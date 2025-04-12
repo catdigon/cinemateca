@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nesta página é possível aceder às notícias publicadas pela Cinemateca Portuguesa.">
 
     <title>Notícias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
 
@@ -44,13 +45,13 @@
     </nav>
 
 
-    <div class="board-container ">
-        <nav class="filters-menu-container col-2" role="complementary">
+    <div class="board-container">
+        <div class="filters-menu-container col-2" role="toolbar" aria-label="Filter controls" >
             <!-- filtros laterais-->
             <!-- form pesquisa-->
-            <form class="form-inline">
-                <input id="search-form" class="body-small" type="search" placeholder="Pesquisar ..." role="search"
-                    aria-label="Search">
+            <form class="form-inline" role="search">
+                <input id="search-form" class="body-small" type="search" placeholder="Pesquisar ..."
+                    aria-label="Pesquisar no site">
             </form>
             <!-- filtros categoria obras-->
             <div class="btn-categories-container">
@@ -64,7 +65,7 @@
                 <button class="btn-filters filtros-categories">Programação</button>
                 <button class="btn-filters filtros-categories">Projeto</button>
             </div>
-        </nav>
+        </div>
         <main>
             <div class="results-container">
                 <div class="all-news-container">
@@ -212,7 +213,7 @@
                             <a class="active" href="#">1</a>
                             <a href="#">2</a>
                             <a href="#">3</a>
-                            <a> ... </a>
+                            <a href="#"> ... </a>
                             <a href="#">20</a>
                             <a href="#">&raquo;</a>
                         </div>
