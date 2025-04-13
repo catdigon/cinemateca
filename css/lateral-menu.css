@@ -69,3 +69,14 @@
 .acervo {
     background-image: url('../images/menu-lateral/Almadraba-atuneira.jpg');
 }
+
+@media only screen and (max-width: 576px) {
+    .menu-item { 
+        padding: 0rem 0rem 3rem 0rem;
+    }
+
+    .menu-item p{
+        transform: rotate(-90deg);
+    }
+
+}

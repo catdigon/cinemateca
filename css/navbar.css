@@ -160,7 +160,6 @@ h3 {
 .navbar-hamburguer a:hover {
     background-color: #fea217d4;
     transition: all 0.4s linear;
-    width: 100%;
 }
 
 .close-hamburguer-container{
@@ -188,7 +187,7 @@ h3 {
 }
 
 #navbar menu, 
-#navbar li {
+#navbar li{
     all: unset; 
     display: flex;
     list-style-type: disc;
@@ -198,6 +197,10 @@ h3 {
     unicode-bidi: isolate;
     justify-content: center;
   }
+
+#navbar ul{
+    padding-left: 0;
+}
 
 @media only screen and (max-width: 992px) {
     .body-menu-navbar {

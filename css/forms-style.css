@@ -116,3 +116,20 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 860px) {
+    .form-container .form-inputs {
+        margin-inline-start: 0;
+    }
+    .form-group {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+
+
+    .form-group {
+        width: 85%;
+    }
+}

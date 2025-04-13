@@ -1,6 +1,6 @@
 /*Tipografia*/
-h6{
-    font-family: 'Afacad';
+h6 {
+    font-family: 'Afacad', sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
@@ -10,7 +10,7 @@ h6{
 }
 
 .footer-type {
-    font-family: Afacad;
+    font-family: 'Afacad', sans-serif;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
@@ -48,12 +48,12 @@ h6:hover,
     margin-top: 1.2rem;
 }
 
-#footer-container .footer-menu {
+.footer-list {
     display: flex;
-    gap: 4%;
-    justify-content: center;
-    margin-inline-start: 5vw;
+    flex-direction: column;
+    width: max-content;
 }
+
 
 #footer-container .footer-return-top {
     display: flex;
@@ -70,24 +70,37 @@ h6:hover,
     margin-bottom: 1.5rem;
 }
 
-footer ul, 
+footer ul,
 footer li {
-    all: unset; 
+    all: unset;
     width: 100%;
-  }
+}
 
-@media only screen and (max-width: 768px) {
+footer menu {
+    all: unset;
+    gap: 2vw;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    unicode-bidi: unset;
+}
+
+@media only screen and (max-width: 992px) {
 
     /*Footer*/
-    #footer-container .footer-menu {
-        display: flex;
+    footer menu {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        row-gap: 2rem;
-        padding: 5%;
         margin-inline-start: 0;
+        row-gap: 2rem;        
+        text-align: center;
+        width: 100%;
+    }
+    
+    .footer-list {
+        width: 100%;
     }
 
     #footer-container .footer-logo img {
@@ -96,7 +109,11 @@ footer li {
 }
 
 @media only screen and (max-width: 576px) {
-        #footer-container .footer-logo {
+    #footer-container .footer-container-top {
+        flex-direction: column;
+    }
+
+    #footer-container .footer-logo {
         display: none;
     }
 
