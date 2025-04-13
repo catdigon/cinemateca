@@ -46,8 +46,8 @@
     </nav>
 
 
-    <div class="board-container">
-        <div role="toolbar" aria-label="Filter controls" class="filters-menu-container">
+    <div class="board-container" id="filterDesktop">
+        <div role="toolbar" aria-label="Filter controls" class="filters-menu-container" id="filter-toolbar">
             <!-- botao voltar atrás-->
             <button class="btn-primary btn-icon btn-return-back" id="btn-return-back" onclick="history.back()">Voltar ao
                 acervo digital</button>
@@ -223,15 +223,15 @@
 
                 <!--btn to open filters when mobile-->
                 <button class="btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Filtros</button>
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" onclick="mover()">Filtros</button>
 
                 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                     aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <div class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></div>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" onclick="reverter()" aria-label="Close"></button>
+                        <div id="filtersMobile"></div>
                     </div>
-                    <nav id="filters-mobile"> </nav>
                 </div>
 
                 <!-- barra filtros adicionados -->
@@ -550,6 +550,7 @@
 
     <script src="js/main.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/filters.js"></script>
 </body>
 
 </html>
