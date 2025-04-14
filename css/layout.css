@@ -56,9 +56,13 @@
 .offcanvas-header{
     display: flex;
     flex-direction: column;
+    height: 100%;
+}
+
+#off-canva-space{
+    height: 14vw;
 }
 
 .filtersMobile{
     display: flex;
-
 }

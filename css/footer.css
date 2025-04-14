@@ -1,5 +1,5 @@
 /*Tipografia*/
-h6 {
+.tittle {
     font-family: 'Afacad', sans-serif;
     font-size: 1.5rem;
     font-style: normal;
@@ -18,7 +18,7 @@ h6 {
     color: #FCFAF8;
 }
 
-h6:hover,
+.tittle:hover,
 .footer-type:hover {
     color: #FEA017;
 }
@@ -53,7 +53,6 @@ h6:hover,
     flex-direction: column;
     width: max-content;
 }
-
 
 #footer-container .footer-return-top {
     display: flex;

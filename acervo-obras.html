@@ -222,14 +222,15 @@
             <div class="results-container">
 
                 <!--btn to open filters when mobile-->
-                <button class="btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" onclick="mover()">Filtros</button>
+                <button id="filterModalMenu" class="btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Filtros</button>
 
                 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                     aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
                         <div class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></div>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" onclick="reverter()" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <div id="off-canva-space"></div>
                         <div id="filtersMobile"></div>
                     </div>
                 </div>

@@ -15,13 +15,15 @@ h2 {
     font-variant: small-caps;
 }
 
-h3 {
+h3,
+.obra-detail {
     font-family: 'Julius Sans One';
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
+
 
 h4 {
     font-family: 'Afacad', sans-serif;
@@ -31,7 +33,6 @@ h4 {
     line-height: 108%;
 }
 
-/*News-Tittles*/
 h5 {
     font-family: 'Afacad', sans-serif;
     font-size: 1.5rem;
@@ -55,6 +56,7 @@ body .bold{
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
+    font-variant: unset;
 }
 
 body .small{
