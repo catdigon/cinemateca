@@ -71,7 +71,6 @@ h3 {
 }
 
 .navbar-menu-icon {
-    margin-top: 2vw;
     display: none;
 }
 
@@ -162,6 +161,10 @@ h3 {
     transition: all 0.4s linear;
 }
 
+.navbar-hamburguer a{
+ width: 100%;
+}
+
 .close-hamburguer-container{
     display: flex;
     flex-direction: row-reverse;
@@ -207,10 +210,6 @@ h3 {
         font-size: 0.85rem;
     }
 
-    #navbar a h3 {
-        padding: 0.5rem 0rem 0rem 0rem;
-    }
-
     .navbar-logo img{
         height: 16vw;
     }
@@ -240,7 +239,6 @@ h3 {
     }
 }
 
-
 @media only screen and (max-width: 576px) {
     .navbar-logo {
         position: absolute;
@@ -261,9 +259,6 @@ h3 {
         right: 7%;
     }
 
-    .navbar-menu-icon img {
-        height: 20px;
-    }
 
     .navbar-hamburguer-container {
         top: 45px;

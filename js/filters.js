@@ -12,38 +12,30 @@ function mover() {
     destinoOriginal.insertBefore(div, mainResults)
   }
 
-
-//Move filters if screen is small
-function handleFilterContainer() {
-  const filterBtn = document.getElementById("filterModalMenu")
-  console.log(filterBtn)
-  const returnBtn = document.getElementById("btn-return-back")
-
-
-  function showFiltersBtn (){
-    if (window.innerWidth < 992) {
-      filterBtn.style.display = "flex"
-      returnBtn.style.display = "none"
-      mover()
-      } else {
-      filterBtn.style.display = "none"
-      returnBtn.style.display = "flex"
-      reverter()
-     }
-
-     if (window.innerWidth > 992) {
-      filterBtn.style.display = "none"
-      returnBtn.style.display = "flex"
-      reverter()
-     }
-    }
-
-    window.addEventListener("resize", showFiltersBtn)
-
-  }
-
 handleFilterContainer()
 
+//Move filters if screen is small
+function handleFilterContainer (){
+  const filterBtn = document.getElementById("filterModalMenu")
+  const returnBtn = document.getElementById("btn-return-back")
+  if (window.innerWidth < 992) {
+    filterBtn.style.display = "flex"
+    returnBtn.style.display = "none"
+    mover()
+    } else {
+    filterBtn.style.display = "none"
+    returnBtn.style.display = "flex"
+    reverter()
+   }
+
+   if (window.innerWidth > 992) {
+    filterBtn.style.display = "none"
+    returnBtn.style.display = "flex"
+    reverter()
+   }
+  }
+
+  window.addEventListener("resize", handleFilterContainer)
 
 
   var i;

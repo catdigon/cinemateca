@@ -13,14 +13,16 @@ async function loadComponent(id, file) {
 }
 
 /**Load and place navbar and footer*/
-window.addEventListener("DOMContentLoaded", () => {
-  loadComponent("navbar-placeholder", "navbar.html");
-  loadComponent("footer-placeholder", "footer.html");
+window.addEventListener("DOMContentLoaded", async() => {
+  await loadComponent("navbar-placeholder", "navbar.html");
+  await loadComponent("footer-placeholder", "footer.html");
+  await handleHideHamburguerWhenScreenLarge()
 });
 
 /**Change: Show/Hide the elements on Menu/Navbar*/
 function toggleVisibilityElement(selector) {
-  var element = document.querySelector(selector);
+  try {
+     var element = document.querySelector(selector);
   const icon = document.querySelector(".navbar-menu-icon")
   if (element.style.display === "flex") {
     element.style.display = "none";
@@ -29,6 +31,10 @@ function toggleVisibilityElement(selector) {
     element.style.display = "flex";
     icon.style.opacity = "0"
   }
+  }
+ catch(e) {
+  console.error("Não encontrei o seletor " , selector)
+ }
 }
 
 /**Hide always the element*/
@@ -41,9 +47,11 @@ function hideElementAlways(selector) {
 function handleHideHamburguerWhenScreenLarge() {
   var navbarHamburguer = document.querySelector(".navbar-hamburguer-container");
   const icon = document.querySelector("#navbar-hamburguer-icon")
-  if (window.innerWidth > 768 && navbarHamburguer) {
-    navbarHamburguer.style.display = "none";
-    icon.style.opacity = "1"
+  if (window.innerWidth > 992 && navbarHamburguer) {
+    icon.style.display = "none";
+  } else {
+    icon.style.display = "flex"
+    icon.style.marginTop = "3vw"
   }
 }
 
@@ -63,11 +71,14 @@ function returnTopFunction() {
 window.addEventListener("scroll", function () {
   const navbar = document.getElementById("navbar");
 
-  if (window.scrollY > 50) {
+  if (navbar) { 
+    if (window.scrollY > 50) {
     navbar.classList.add("scrolled");
   } else {
     navbar.classList.remove("scrolled");
-  }
+  }}
+
+ 
 });
 
 /**Place svg icon - btn*/
