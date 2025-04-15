@@ -1,44 +1,64 @@
 function mover() {
-    const div = document.getElementById("filter-toolbar");
-    const destino = document.getElementById("filtersMobile");
-    destino.appendChild(div);
-  }
+  const div = document.getElementById("filter-toolbar");
+  const destino = document.getElementById("filtersMobile");
+  destino.appendChild(div);
+}
 
 
-  function reverter() {
-    const div = document.getElementById("filter-toolbar");
-    const destinoOriginal = document.getElementById("filterDesktop");
-    const mainResults = document.getElementById("main-container")
-    destinoOriginal.insertBefore(div, mainResults)
-  }
+function reverter() {
+  const div = document.getElementById("filter-toolbar");
+  const destinoOriginal = document.getElementById("filterDesktop");
+  const mainResults = document.getElementById("main-container")
+  destinoOriginal.insertBefore(div, mainResults)
+}
 
 handleFilterContainer()
 
 //Move filters if screen is small
-function handleFilterContainer (){
+function handleFilterContainer() {
   const filterBtn = document.getElementById("filterModalMenu")
   const returnBtn = document.getElementById("btn-return-back")
-  if (window.innerWidth < 992) {
-    filterBtn.style.display = "flex"
-    returnBtn.style.display = "none"
-    mover()
-    } else {
-    filterBtn.style.display = "none"
-    returnBtn.style.display = "flex"
-    reverter()
-   }
 
-   if (window.innerWidth > 992) {
-    filterBtn.style.display = "none"
-    returnBtn.style.display = "flex"
-    reverter()
-   }
+  if (returnBtn) {
+    if (window.innerWidth < 992) {
+      filterBtn.style.display = "flex"
+      returnBtn.style.display = "none"
+      mover()
+    } else {
+      filterBtn.style.display = "none"
+      returnBtn.style.display = "flex"
+      reverter()
+    }
+
+    if (window.innerWidth > 992) {
+      filterBtn.style.display = "none"
+      returnBtn.style.display = "flex"
+      reverter()
+    }
   }
 
-  window.addEventListener("resize", handleFilterContainer)
+  if (!returnBtn) {
+    if (window.innerWidth < 992) {
+      filterBtn.style.display = "flex"
+      mover()
+    } else {
+      filterBtn.style.display = "none"
+      reverter()
+    }
+
+    if (window.innerWidth > 992) {
+      filterBtn.style.display = "none"
+      reverter()
+    }
+  }
+
+}
 
 
-  var i;
+window.addEventListener("resize", handleFilterContainer)
+
+
+var i;
 
 /**Open/Close filters*/
 var acordionFilters = document.getElementsByClassName("accordion");
@@ -85,7 +105,7 @@ document.querySelectorAll('.filtros-categories').forEach(item => {
   });
 });
 
- 
+
 function searchLabelContent(filterContent, contentId, AreaId) {
   const contentLabel = document.querySelectorAll(contentId);
   const contentArea = document.querySelectorAll(AreaId);
@@ -94,7 +114,7 @@ function searchLabelContent(filterContent, contentId, AreaId) {
 
   if (filterContent === "Ver tudo") {
     contentArea.forEach(content => {
-      content.style.display = "flex";  
+      content.style.display = "flex";
       pagination.style.display = "flex";
     });
     return;
@@ -103,14 +123,14 @@ function searchLabelContent(filterContent, contentId, AreaId) {
   contentLabel.forEach((label, index) => {
     const labelText = label.textContent.trim();
     const content = contentArea[index];
-     
-  if (labelText === filterContent) {
-   content.style.display = "flex";
-   pagination.style.display = "none";
-  } else {
-    content.style.display = "none";
-    pagination.style.display = "none";
-    return
-  }
+
+    if (labelText === filterContent) {
+      content.style.display = "flex";
+      pagination.style.display = "none";
+    } else {
+      content.style.display = "none";
+      pagination.style.display = "none";
+      return
+    }
   })
 }
