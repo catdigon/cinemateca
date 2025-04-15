@@ -70,13 +70,15 @@
     background-image: url('../images/menu-lateral/Almadraba-atuneira.jpg');
 }
 
-@media only screen and (max-width: 576px) {
-    .menu-item { 
-        padding: 0rem 0rem 3rem 0rem;
+@media only screen and (max-width: 768px) {
+    .vertical-menu {
+        flex-direction: row;
+        width: 100%;
     }
 
-    .menu-item p{
-        transform: rotate(-90deg);
+    .menu-item {
+        justify-content: center;
+        text-align: center;
     }
 
 }

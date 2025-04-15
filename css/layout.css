@@ -80,3 +80,15 @@
         margin-bottom: 5vw;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .page-layout-container {
+        flex-direction: column-reverse;
+    }
+
+
+    #main-pagescontent {
+        margin: 0rem 0 0rem 0;
+    }
+
+}

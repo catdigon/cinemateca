@@ -131,12 +131,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
     gap: 1rem;
 }
 
 .new-card{
-    width: 17rem;
+    width: 16vw;
 }
 
 .btn-container{
@@ -145,32 +144,63 @@
     margin: 2rem 0 5rem 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+
+  
     .page-layout-container {
-        display: flex;
-        flex-direction: column;  
-     }
+        flex-direction: column-reverse;
+        display: inline;
+        width: 0;
+    }
 
-     .lateral-container{
+    .lateral-container{
         width: 100%;
-        height: auto;
         margin-top: 0;
-        padding: 3rem 1rem 3rem 6rem;
+        height: 33rem;
+    }
+
+    .product-container {
+        margin: 0 !important;
      }
 
-     .ficha-tecnica {
+     .product-description-container{
+        padding-left: 10%;
+     }
+
+     .resume-text-container {
+        width: 90%;
+    }
+
+    .news-container {
+        padding: 1rem 10% 2rem 10%;
+        align-self: anchor-center;
+        width: 90%;
+        margin-top: 1rem;
+     }
+
+     .ficha-tecnica{
         padding: 0;
-    }
-
-     .product-description-container {
-        width: 90%;
-    }
-
-     .news-container {
-        width: 90%;
      }
 
-     .news-cards-container {
-        flex-wrap: unset;
+     .ficha-tecnica-details {
+        flex-wrap: wrap;
      }
+
+     .new-card {
+        width: 16rem;}
+
+    .small-size {
+        width: 26vw !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .news-cards-container {
+        flex-direction: column;
+    }
+
+    .small-size {
+        width: auto !important;
+    }
+
 }

@@ -127,9 +127,14 @@
 }
 
 @media only screen and (max-width: 880px) {
-
-
     .form-group {
         width: 85%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .form-container { 
+        margin-top: 0;
+        padding-top: 2rem;
     }
 }
