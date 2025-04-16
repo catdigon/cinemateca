@@ -72,9 +72,9 @@
                 <div class="all-news-container">
 
                     <!--btn to open filters when mobile-->
-                    <button id="filterModalMenu" class="btn-primary" type="button" data-bs-toggle="offcanvas"
+                    <button id="filterModalMenu" class="btn-primary btn-icon btn-filter" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasWithBothOptions"
-                        aria-controls="offcanvasWithBothOptions">Filtros</button>
+                        aria-controls="offcanvasWithBothOptions">Filtros</button>                     
 
                     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
                         id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -95,8 +95,8 @@
                     <div class="news-cards-container">
                         <!-- card noticia principal -->
                         <div class="main-new-container big-news-container new-search">
-                            <a href="/cinemateca/noticia.html">
-                                <div class="new-card">
+                            <a href="/cinemateca/noticia.html?id=news1">
+                                <div class="new-card" id="news1">
                                     <div class="img-card-container big-size "> <img src="images/news/camoes.png"
                                             alt="Fotograma do filme: Camões"></div>
                                     <div class="news-card-class">
@@ -126,7 +126,8 @@
                         <div class="other-new-container">
                             <!-- cards noticias secundaria-1-->
                             <div class="medium-news-container new-search">
-                                <div class="new-card">
+                                <a href="/cinemateca/noticia.html?id=news2">
+                                <div class="new-card" id="news2">
                                     <div class="img-card-container medium-size"> <img src="images/news/espanha.jpg"
                                             alt="Fotograma do filme: Alcarràs"></div>
                                     <div class="news-card-class">
@@ -148,10 +149,12 @@
                                         </p>
                                     </div>
                                 </div>
+                            </a>
                             </div>
                             <!-- cards noticias secundaria-2-->
                             <div class="medium-news-container new-search">
-                                <div class="new-card">
+                                <a href="/cinemateca/noticia.html?id=news3">
+                                <div class="new-card" id="news3">
                                     <div class="img-card-container medium-size"> <img
                                             src="images/news/antonio-pedro vasconcelos.jpg"
                                             alt="Foto de António-Pedro Vasconcelos"></div>
@@ -172,11 +175,13 @@
                                         </p>
                                     </div>
                                 </div>
+                            </a>
                             </div>
 
                             <div class="medium-news-container new-search">
                                 <!-- cards noticias secundaria-3-->
-                                <div class="new-card">
+                                <a href="/cinemateca/noticia.html?id=news4">
+                                <div class="new-card" id="news4">
                                     <div class="img-card-container medium-size"> <img
                                             src="images/news/O Naufrágio do Veronese.jpg"
                                             alt="Fotograma do filme: O Naufrágio do Veronese"></div>
@@ -197,11 +202,13 @@
                                         </p>
                                     </div>
                                 </div>
+                                </a>
                             </div>
 
                             <div class="medium-news-container new-search">
                                 <!-- cards noticias secundaria-4-->
-                                <div class="new-card">
+                                <a href="/cinemateca/noticia.html?id=news5">
+                                <div class="new-card" id="news5">
                                     <div class="img-card-container medium-size"> <img
                                             src="images/news/Gente da Praia da Vieira.jpg"
                                             alt="Fotograma do filme: Gente da Praia da Vieira"></div>
@@ -224,7 +231,7 @@
                                         </p>
                                     </div>
                                 </div>
-
+                                </a>
                             </div>
                         </div>
                         <!-- paginacao -->
