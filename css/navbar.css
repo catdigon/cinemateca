@@ -75,7 +75,9 @@ h3 {
 }
 
 .navbar-logo {
-    padding-left: 5%;
+    position: absolute;
+    left: 5%;
+    transition: all 0.3s ease-in-out;
 }
 
 #navbar img {
@@ -83,7 +85,12 @@ h3 {
 }
 
 .navbar-logo img{
-    height: 10vw;
+    height: 12vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-logo img.scrolled{
+    height: 8.5vw;
 }
 
 .navbar-menu-icon svg {
@@ -227,10 +234,8 @@ h3 {
         display: block;
     }
 
-    .navbar-logo {
-        position: absolute;
-        top: -8%;
-        left: 5%;
+    .navbar-logo img.scrolled{
+        height: 14vw;
     }
 
     .navbar-menu-container {
@@ -240,12 +245,6 @@ h3 {
 }
 
 @media only screen and (max-width: 576px) {
-    .navbar-logo {
-        position: absolute;
-        top: -4%;
-        left: 5%;
-    }
-
     .navbar-menu-container {
         top: 8%;
         right: 7%;
@@ -258,7 +257,6 @@ h3 {
         top: 6%;
         right: 7%;
     }
-
 
     .navbar-hamburguer-container {
         top: 45px;

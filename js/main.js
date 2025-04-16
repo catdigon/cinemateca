@@ -70,15 +70,17 @@ function returnTopFunction() {
 /**Navbar scrool*/
 window.addEventListener("scroll", function () {
   const navbar = document.getElementById("navbar");
+  const navbarLogo =  document.querySelector(".navbar-logo img")
 
   if (navbar) { 
     if (window.scrollY > 50) {
     navbar.classList.add("scrolled");
+    navbarLogo.classList.add("scrolled");
   } else {
     navbar.classList.remove("scrolled");
+    navbarLogo.classList.remove("scrolled");
   }}
 
- 
 });
 
 /**Place svg icon - btn*/

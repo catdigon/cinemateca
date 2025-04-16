@@ -42,15 +42,10 @@
         <section class="video-section">
             <div class="video-main-container">
                 <div class="video-container">
-                    <div class="video-overlay" onclick="playVideo()">
-                        <img src="images/acervo/sobreiro2.png" class="video-placeholder" id="img" alt="Vídeo Placeholder">
+                    <div class="video-overlay no-link">
+                        <img src="" class="video-placeholder" id="img" alt="Placeholder">
                         <div class="video-filter-overlay"></div>
-                        <img src="Icon/play.svg" class="play-button" alt="Play">
                     </div>
-                    <video id="video" controls="">
-                        <source src="video/o sobreiro.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
                 </div>
             </div>
         </section>
@@ -69,34 +64,28 @@
             <div class="page-container">
                 <div class="page-layout-container">
                     <!-- ficha tecnica lateral-->
-                    <div class="lateral-container col-4" aria-label="Ficha Técnica">
+                    <div class="lateral-container col-4 obra-text" aria-label="Ficha Técnica">
                         <h3>Ficha técnica</h3>
                         <div class="ficha-tecnica">
                             <div class="ficha-tecnica-details">
-                                <p class="bold">Realizador</p>
+                                <p class="bold">Em</p>
                                 <p id="director">João Neves</p>
                             </div>
                             <div class="ficha-tecnica-details">
-                                <p class="bold">Género</p>
-                                <p class="style">Documentário</p>
-                            </div>
-                            <div class="ficha-tecnica-details">
-                                <p class="bold">Duração</p>
-                                <p class="time">00:19:50</p>
+                                <p class="bold">Tipologia</p>
+                                <p class="style">texto</p>
                                 <p>,</p>
-                                <p class="frame">24 fps</p>
+                                <p class="frame">page</p>
                             </div>
                             <div class="ficha-tecnica-details">
                                 <p class="bold">Formato</p>
-                                <p class="format">35mm</p>
+                                <p class="format">Texto</p>
                                 <p>,</p>
                                 <p class="color">Cor</p>
-                                <p>,</p>
-                                <p class="sound">com som</p>
                             </div>
                             <div class="ficha-tecnica-details">
-                                <p class="bold">AR</p>
-                                <p>1:1,37</p>
+                                <p class="bold">Detentor de Direitos</p>
+                                <p> Domínio público</p>
                             </div>
                         </div>
                         <div class="ficha-tecnica">
@@ -107,12 +96,6 @@
                                 informações sobre os detentores de direitos. | Please contact the Cinemateca
                                 Portuguesa-Museu do
                                 Cinema for information about the rights holders.</p>
-                        </div>
-                        <div class="ficha-tecnica">
-                            <div class="ficha-tecnica-details">
-                                <p class="id-deposito">ID CP-MC</p>
-                                <p class="idnumber">7001249</p>
-                            </div>
                         </div>
                     </div>
 
@@ -266,6 +249,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/acervo.js"></script>
     <script src="js/orderlayout.js"></script>
+    
 </body>
 
 </html>
