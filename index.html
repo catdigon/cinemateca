@@ -7,6 +7,8 @@
     <meta name="description" content="Esta é a página principal do Site da Cinemateca Portuguesa.">
 
     <title>A Cinemateca Portuguesa</title>
+    <link rel="icon" type="image/x-icon" href="/cinemateca/images/cinemateca-portuguesa-museu-do-cinema.ico">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
@@ -32,7 +34,7 @@
 
     <!-- navbar imagem fundo + barra amarela-->
     <div id="header-container">
-        <img src="images/header-index-total.png" alt="Cinemateca" class="header-image">
+        <img src="images/headers/header-index-total.webp" alt="Cinemateca" class="header-image">
     </div>
 
     <main>
@@ -45,7 +47,7 @@
                     <!--event1-->
                     <div id="Event1" class="card" onmouseenter="showCardDetails('Event1')"
                         onmouseleave="showCardDetails('Event1')">
-                        <img class="card-image" src="images/agenda/midnight in paris.jpg"
+                        <img class="card-image" src="images/agenda/midnight in paris.webp"
                             alt="Filme: Midnight in Paris">
                         <div class="card-img-overlay">
                             <div class="card-date-container">
@@ -54,7 +56,7 @@
                                 </div>
                             </div>
                             <div class="card-title-container">
-                                <h4 class="card-title">Midnight in Paris</h4>
+                                <p class="card-title">Midnight in Paris</p>
                             </div>
                         </div>
                     </div>
@@ -62,13 +64,27 @@
                     <div id="Event1Back" class="card card-back hidden" onmouseenter="showCardDetails('Event1')"
                         onmouseleave="showCardDetails('Event1')">
                         <div class="card-type">
-                            <img src="Icon/dot.svg" class="icone-dot dot-big">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="8" height="8"
+                                        viewBox="0 0 3 3" fill="none">
+                                        <g id="Ã&shy;cone/dot">
+                                            <path id="Vector"
+                                                d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                                fill="#FCFAF8" />
+                                        </g>
+                                    </svg>
                             <p>Filme</p>
                         </div>
-                        <h4 class="card-title"> Midnight in Paris</h4>
+                        <p class="card-title"> Midnight in Paris</p>
                         <div class="events-card-details">
                             <p> 11 Nov 2024</p>
-                            <img src="Icon/dot.svg" class="icone-dot dot-small">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                        viewBox="0 0 3 3" fill="none">
+                                        <g id="Ã&shy;cone/dot">
+                                            <path id="Vector"
+                                                d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                                fill="#FCFAF8" />
+                                        </g>
+                                    </svg>
                             <p> 18:30</p>
                         </div>
                         <div>
@@ -82,7 +98,7 @@
                     <!--event2-->
                     <div id="Event2" class="card" onmouseenter="showCardDetails('Event2')"
                         onmouseleave="showCardDetails('Event2')">
-                        <img class="card-image" src="images/agenda/lejos de africa.jpg" alt="Filme: Lejos de África">
+                        <img class="card-image" src="images/agenda/lejos de africa.webp" alt="Filme: Lejos de África">
                         <div class="card-img-overlay">
                             <div class="card-date-container">
                                 <div class="card-detail-yellow">
@@ -90,7 +106,7 @@
                                 </div>
                             </div>
                             <div class="card-title-container">
-                                <h5 class="card-title">Lejos de África</h5>
+                                <p class="card-title">Lejos de África</p>
                             </div>
                         </div>
                     </div>
@@ -98,13 +114,27 @@
                     <div id="Event2Back" class="card card-back hidden" onmouseenter="showCardDetails('Event2')"
                         onmouseleave="showCardDetails('Event2')">
                         <div class="card-type">
-                            <img src="Icon/dot.svg" class="icone-dot dot-big">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="8" height="8"
+                                        viewBox="0 0 3 3" fill="none">
+                                        <g id="Ã&shy;cone/dot">
+                                            <path id="Vector"
+                                                d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                                fill="#FCFAF8" />
+                                        </g>
+                                    </svg>
                             <p>Filme</p>
                         </div>
-                        <h4 class="card-title"> Lejos de África</h4>
+                        <p class="card-title"> Lejos de África</p>
                         <div class="events-card-details">
                             <p> 27 NOV 2024</p>
-                            <img src="Icon/dot.svg" class="icone-dot dot-small">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                        viewBox="0 0 3 3" fill="none">
+                                        <g id="Ã&shy;cone/dot">
+                                            <path id="Vector"
+                                                d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                                fill="#FCFAF8" />
+                                        </g>
+                                    </svg>
                             <p> 18:30</p>
                         </div>
                         <div>
@@ -118,7 +148,7 @@
                     <!--event3-->
                     <div id="Event3" class="card" onmouseenter="showCardDetails('Event3')"
                         onmouseleave="showCardDetails('Event3')">
-                        <img class="card-image" src="images/agenda/cinetracts.png" alt="Filme: Cinétracts">
+                        <img class="card-image" src="images/agenda/cinetracts.webp" alt="Filme: Cinétracts">
                         <div class="card-img-overlay">
                             <div class="card-date-container">
                                 <div class="card-detail-yellow">
@@ -126,7 +156,7 @@
                                 </div>
                             </div>
                             <div class="card-title-container">
-                                <h5 class="card-title">Cinétracts</h5>
+                                <p class="card-title">Cinétracts</p>
                             </div>
                         </div>
                     </div>
@@ -134,13 +164,27 @@
                     <div id="Event3Back" class="card card-back hidden" onmouseenter="showCardDetails('Event3')"
                         onmouseleave="showCardDetails('Event3')">
                         <div class="card-type">
-                            <img src="Icon/dot.svg" class="icone-dot dot-big">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="8" height="8"
+                                        viewBox="0 0 3 3" fill="none">
+                                        <g id="Ã&shy;cone/dot">
+                                            <path id="Vector"
+                                                d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                                fill="#FCFAF8" />
+                                        </g>
+                                    </svg>
                             <p>Filme</p>
                         </div>
                         <h4 class="card-title"> Cinétracts</h4>
                         <div class="events-card-details">
                             <p> 29 NOV 2024</p>
-                            <img src="Icon/dot.svg" class="icone-dot dot-small">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                        viewBox="0 0 3 3" fill="none">
+                                        <g id="Ã&shy;cone/dot">
+                                            <path id="Vector"
+                                                d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                                fill="#FCFAF8" />
+                                        </g>
+                                    </svg>
                             <p> 18:30</p>
                         </div>
                         <div>
@@ -155,7 +199,7 @@
                     <!--event4-->
                     <div id="Event4" class="card" onmouseenter="showCardDetails('Event4')"
                         onmouseleave="showCardDetails('Event4')">
-                        <img class="card-image" src="images/agenda/oficina-animacao.jpg"
+                        <img class="card-image" src="images/agenda/oficina-animacao.webp"
                             alt="Oficina: Técnicas de Cinema de Animação">
                         <div class="card-img-overlay">
                             <div class="card-date-container">
@@ -164,7 +208,7 @@
                                 </div>
                             </div>
                             <div class="card-title-container">
-                                <h5 class="card-title">Técnicas de Cinema de Animação</h5>
+                                <p class="card-title">Técnicas de Cinema de Animação</p>
                             </div>
                         </div>
                     </div>
@@ -172,13 +216,27 @@
                     <div id="Event4Back" class="card card-back hidden" onmouseenter="showCardDetails('Event4')"
                         onmouseleave="showCardDetails('Event4')">
                         <div class="card-type">
-                            <img src="Icon/dot.svg" class="icone-dot dot-big">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="8" height="8"
+                                        viewBox="0 0 3 3" fill="none">
+                                        <g id="Ã&shy;cone/dot">
+                                            <path id="Vector"
+                                                d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                                fill="#FCFAF8" />
+                                        </g>
+                                    </svg>
                             <p>Ofícina</p>
                         </div>
-                        <h4 class="card-title"> Técnicas de Cinema de Animação</h4>
+                        <p class="card-title"> Técnicas de Cinema de Animação</p>
                         <div class="events-card-details">
                             <p> 14 DEZ 2024</p>
-                            <img src="Icon/dot.svg" class="icone-dot dot-small">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                        viewBox="0 0 3 3" fill="none">
+                                        <g id="Ã&shy;cone/dot">
+                                            <path id="Vector"
+                                                d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                                fill="#FCFAF8" />
+                                        </g>
+                                    </svg>
                             <p> 10:30</p>
                         </div>
                         <div>
@@ -190,7 +248,7 @@
                     <!--event5-->
                     <div id="Event5" class="card card-big" onmouseenter="showCardDetails('Event5')"
                         onmouseleave="showCardDetails('Event5')">
-                        <img class="card-image" src="images/agenda/noemia.jpg" alt="Exposição: Noémia.">
+                        <img class="card-image" src="images/agenda/noemia.webp" alt="Exposição: Noémia.">
                         <div class="card-img-overlay">
                             <div class="card-date-container">
                                 <div class="card-detail-yellow">
@@ -198,7 +256,7 @@
                                 </div>
                             </div>
                             <div class="card-title-container">
-                                <h5 class="card-title">Noémia.</h5>
+                                <p class="card-title">Noémia.</p>
                             </div>
                         </div>
                     </div>
@@ -206,13 +264,27 @@
                     <div id="Event5Back" class="card card-big card-back hidden" onmouseenter="showCardDetails('Event5')"
                         onmouseleave="showCardDetails('Event5')">
                         <div class="card-type">
-                            <img src="Icon/dot.svg" class="icone-dot dot-big">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="8" height="8"
+                                        viewBox="0 0 3 3" fill="none">
+                                        <g id="Ã&shy;cone/dot">
+                                            <path id="Vector"
+                                                d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                                fill="#FCFAF8" />
+                                        </g>
+                                    </svg>
                             <p>Exposição</p>
                         </div>
-                        <h4 class="card-title"> Técnicas de Cinema de Animação</h4>
+                        <p class="card-title">Noémia.</p>
                         <div class="events-card-details">
                             <p> ATÉ 16 DEZ 2024</p>
-                            <img src="Icon/dot.svg" class="icone-dot dot-small">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icone-dot" width="4" height="4"
+                                        viewBox="0 0 3 3" fill="none">
+                                        <g id="Ã&shy;cone/dot">
+                                            <path id="Vector"
+                                                d="M1.5 3C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.89782 0 2.27936 0.158035 2.56066 0.43934C2.84196 0.720644 3 1.10218 3 1.5C3 1.89782 2.84196 2.27936 2.56066 2.56066C2.27936 2.84196 1.89782 3 1.5 3Z"
+                                                fill="#FCFAF8" />
+                                        </g>
+                                    </svg>
                             <p>14h00 - 19h30</p>
                         </div>
                         <div>
@@ -255,8 +327,8 @@
                 </div>
             </div>
             <div class="acervo-img-container">
-                <img src="images/acervo-montage.png" class="acervo-img image-acervo-1" alt="Imagens do acervo">
-                <img src="images/acervo-montage.png" class="acervo-img image-acervo-2" alt="Imagens do acervo">
+                <img src="images/acervo-montage.webp" class="acervo-img image-acervo-1" alt="Imagens do acervo">
+                <img src="images/acervo-montage.webp" class="acervo-img image-acervo-2" alt="Imagens do acervo">
             </div>
         </div>
 
@@ -271,7 +343,7 @@
                     <div class="news-card" id="news1">
                         <div class="card-top"></div>
                         <a href="/cinemateca/noticia.html?id=news1">
-                            <h5>Estreia de cópia digital restaurada de Camões (1946) </h5>
+                            <p id="card-news-title">Estreia de cópia digital restaurada de Camões (1946) </p>
                             <div class="news-card-class">
                                 <div class="card-detail-yellow">
                                     <p class="font-detail">Exibição</p>
@@ -295,7 +367,7 @@
                     <div class="news-card" id="news2">
                         <div class="card-top"></div>
                         <a href="/cinemateca/noticia.html?id=news2">
-                        <h5>Cinco décadas de democracia em Espanha</h5>
+                        <p id="card-news-title">Cinco décadas de democracia em Espanha</p>
                         <div class="news-card-class">
                             <div class="card-detail-yellow">
                                 <p class="font-detail"> Programação </p>
@@ -315,7 +387,7 @@
                     <div class="news-card" id="news4">
                         <div class="card-top"></div>
                         <a href="/cinemateca/noticia.html?id=news4">
-                        <h5>FILMar tem últimas sessões na RTP dias 20 e 23 de junho</h5>
+                        <p id="card-news-title">FILMar tem últimas sessões na RTP dias 20 e 23 de junho</p>
                         <div class="news-card-class">
                             <div class="card-detail-yellow">
                                 <p class="font-detail">Projeto</p>
@@ -335,7 +407,7 @@
                     <div class="news-card" id="news5">
                         <div class="card-top"></div>
                         <a href="/cinemateca/noticia.html?id=news5">
-                        <h5>FILMar inicia ÚLTIMA VAGA</h5>
+                        <p id="card-news-title">FILMar inicia ÚLTIMA VAGA</p>
                         <div class="news-card-class">
                             <div class="card-detail-yellow">
                                 <p class="font-detail">Projeto</p>

@@ -19,7 +19,7 @@ $.getJSON("js/json/acervo.json", function(data) {
         $("#img")
             .attr("src", obra.img)
             .attr("alt", obra.alt);
-            $("#video")
+        $("#video")
             .attr("src", obra.video)        
         $("#year").text(obra.year);
         $("#director").text(obra.director);

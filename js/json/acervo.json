@@ -2,7 +2,7 @@
     {
         "id": "film1",
         "title": "A arte e a justiça",
-        "img": "images/acervo/arte e justica.jpg",
+        "img": "images/acervo/arte e justica.webp",
         "alt": "Filme A arte e a justiça",
         "video": "video/o sobreiro.mp4",
         "category": "Filme",
@@ -20,7 +20,7 @@
     {
         "id": "film2",
         "title": "A Extraordinária Aventura do Zéca",
-        "img": "images/acervo/zeca.jpg",
+        "img": "images/acervo/zeca.webp",
         "alt": "Filme A Extraordinária Aventura do Zéca",
         "video": "video/o sobreiro.mp4",
         "category": "Filme",
@@ -38,7 +38,7 @@
     {
         "id": "film3",
         "title": "A Exposição do Mundo Português",
-        "img": "images/acervo/exposicao mundo.jpg",
+        "img": "images/acervo/exposicao mundo.webp",
         "alt": "Filme A Exposição do Mundo Português",
         "video": "video/o sobreiro.mp4",
         "category": "Filme",
@@ -56,7 +56,7 @@
     {
         "id": "img1",
         "title": "A Vida do Soldado",
-        "img": "images/acervo/vida soldado.jpg",
+        "img": "images/acervo/vida soldado.webp",
         "alt": "Imagem A Vida do Soldado",
         "video": "",
         "category": "Imagem",
@@ -64,7 +64,7 @@
         "director": "Aníbal Contreiras",
         "style": "Fotografia promocional",
         "time": "",
-        "frame": "",
+        "frame": "Film frame",
         "format": "23 x 31 cm",
         "color": "Lobby card",
         "sound": "n.d",
@@ -74,7 +74,7 @@
     {
         "id": "img2",
         "title": "O raid aéreo Lisboa-Rio de Janeiro",
-        "img": "images/acervo/raid.jpg",
+        "img": "images/acervo/raid.webp",
         "alt": "Imagem O raid aéreo Lisboa-Rio de Janeiro",
         "video": "",
         "category": "Imagem",
@@ -82,7 +82,7 @@
         "director": "Henrique Alegria",
         "style": "Fotografia",
         "time": "",
-        "frame": "",
+        "frame": "Film frame",
         "format": "35mm",
         "color": "Film frame",
         "sound": "n.d",
@@ -92,7 +92,7 @@
     {
         "id": "film4",
         "title": "Guiné: Aspectos Industriais e Agricultura",
-        "img": "images/acervo/guine.jpg",
+        "img": "images/acervo/guine.webp",
         "alt": "Filme Guiné: Aspectos Industriais e Agricultura",
         "video": "video/o sobreiro.mp4",
         "category": "Filme",
@@ -110,7 +110,7 @@
     {
         "id": "film5",
         "title": "O Sobreiro: Alguns Aspectos do seu Cultivo",
-        "img": "images/acervo/sobreiro2.png",
+        "img": "images/acervo/sobreiro2.webp",
         "alt": "Filme Guiné: Aspectos Industriais e Agricultura",
         "video": "video/o sobreiro.mp4",
         "category": "Filme",
@@ -128,7 +128,7 @@
     {
         "id": "text1",
         "title": "A Producção Cinematographica em Portugal",
-        "img": "images/acervo/producao cinematografica.jpg",
+        "img": "images/acervo/producao cinematografica.webp",
         "alt": "Texto A Producção Cinematographica em Portugal",
         "video": "",
         "category": "Texto",
@@ -146,7 +146,7 @@
     {
         "id": "film6",
         "title": "A Nossa Riqueza Termal",
-        "img": "images/acervo/riqueza termal.jpg",
+        "img": "images/acervo/riqueza termal.webp",
         "alt": "Filme A Nossa Riqueza Termal",
         "video": "video/o sobreiro.mp4",
         "category": "Filme",
@@ -164,7 +164,7 @@
     {
         "id": "film7",
         "title": "A Indústria da Baleia",
-        "img": "images/acervo/industria baleia.png",
+        "img": "images/acervo/industria baleia.webp",
         "alt": "Filme A Indústria da Baleia",
         "video": "video/o sobreiro.mp4",
         "category": "Filme",
@@ -182,7 +182,7 @@
     {
         "id": "film8",
         "title": "Os Lobos",
-        "img": "images/acervo/lobos.jpg",
+        "img": "images/acervo/lobos.webp",
         "alt": "Filme Os Lobos",
         "video": "video/o sobreiro.mp4",
         "category": "Filme",
@@ -200,7 +200,7 @@
     {
         "id": "text2",
         "title": "Alfama : Um Belo Documentário",
-        "img": "images/acervo/alfama.jpg",
+        "img": "images/acervo/alfama.webp",
         "alt": "Texto Alfama : Um Belo Documentário",
         "video": "",
         "category": "Texto",

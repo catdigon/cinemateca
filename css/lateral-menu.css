@@ -43,23 +43,23 @@
 }
 
 .contatos {
-    background-image: url('../images/menu-lateral/carta-guerra.jpg');
+    background-image: url('../images/menu-lateral/carta-guerra.webp');
 }
 
 .localizacao {
-    background-image: url('../images/menu-lateral/tras-montes.jpg');
+    background-image: url('../images/menu-lateral/tras-montes.webp');
 }
 
 .apresentacao {
-    background-image: url('../images/menu-lateral/cinemateca.jpg');
+    background-image: url('../images/menu-lateral/cinemateca.webp');
 }
 
 .historia {
-    background-image: url('../images/menu-lateral/verdes-anos.jpg');
+    background-image: url('../images/menu-lateral/verdes-anos.webp');
 }
 
 .missao{
-    background-image: url('../images/menu-lateral/anim.jpg');
+    background-image: url('../images/menu-lateral/anim.webp');
 }
 
 .agenda {
@@ -67,7 +67,7 @@
 }
 
 .acervo {
-    background-image: url('../images/menu-lateral/Almadraba-atuneira.jpg');
+    background-image: url('../images/menu-lateral/acervo.webp');
 }
 
 @media only screen and (max-width: 768px) {

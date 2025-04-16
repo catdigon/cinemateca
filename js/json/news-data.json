@@ -2,7 +2,7 @@
     {
         "id": "news1",
         "title": "Estreia de cópia digital restaurada de Camões (1946) nos 500 anos do nascimento do poeta",
-        "img": "images/news/camoes.png",
+        "img": "images/news/camoes.webp",
         "alt": "Fotograma do filme Camões de Leitão de Barros",
         "category": "Exibição",
         "date": "18 OUT 2024",
@@ -19,7 +19,7 @@
     {
         "id": "news2",
         "title": "Cinco décadas de democracia em Espanha",
-        "img": "images/news/espanha.jpg",
+        "img": "images/news/espanha.webp",
         "alt": "Fotograma do filme: Alcarràs",
         "category": "Programação",
         "date": "22 OUT 2024",
@@ -34,7 +34,7 @@
     {
         "id": "news3",
         "title": "António-Pedro Vasconcelos (1939-2024)",
-        "img": "images/news/antonio-pedro vasconcelos.jpg",
+        "img": "images/news/antonio-pedro vasconcelos.webp",
         "alt": "Foto de António-Pedro Vasconcelos",
         "category": "In Memorium",
         "date": "10 AGO 2024",
@@ -47,7 +47,7 @@
     {
         "id": "news4",
         "title": "Projeto FILMar tem últimas sessões na RTP dias 20 e 23 de junho",
-        "img": "images/news/O Naufrágio do Veronese.jpg",
+        "img": "images/news/O Naufrágio do Veronese.webp",
         "alt": "Fotograma do filme: O Naufrágio do Veronese",
         "category": "Projeto",
         "date": "15 JUN 2024",
@@ -64,7 +64,7 @@
     {
         "id": "news5",
         "title": "FILMar inicia ÚLTIMA VAGA",
-        "img": "images/news/Gente da Praia da Vieira.jpg",
+        "img": "images/news/Gente da Praia da Vieira.webp",
         "alt": "Fotograma do filme: Gente da Praia da Vieira",
         "category": "Programação",
         "date": "25 JAN 2024",
@@ -86,7 +86,7 @@
     {
         "id": "news6",
         "title": "O mar português no DocLisboa",
-        "img": "images/news/Ilhas encantadas.jpg",
+        "img": "images/news/Ilhas encantadas.webp",
         "alt": "Fotograma do filme: Ilhas Encantadas",
         "category": "Programação",
         "date": "10 SET  2024",
@@ -96,14 +96,14 @@
             "Na sessão, serão ainda apresentados dois filmes a trabalhar no âmbito do FILMar: CASCAES (Amélia Borges Rodrigues, 1937) e TIN SARDINES (atribuído a Leitão de Barros, 1935). Dois exemplos que demonstram o trabalho a ser desenvolvido ao longo dos próximos meses, permitindo abrir uma discussão sobre o mar enquanto personagem e as suas múltiplas narrativas, atendendo a dimensões de cariz social, político e territorial percetíveis pelo modo como neles guardam registos das condições de vida e das construções políticas que lhes são intrínsecas.",
             "O dia 25 de outubro será ainda marcado por um debate Mar: personagem de ficções reais, que contará com a presença de Pedro Martins, investigador do Instituto de História Contemporânea da Universidade Nova de Lisboa, e Truls Lie, documentarista e jornalista norueguês, com moderação de Sérgio Silva, investigador e realizador, também ele presente no festival com uma curta-metragem relacionada com o mar, A TERRA SEGUE AZUL QUANDO SAIO DO TRABALHO.",
             "O que é o FILMar?",
-            "Até 2024, a Cinemateca Portuguesa – Museu do Cinema irá desenvolver um programa de digitalização e divulgação do cinema português relacionado com o mar, no âmbito do mecanismo financeiro de apoio EEAGrants. Este programa, criado pela Noruega, Islândia e Liechtenstein prevê a digitalização de 10 mil minutos de títulos, entre longas e curtas-metragens, conservadas na Cinemateca Portuguesa-Museu do Cinema, com o objetivo de devolver às comunidades um conhecimento sobre o modo como o cinema contou as suas histórias.",
+            "Até 2024, a Cinemateca Portuguesa - Museu do Cinema irá desenvolver um programa de digitalização e divulgação do cinema português relacionado com o mar, no âmbito do mecanismo financeiro de apoio EEAGrants. Este programa, criado pela Noruega, Islândia e Liechtenstein prevê a digitalização de 10 mil minutos de títulos, entre longas e curtas-metragens, conservadas na Cinemateca Portuguesa-Museu do Cinema, com o objetivo de devolver às comunidades um conhecimento sobre o modo como o cinema contou as suas histórias.",
             "A relação que o cinema português tem com o mar é transversal às épocas, géneros e temáticas, sendo possível encontrar registos desde 1896, quando se realizaram as primeiras sessões públicas. Desde então, o mar foi matéria de trabalho para autores e instituições, através de títulos a partir dos quais é possível acompanhar o desenvolvimento da indústria, em particular a conserveira, a construção de estaleiros e o poderio militar, as campanhas marítimas, a expansão e consolidação urbanística das comunidades piscatórias, as suas práticas religiosas e os rituais pagãos, os movimentos sociais e as condições laborais, bem como a promoção do território nacional, do turismo ao mar enquanto fator identitário, o conhecimento científico e o estudo da fauna e flora marítima e costeira, a relação com as antigas colónias portuguesas e, naturalmente, a ficção como motor para narrativas que permitiram descrever realidades distintas a partir de uma mesma matéria."
         ]
     },
     {
         "id": "news7",
         "title": "Imagens de Portugal em curtas-metragens dos anos 1920-70",
-        "img": "images/news/Imagens de pt.jpg",
+        "img": "images/news/Imagens de pt.webp",
         "alt": "Fotograma: Imagens de Portugal",
         "category": "Património",
         "date": "01 DEZ  2023",

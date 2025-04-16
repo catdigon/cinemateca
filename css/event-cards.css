@@ -59,45 +59,45 @@
     display: flex;
     gap: 0.4rem;
     color: #100C07;
-    background: rgb(217,217,217);
-    background: radial-gradient(ellipse, rgba(217,217,217,1) 25%, rgba(217,217,217,0) 70%);
+    background: rgb(217, 217, 217);
+    background: radial-gradient(ellipse, rgba(217, 217, 217, 1) 25%, rgba(217, 217, 217, 0) 70%);
 }
 
 .card-type,
-.events-card-details{
+.events-card-details {
     display: flex;
     align-items: center;
     gap: 0.3rem;
     flex-wrap: wrap;
-    
+
 }
 
 .events-card-details p,
-.card-type p{
+.card-type p {
     margin-bottom: 0;
     text-transform: uppercase;
 }
 
-.icone-dot{
+.icone-dot {
     filter: invert();
 }
 
-.dot-big{
+.dot-big {
     height: 0.5rem !important;
 }
 
-.dot-small{
+.dot-small {
     height: 0.25rem !important;
 }
-    
-.card-title{
-font-size: 2rem;
-text-transform: uppercase;
+
+.card-title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 992px) {
-    .event-description{
-    display: none;
+    .event-description {
+        display: none;
     }
 }
 
@@ -116,6 +116,7 @@ text-transform: uppercase;
 }
 
 @media only screen and (max-width: 576px) {
+
     /*Events - Index page*/
     .events-cards {
         justify-content: center;
@@ -128,6 +129,7 @@ text-transform: uppercase;
 
 
 @media only screen and (max-width: 320px) {
+
     /*Events - Index page*/
     .events-cards .card {
         width: 100%;

@@ -25,7 +25,8 @@ h3,
 }
 
 
-h4 {
+h4,
+.card-title {
     font-family: 'Afacad', sans-serif;
     font-size: 1.5rem;
     font-style: normal;
@@ -33,7 +34,8 @@ h4 {
     line-height: 108%;
 }
 
-h5 {
+h5,
+#card-news-title {
     font-family: 'Afacad', sans-serif;
     font-size: 1.5rem;
     font-style: normal;
