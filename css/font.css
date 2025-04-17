@@ -51,8 +51,8 @@ body {
     font-weight: 400;
     line-height: 150%;
 }
- 
-body .bold{
+
+body .bold {
     font-family: 'Afacad', sans-serif;
     font-size: 1.2rem;
     font-style: normal;
@@ -61,7 +61,7 @@ body .bold{
     font-variant: unset;
 }
 
-body .small{
+body .small {
     font-family: 'Afacad', sans-serif;
     font-size: 1rem;
     font-style: normal;

@@ -103,7 +103,7 @@
     margin-bottom: 0.5rem;
 }
 
-#black-space{
+#black-space {
     display: none;
 }
 
@@ -112,7 +112,7 @@
         margin-left: 3rem;
     }
 
-    #black-space{
+    #black-space {
         display: flex;
         height: 3vw;
     }

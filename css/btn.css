@@ -1,6 +1,6 @@
 /*Botons*/
 .btn-primary,
-.btn-secondary{
+.btn-secondary {
     max-width: 200px;
     min-width: 200px;
     height: 40px;
@@ -43,7 +43,7 @@
 }
 
 .btn-primary svg,
-.btn-secondary svg{
+.btn-secondary svg {
     width: 15px;
     height: 15px;
     transition: fill 0.3s linear;
@@ -52,11 +52,11 @@
 .btn-primary svg path,
 .btn-secondary svg path,
 .btn-primary:hover svg path,
-.btn-secondary:hover svg path{
+.btn-secondary:hover svg path {
     fill: currentColor;
 }
 
-.btn-primary span, 
+.btn-primary span,
 .btn-secondary span {
     all: unset;
     display: flex;
@@ -74,14 +74,14 @@
     gap: 3px;
 }
 
-#btn-top{
+#btn-top {
     border: none;
     background: none;
-    color: #FCFAF8; 
-    cursor: pointer; 
-  }
+    color: #FCFAF8;
+    cursor: pointer;
+}
 
-#btn-none{
+#btn-none {
     all: unset;
     display: flex;
     gap: 4px;
@@ -117,23 +117,23 @@
     background: none;
 }
 
-.btn-filter-added{
+.btn-filter-added {
     border: none;
     background: none;
     font-family: Montserrat;
     font-weight: 600;
     font-variant: small-caps;
-  }
+}
 
-.btn-remove{
+.btn-remove {
     border: none;
 }
 
-.btn-none{
+.btn-none {
     all: unset;
 }
 
-.btn-clean{
+.btn-clean {
     border: none;
     font-size: 0.8rem;
     color: #FCFAF8;

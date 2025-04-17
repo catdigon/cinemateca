@@ -54,9 +54,7 @@ function handleFilterContainer() {
 
 }
 
-
 window.addEventListener("resize", handleFilterContainer)
-
 
 var i;
 
@@ -107,7 +105,7 @@ document.querySelectorAll('.filtros-categories').forEach(item => {
   });
 });
 
-
+//Logic to filter and display results
 function searchLabelContent(filterContent, contentId, AreaId) {
   const contentLabel = document.querySelectorAll(contentId);
   const contentArea = document.querySelectorAll(AreaId);
@@ -137,32 +135,65 @@ function searchLabelContent(filterContent, contentId, AreaId) {
   })
 }
 
-function addFilterSelected(filterText){
+//Logic to add/remove filter added to results container
+function addFilterSelected(filterText) {
   const filtersContainer = document.querySelector(".filters-added")
   const categoryFilter = filtersContainer.querySelector(".filter-category")
 
-  if (filterText === "Ver tudo"){
+  if (filterText === "Ver tudo") {
     if (categoryFilter) {
       categoryFilter.remove()
     }
   }
 
   const filterBtn = document.createElement("button");
-    filterBtn.classList.add("btn-icon", "btn-x", "btn-filter-added" , "filter-category")
-    filterBtn.innerText = filterText;
+  filterBtn.classList.add("btn-icon", "btn-x", "btn-filter-added", "filter-category")
+  filterBtn.innerText = filterText;
 
-    filterBtn.addEventListener("click", function () {
-      this.remove(); // Delete btn added
-    });
+  filterBtn.addEventListener("click", function () {
+    this.remove(); // Delete btn added
+  });
 
-    if (categoryFilter) {
-      categoryFilter.replaceWith(filterBtn)
-    } else {
-      filtersContainer.appendChild(filterBtn)
-    }
-  
-    searchBtnIcons()
+  if (categoryFilter) {
+    categoryFilter.replaceWith(filterBtn)
+  } else {
+    filtersContainer.appendChild(filterBtn)
+  }
 
-    console.log("O texto deveria ser" ,filterText)
+  searchBtnIcons()
+
+  console.log("O texto deveria ser", filterText)
 
 }
+
+//Open acervo and present results according footer selection
+document.querySelectorAll(".footer-filter").forEach(item => {
+  item.addEventListener("click", function () {
+    const filterText = this.textContent.trim();
+    window.location.href = `produtos.html?category=${encodeURIComponent(filterText)}`;
+  });
+});
+
+document.querySelectorAll(".body-menu-navbar").forEach(item => {
+  item.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const filterText = this.textContent.trim();
+    window.location.href = `produtos.html?category=${encodeURIComponent(filterText)}`;
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const filterText = urlParams.get("category");
+
+  if (filterText) {
+    console.log("Menu filtrou por", filterText);
+
+    document.querySelectorAll('.filtros-categories').forEach(item => {
+      if (item.textContent.trim() === filterText) {
+        item.click(); // Simula um clique no botão
+      }
+    });
+  }
+});

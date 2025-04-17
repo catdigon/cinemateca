@@ -1,19 +1,20 @@
 .pagination {
-    justify-self: self-end;
-    margin-top: 1.6rem;
+  justify-self: self-end;
+  margin-top: 1.6rem;
 }
 
 .pagination a {
-    color: #100C07;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-  }
-  
-  .pagination a.active {
-    font-weight: 700;
-  }
-  
-  .pagination a:hover:not(.active) {
-    background-color: #C9C8C8;}
+  color: #100C07;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  font-weight: 700;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #C9C8C8;
+}

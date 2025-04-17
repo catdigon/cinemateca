@@ -13,7 +13,7 @@
     gap: 0.5rem;
 }
 
-#main-container{
+#main-container {
     width: 100%;
 }
 
@@ -75,11 +75,11 @@
     background-repeat: no-repeat;
 }
 
- .filter-option.add-filter p::before {
+.filter-option.add-filter p::before {
     display: inline-block;
 }
 
- .filter-option.add-filter p {
+.filter-option.add-filter p {
     text-align: left;
 }
 
@@ -89,7 +89,7 @@
     transition: max-height 0.2s ease-out;
 }
 
-.filters-added{
+.filters-added {
     padding: 1rem 0rem;
     display: flex;
     flex-direction: row;
@@ -118,7 +118,7 @@
     object-fit: cover;
 }
 
-.obra-card .card-image-text{
+.obra-card .card-image-text {
     height: auto !important;
     width: 100%;
     object-fit: cover;
@@ -141,7 +141,8 @@
     background: rgba(42, 42, 42, 0.85);
     mask: linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, rgb(0, 0, 0) 86%, rgb(0, 0, 0) 100%);
     transition: background-color 0.4s ease, opacity 0.6s ease;
-    z-index: 1; /* A máscara fica abaixo do texto */
+    z-index: 1;
+    /* A máscara fica abaixo do texto */
 }
 
 
@@ -162,7 +163,8 @@
     position: relative;
     color: #FCFAF8;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 2; /* Garante que o texto fica acima da máscara */
+    z-index: 2;
+    /* Garante que o texto fica acima da máscara */
 }
 
 .obra-info p {

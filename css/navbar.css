@@ -31,7 +31,7 @@ h3 {
 }
 
 #navbar.scrolled {
-    height: 6rem; 
+    height: 6rem;
 }
 
 #navbar::before {
@@ -39,12 +39,11 @@ h3 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, 
-        rgba(16,12,7,1) 40%,  
-        rgba(16,12,7,0.7) 60%,  
-        rgba(16,12,7,0.3) 85%,  
-        rgba(16,12,7,0) 100%  
-    );
+    background-image: linear-gradient(to bottom,
+            rgba(16, 12, 7, 1) 40%,
+            rgba(16, 12, 7, 0.7) 60%,
+            rgba(16, 12, 7, 0.3) 85%,
+            rgba(16, 12, 7, 0) 100%);
     z-index: 0;
 }
 
@@ -84,12 +83,12 @@ h3 {
     filter: invert(100%);
 }
 
-.navbar-logo img{
+.navbar-logo img {
     height: 12vw;
     transition: all 0.3s ease-in-out;
 }
 
-.navbar-logo img.scrolled{
+.navbar-logo img.scrolled {
     height: 8.5vw;
 }
 
@@ -146,7 +145,7 @@ h3 {
     width: 100%;
 }
 
-.navbar-hamburguer-last{
+.navbar-hamburguer-last {
     padding-bottom: 1.2rem;
 }
 
@@ -159,7 +158,7 @@ h3 {
     margin: 0.2rem;
 }
 
-.navbar-hamburguer-container menu{
+.navbar-hamburguer-container menu {
     flex-direction: column !important;
 }
 
@@ -168,37 +167,37 @@ h3 {
     transition: all 0.4s linear;
 }
 
-.navbar-hamburguer a{
- width: 100%;
+.navbar-hamburguer a {
+    width: 100%;
 }
 
-.close-hamburguer-container{
+.close-hamburguer-container {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 2vw;
     padding-right: 6.5vw;
 }
 
-.close-hamburguer-icon{
+.close-hamburguer-icon {
     width: 1.2rem;
 }
 
-.hamburguer-hover svg{
+.hamburguer-hover svg {
     fill: #FCFAF8;
     stroke: #FCFAF8;
     stroke-width: 0.5px;
     transition: all 0.2s linear;
 }
 
-.hamburguer-hover svg:hover{
+.hamburguer-hover svg:hover {
     fill: #FEA017;
     stroke: #FEA017;
     transition: all 0.2s linear;
 }
 
-#navbar menu, 
-#navbar li{
-    all: unset; 
+#navbar menu,
+#navbar li {
+    all: unset;
     display: flex;
     list-style-type: disc;
     margin-block-start: 0;
@@ -206,9 +205,9 @@ h3 {
     padding-inline-start: 0;
     unicode-bidi: isolate;
     justify-content: center;
-  }
+}
 
-#navbar ul{
+#navbar ul {
     padding-left: 0;
 }
 
@@ -217,7 +216,7 @@ h3 {
         font-size: 0.85rem;
     }
 
-    .navbar-logo img{
+    .navbar-logo img {
         height: 16vw;
     }
 
@@ -234,7 +233,7 @@ h3 {
         display: block;
     }
 
-    .navbar-logo img.scrolled{
+    .navbar-logo img.scrolled {
         height: 14vw;
     }
 

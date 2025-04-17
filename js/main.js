@@ -13,7 +13,7 @@ async function loadComponent(id, file) {
 }
 
 /**Load and place navbar and footer*/
-window.addEventListener("DOMContentLoaded", async() => {
+window.addEventListener("DOMContentLoaded", async () => {
   await loadComponent("navbar-placeholder", "navbar.html");
   await loadComponent("footer-placeholder", "footer.html");
   await handleHideHamburguerWhenScreenLarge()
@@ -22,19 +22,19 @@ window.addEventListener("DOMContentLoaded", async() => {
 /**Change: Show/Hide the elements on Menu/Navbar*/
 function toggleVisibilityElement(selector) {
   try {
-     var element = document.querySelector(selector);
-  const icon = document.querySelector(".navbar-menu-icon")
-  if (element.style.display === "flex") {
-    element.style.display = "none";
-    icon.style.opacity = "1"
-  } else {
-    element.style.display = "flex";
-    icon.style.opacity = "0"
+    var element = document.querySelector(selector);
+    const icon = document.querySelector(".navbar-menu-icon")
+    if (element.style.display === "flex") {
+      element.style.display = "none";
+      icon.style.opacity = "1"
+    } else {
+      element.style.display = "flex";
+      icon.style.opacity = "0"
+    }
   }
+  catch (e) {
+    console.error("Não encontrei o seletor ", selector)
   }
- catch(e) {
-  console.error("Não encontrei o seletor " , selector)
- }
 }
 
 /**Hide always the element*/
@@ -52,6 +52,7 @@ function handleHideHamburguerWhenScreenLarge() {
   } else {
     icon.style.display = "flex"
     icon.style.marginTop = "3vw"
+    icon.style.opacity = "1"
   }
 }
 
@@ -70,16 +71,17 @@ function returnTopFunction() {
 /**Navbar scrool*/
 window.addEventListener("scroll", function () {
   const navbar = document.getElementById("navbar");
-  const navbarLogo =  document.querySelector(".navbar-logo img")
+  const navbarLogo = document.querySelector(".navbar-logo img")
 
-  if (navbar) { 
+  if (navbar) {
     if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-    navbarLogo.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-    navbarLogo.classList.remove("scrolled");
-  }}
+      navbar.classList.add("scrolled");
+      navbarLogo.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+      navbarLogo.classList.remove("scrolled");
+    }
+  }
 
 });
 
@@ -109,8 +111,8 @@ function searchBtnIcons() {
           <path id="Vector_2" d="M9.99711 0.386353C9.99741 0.436948 9.98771 0.487103 9.96858 0.533943C9.94945 0.580783 9.92126 0.623384 9.88562 0.659307L0.658972 9.88596C0.58658 9.95835 0.488395 9.99902 0.386017 9.99902C0.283639 9.99902 0.185454 9.95835 0.113062 9.88596C0.0406695 9.81357 7.62776e-10 9.71538 0 9.61301C-7.62776e-10 9.51063 0.0406695 9.41244 0.113062 9.34005L9.33972 0.113398C9.37545 0.077364 9.41797 0.0487633 9.46482 0.0292454C9.51167 0.00972748 9.56192 -0.000320435 9.61267 -0.000320435C9.66342 -0.000320435 9.71367 0.00972748 9.76052 0.0292454C9.80737 0.0487633 9.84989 0.077364 9.88562 0.113398C9.92126 0.14932 9.94945 0.191922 9.96858 0.238762C9.98771 0.285602 9.99741 0.335757 9.99711 0.386353Z" fill="#100C07"/>
         </g>
         </svg>`,
-        "btn-filter":
-        `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" alt="Filters icon">
+    "btn-filter":
+      `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" alt="Filters icon">
                             <path d="M12 12l8-8V0H0v4l8 8v8l4-4v-4z"/></svg>`
   };
 
@@ -119,19 +121,18 @@ function searchBtnIcons() {
 
   btnCollection.forEach(button => {
     // Run all classes to find the currect svg
-    if(!button.querySelector("span")){
-    for (let className in icons) {
-      if (button.classList.contains(className)) {
-        // Creat an span elemento to place the SVG icon
-        const iconSpan = document.createElement("span");
-        iconSpan.innerHTML = icons[className];
+    if (!button.querySelector("span")) {
+      for (let className in icons) {
+        if (button.classList.contains(className)) {
+          // Creat an span elemento to place the SVG icon
+          const iconSpan = document.createElement("span");
+          iconSpan.innerHTML = icons[className];
 
-        // Put the icon before text
-        button.prepend(iconSpan);
-        break; // Stop when it finds a match
+          // Put the icon before text
+          button.prepend(iconSpan);
+          break; // Stop when it finds a match
         }
       }
     }
   });
 }
-

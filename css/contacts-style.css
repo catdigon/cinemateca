@@ -1,4 +1,4 @@
-.contacts-container{
+.contacts-container {
     align-content: center;
 }
 
@@ -60,4 +60,3 @@
 .mail::before {
     background-image: url('../Icon/email.svg');
 }
-
