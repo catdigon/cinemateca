@@ -119,6 +119,7 @@ function searchBtnIcons() {
 
   btnCollection.forEach(button => {
     // Run all classes to find the currect svg
+    if(!button.querySelector("span")){
     for (let className in icons) {
       if (button.classList.contains(className)) {
         // Creat an span elemento to place the SVG icon
@@ -128,6 +129,7 @@ function searchBtnIcons() {
         // Put the icon before text
         button.prepend(iconSpan);
         break; // Stop when it finds a match
+        }
       }
     }
   });

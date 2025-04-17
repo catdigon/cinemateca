@@ -100,6 +100,8 @@ document.querySelectorAll('.filtros-categories').forEach(item => {
     const filterText = this.textContent.trim();
     console.log("BTN says", filterText)
 
+    addFilterSelected(filterText)
+
     searchLabelContent(filterText, ".card-detail-yellow", ".new-search");
     searchLabelContent(filterText, "#film-category", ".obra-card");
   });
@@ -133,4 +135,34 @@ function searchLabelContent(filterContent, contentId, AreaId) {
       return
     }
   })
+}
+
+function addFilterSelected(filterText){
+  const filtersContainer = document.querySelector(".filters-added")
+  const categoryFilter = filtersContainer.querySelector(".filter-category")
+
+  if (filterText === "Ver tudo"){
+    if (categoryFilter) {
+      categoryFilter.remove()
+    }
+  }
+
+  const filterBtn = document.createElement("button");
+    filterBtn.classList.add("btn-icon", "btn-x", "btn-filter-added" , "filter-category")
+    filterBtn.innerText = filterText;
+
+    filterBtn.addEventListener("click", function () {
+      this.remove(); // Delete btn added
+    });
+
+    if (categoryFilter) {
+      categoryFilter.replaceWith(filterBtn)
+    } else {
+      filtersContainer.appendChild(filterBtn)
+    }
+  
+    searchBtnIcons()
+
+    console.log("O texto deveria ser" ,filterText)
+
 }

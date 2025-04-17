@@ -95,12 +95,6 @@
     flex-direction: row;
 }
 
-.btn-filter-added:hover{
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-
 /*Cards*/
 .obras-card-container {
     display: flex;

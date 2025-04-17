@@ -71,6 +71,13 @@
     display: flex;
 }
 
+.btn-filter-added:hover{
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: 0.2s;
+    background: rgba(254, 160, 23, 0.20);;
+}
+
 @media only screen and (max-width: 992px) {
     .filters-menu-container {
         width: 100%;
